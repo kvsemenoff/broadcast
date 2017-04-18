@@ -1,58 +1,4 @@
-.autonomous{
-	padding: 109px 0 45px;
-	.autonomous__row_descr{
-		padding: 0 0 35px;
-		border-bottom: 1px solid #ebebeb;
-	}
-	.autonomous__row_text{
-		padding: 50px 0 0;
-	}	
-	@media only screen and (min-width : 992px) {
-		.dfreality__caption{
-			margin-right: 20px;
-		}	
-	}
-	&_h2{
-		text-align: center;
-	}
-	&__text{
-		padding-bottom: 8px;
-		font-size: 15px;
-		color: #7a7a7a;
-	}
-	&__text_strong{
-		font-family: "LatoSemibold";
-		color: #2b3135;
-	}
-	&__q-descr{
-		display: block;
-		font-family: "LatoSemiboldItalic";
-		text-align: right;
-		font-size: 15px;
-		color: #949494;
-	}
-	&__img-wrap{
-		width: 100%;
-		overflow: hidden;
-		margin-bottom: 10px;
-	}
-	&__img{
-		width: 100%;
-		height: auto;
-		display: block;
-	}
-	&__link{
-		color: #fd5c44;
-		font-size: 15px;
-		text-decoration: underline;
-		display: inline-block;
-	}
-	.q_theme_rosa{
-		padding-bottom: 14px;
-		padding-left: 57px;
-    background: url(../../img/quotes.png) no-repeat top left 0px;
-	}
-}
+
 
 @media only screen and (min-width : 320px) {
 }
@@ -64,9 +10,6 @@
 }
 
 @media only screen and (min-width : 992px) {
-	.autonomous_h2 {
-	    text-align: right;
-	}
 }
 
 @media only screen and (min-width : 1248px) {

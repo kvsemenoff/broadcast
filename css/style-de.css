@@ -1,0 +1,31 @@
+.menu-g { font-family: "SegoeUISemiBold"; }
+.menu-g .menu { padding: 10px 0 30px; }
+.menu-g .menu__point { list-style: none; font-size: 14px; position: relative; display: inline-block; }
+.menu-g .menu__point:hover .menu__sub { display: block; }
+.menu-g .menu__name { font-size: 18px; color: #fff; display: block; line-height: 28px; padding: 5px 25px; position: relative; }
+.menu-g .sub { display: none; position: absolute; left: 25px; top: 100%; background: #fff; padding: 0 25px; width: 310px; z-index: 100; }
+.menu-g .sub__point { list-style: none; width: 100%; }
+.menu-g .sub__point_main { font-size: 16px; padding: 10px 0 3px; color: #673a90; }
+.menu-g .sub__point-title { color: #282828; display: block; line-height: 23px; }
+.menu-g .sub__point-title:hover { color: #673a90; }
+.menu-g .menu__point:hover > .sub { display: block; }
+
+.menu-burger .menu-up { padding: 10px 0 20px; float: left; background: #0099cc; position: relative; }
+.menu-burger .menu__li { list-style: none; font-size: 10px; width: 49%; display: inline-block; }
+.menu-burger .menu__li:hover .menu__sub { display: block; }
+.menu-burger .menu__li a { text-decoration: none; color: #b5e7f8; display: block; line-height: 22px; padding: 0 23px; background: url(../img/ic_menu.png) center right 20px no-repeat; }
+.menu-burger .menu__li a:hover { color: #fefefe; }
+.menu-burger .menu .submenu { width: 100%; background: #fff; position: absolute; top: 100%; left: 0; padding: 10px 0 10px 10px; }
+.menu-burger .submenu li { display: inline-block; width: 40%; }
+.menu-burger .submenu li a { color: #0099cc; display: block; padding: 0 10px; }
+.menu-burger .submenu li a:hover { color: #000; }
+.menu-burger .sidebar__link { width: 290px; float: right; }
+.menu-burger .sidebar__link .filter { font-size: 17px; color: #000; display: block; padding: 15px 10px 15px 65px; text-transform: uppercase; background: #ca0309 url(../img/sidebar-link-ic.png) 10px 30px no-repeat; }
+.menu-burger .sidebar__link i { color: #fff; font-style: normal; padding-right: 3px; }
+.menu-burger .sidebar__link .filter-inner { width: 240px; margin-left: 50px; background: #ca0309; padding: 10px 0; }
+.menu-burger .sidebar__link .filter-inner li { list-style: none; }
+.menu-burger .sidebar__link .filter-inner li a { font-size: 11px; display: block; padding: 6px 25px 6px 35px; color: #fff; background: url(../img/ic_arow-mini.png) center right 15px no-repeat; }
+.menu-burger .menu-button { cursor: pointer; font-size: 24px; color: #fefefe; width: 100px; position: relative; float: left; padding-left: 35px; margin-top: 25px; }
+.menu-burger .menu-button .bg { position: absolute; background: #fff; width: 27px; height: 20px; top: 5px; left: 0; display: block; }
+.menu-burger .menu-button .bg::before { content: ""; position: absolute; width: 27px; height: 5px; top: 4px; left: 0; background: #000; display: block; }
+.menu-burger .menu-button .bg::after { content: ""; position: absolute; width: 27px; height: 5px; left: 0; background: #000; display: block; top: 12px; }

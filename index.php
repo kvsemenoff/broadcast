@@ -18,7 +18,7 @@
 <script src="js/jquery.maskedinput.min.js"></script>
 <script src="js/common.js"></script>
 
-
+<script src="/js/outerstyles.js"></script>
 <!--<script>
 	$(document).ready(function() {
 		$("head").append("<link href='https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:300i,500,600,700&amp;subset=cyrillic' rel='stylesheet'>");

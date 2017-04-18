@@ -1,0 +1,48 @@
+.ol_theme_rosa{
+	list-style-type: none;
+	counter-reset: num;
+	font-family:"LatoRegular";
+	font-size: 15px;
+}
+.ol_color{
+	color: #7a7a7a;
+}
+.ol_theme_rosa__li{
+	position: relative;
+	min-height: 50px;
+	padding-left: 72px;
+	padding-top: 8px;
+	margin-bottom: 10px;
+}
+.ol_theme_rosa__li:before{
+	content: '0' counter(num); /* Выводим число */
+    counter-increment: num; /* Увеличиваем значение счётчика */
+    color:#fff;	
+    display: inline-block;
+    border-radius: 50%;
+    background:#FD5C44;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 49px;
+    position: absolute;
+    left: 13px;
+    top:0px;
+    font-family:"LatoHeavy";
+    font-size: 15px;
+}
+.ol_theme_rosa__li_last{
+	position: relative;
+	padding-top: 14px;
+}
+@media only screen and (min-width : 992px) {
+    .ol_theme_rosa__li{
+        padding-left: 98px;
+        margin-bottom: 26px;
+        padding-top: 2px;
+    }
+    .ol_theme_rosa__li_last{
+        position: relative;
+        padding-top: 14px;
+    }
+}

@@ -1,0 +1,18 @@
+.ul_theme_rosa{
+	list-style: none;
+	font-family:"LatoRegular";
+	font-size: 15px;
+}
+.ul_theme_rosa__li{
+	background: url(../../img/bullet.png) no-repeat left top;
+	height: 32px;
+	padding-left: 49px;
+	margin-bottom: 27px;
+	color: #7a7a7a;
+}
+.ul_theme_rosa__li_last{
+	padding-top: 7px;
+	b{
+		color: #2b3135;
+	}
+}

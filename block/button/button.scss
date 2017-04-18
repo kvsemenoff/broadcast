@@ -1,0 +1,55 @@
+//Общие для всех кнопок
+.button {
+	text-decoration: none;
+	display: inline-block;
+	outline: none;
+	border: none;
+	cursor: pointer;
+}
+
+.button_theme_rosa{
+	font-family: 'LatoBold';
+	border: 0;
+	outline: 0;
+	color: #fff;
+	font-size: 13px;
+	line-height: 13px;
+	text-transform: uppercase;
+	border-radius: 40px;
+	//background-image: url('/img/arrow.png');
+	background-repeat: no-repeat;
+	transition: all 5ms;
+	padding: 20px 50px;
+
+}
+
+
+.button_red {
+	background-color: #fc5238;
+}
+.button_red:hover{
+	background: darken(#fc5238, 10%);
+	transition: all 5ms;
+
+}
+.button_question {
+	//padding: 20px 78px 18px 55px;
+	//background-position: 75% center;
+	margin-top: 45px;
+}
+
+.button_pick {
+	//padding: 20px 52px 18px 35px;
+	//background-position: 90% center;
+}
+
+.button_connect {
+	//padding: 20px 60px 18px 40px;
+	//background-position: 85% center;
+	margin-top: 40px;
+}
+
+.button_theme_rosa span{
+	display: inline-block;
+	margin-right: 15px;
+}

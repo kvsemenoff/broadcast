@@ -1,0 +1,38 @@
+.button {
+  text-decoration: none;
+  display: inline-block;
+  outline: none;
+  border: none;
+  cursor: pointer; }
+
+.button_theme_rosa {
+  font-family: 'LatoBold';
+  border: 0;
+  outline: 0;
+  color: #fff;
+  font-size: 13px;
+  line-height: 13px;
+  text-transform: uppercase;
+  border-radius: 40px;
+  background-repeat: no-repeat;
+  transition: all 5ms;
+  padding: 20px 50px; }
+
+.button_red {
+  background-color: #fc5238; }
+
+.button_red:hover {
+  background: #fb2606;
+  transition: all 5ms; }
+
+.button_question {
+  margin-top: 45px; }
+
+.button_connect {
+  margin-top: 40px; }
+
+.button_theme_rosa span {
+  display: inline-block;
+  margin-right: 15px; }
+
+/*# sourceMappingURL=button.css.map */

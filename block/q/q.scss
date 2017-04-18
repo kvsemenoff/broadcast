@@ -1,0 +1,12 @@
+.q_theme_rosa{
+	background:url(../../img/quotes.png) no-repeat top left 7px;
+	padding-left: 50px;
+	font-size: 17px;
+	font-family:"LatoItalic";
+	font-style: italic;
+	color: #7a7a7a;
+	padding-bottom: 20px;
+	@media only screen and (min-width : 992px) {
+		padding-left: 65px;
+	}
+}

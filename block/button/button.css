@@ -16,7 +16,7 @@
   line-height: 28px;
   background-color: #673a90;
   padding: 8px 24px 10px 24px;
-  transition: all 5ms; }
+  transition: background 0.5s; }
   .button_theme_rosa:hover {
     background: #4d2b6c; }
 

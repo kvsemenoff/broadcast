@@ -7,7 +7,6 @@
 <?php require_once('includes/comand.php'); ?>
 <?php require_once('includes/our.php'); ?>
 <?php require_once('includes/footer.php'); ?>
-<?php require_once('includes/footer.php'); ?>
 
 <!-- JS_BLOCK -->
 <script src="libs/jquery/jquery-1.11.1.min.js"></script>

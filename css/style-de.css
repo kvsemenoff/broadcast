@@ -19,13 +19,15 @@
 .menu-burger .menu .submenu { width: 100%; background: #fff; position: absolute; top: 100%; left: 0; padding: 10px 0 10px 10px; }
 .menu-burger .submenu li a { color: #0099cc; display: block; padding: 0 10px; }
 .menu-burger .submenu li a:hover { color: #000; }
-.menu-burger .sidebar__link { width: 290px; float: right; }
-.menu-burger .sidebar__link .filter { font-size: 17px; color: #000; display: block; padding: 15px 10px 15px 65px; text-transform: uppercase; background: #ca0309 url(../img/sidebar-link-ic.png) 10px 30px no-repeat; }
-.menu-burger .sidebar__link i { color: #fff; font-style: normal; padding-right: 3px; }
-.menu-burger .sidebar__link .filter-inner { width: 240px; margin-left: 50px; background: #ca0309; padding: 10px 0; }
-.menu-burger .sidebar__link .filter-inner li { list-style: none; }
-.menu-burger .sidebar__link .filter-inner li a { font-size: 11px; display: block; padding: 6px 25px 6px 35px; color: #fff; background: url(../img/ic_arow-mini.png) center right 15px no-repeat; }
 .menu-burger .menu-button { cursor: pointer; font-size: 24px; color: #fefefe; width: 100px; position: relative; float: left; padding-left: 35px; margin-top: 25px; }
 .menu-burger .menu-button .bg { position: absolute; background: #fff; width: 27px; height: 20px; top: 5px; left: 0; display: block; }
 .menu-burger .menu-button .bg::before { content: ""; position: absolute; width: 27px; height: 5px; top: 4px; left: 0; background: #000; display: block; }
 .menu-burger .menu-button .bg::after { content: ""; position: absolute; width: 27px; height: 5px; left: 0; background: #000; display: block; top: 12px; }
+
+.video { padding: 100px 0 130px; background: url(../img/video-bg.jpg) center/cover; }
+.video__block { margin: 0 auto 25px; max-width: 880px; width: 100%; height: 490px; }
+.video__block iframe { width: 100%; display: block; height: 100%; }
+
+@media only screen and (max-width: 1050px) { .video { padding: 65px 0 55px; } }
+@media only screen and (max-width: 550px) { .video { padding: 30px 0 15px; }
+  .video__block { height: 170px; } }

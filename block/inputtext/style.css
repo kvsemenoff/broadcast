@@ -1,2 +1,32 @@
-.input_theme_rosa{display:inline-block;line-height:24px;min-width:240px}.input__control{font-family:"LatoItalic";opacity:0.4;color:#fff;font-size:15px;font-style:italic;border:none;background:transparent;padding:10px 10px;outline:none;width:100%;border-bottom:1px solid #717273}.input__control::-webkit-input-placeholder{color:#fff}.input__control::-moz-placeholder{color:#fff}.input__control:-moz-placeholder{color:#fff}.input__control:-ms-input-placeholder{color:#fff}
+.input_theme_rosa {
+  display: inline-block;
+  line-height: 24px;
+  max-width: 355px;
+  width: 100%; }
+
+.input__control {
+  font-family: "Segoe UI Regular";
+  color: #a2a2a2;
+  font-size: 16px;
+  line-height: 30px;
+  background: transparent;
+  padding: 7px 20px;
+  outline: none;
+  width: 100%;
+  border: 1px solid #cdcdcd;
+  /* Firefox 19+ */
+  /* Firefox 18- */ }
+  .input__control::-webkit-input-placeholder {
+    color: #a2a2a2; }
+  .input__control::-moz-placeholder {
+    color: #a2a2a2; }
+  .input__control:-moz-placeholder {
+    color: #a2a2a2; }
+  .input__control:-ms-input-placeholder {
+    color: #a2a2a2; }
+
+.input__control:focus, .input__control:active {
+  color: #282828;
+  border: 1px solid #818181; }
+
 /*# sourceMappingURL=style.css.map */

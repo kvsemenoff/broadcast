@@ -1,5 +1,9 @@
+.header-top{
+	height: 814px;
+	background: url(../img/header-top.jpg) center/cover;
+}
 .menu-g{
-	font-family:"SegoeUISemiBold";
+	font-family: "SegoeUIRegular";
 	.menu {
 		padding: 10px 0 30px;
 		&__point { 
@@ -18,15 +22,17 @@
 			line-height: 28px;
 			padding: 5px 25px;
 			position: relative;
+			font-family: "SegoeUIRegular";
 		}
 	}
-	.sub { 
+	.sub {
+		font-family: "SegoeUISemiBold";
 		display: none; 
 		position: absolute; 
 		left: 25px; 
 		top: 100%; 
 		background: #fff; 
-		padding: 0 25px; 
+		padding: 0 25px 10px; 
 		width: 310px; 
 		z-index: 100; 
 	}
@@ -53,25 +59,113 @@
 }
 
 .menu-burger{ 
-	.menu-up { padding: 10px 0 20px; float: left; background: #0099cc; position: relative; }
-	.menu__li { list-style: none; font-size: 10px; width: 49%; display: inline-block; }
-	.menu__li:hover .menu__sub { display: block; }
-	.menu__li a { text-decoration: none; color: #b5e7f8; display: block; line-height: 22px; padding: 0 23px; background: url(../img/ic_menu.png) center right 20px no-repeat; }
-	.menu__li a:hover { color: #fefefe; }
-	.menu .submenu { width: 100%; background: #fff; position: absolute; top: 100%; left: 0; padding: 10px 0 10px 10px; }
-	.submenu li { display: inline-block; width: 40%; }
-	.submenu li a { color: #0099cc; display: block; padding: 0 10px; }
-	.submenu li a:hover { color: #000; }
-	.sidebar__link { width: 290px; float: right; }
-	.sidebar__link .filter { font-size: 17px; color: #000; display: block; padding: 15px 10px 15px 65px; text-transform: uppercase; background: #ca0309 url(../img/sidebar-link-ic.png) 10px 30px no-repeat; }
-	.sidebar__link i { color: #fff; font-style: normal; padding-right: 3px; }
-	.sidebar__link .filter-inner { width: 240px; margin-left: 50px; background: #ca0309; padding: 10px 0; }
-	.sidebar__link .filter-inner li { list-style: none; }
-	.sidebar__link .filter-inner li a { font-size: 11px; display: block; padding: 6px 25px 6px 35px; color: #fff; background: url(../img/ic_arow-mini.png) center right 15px no-repeat; }
-	.menu-button { cursor: pointer; font-size: 24px; color: #fefefe; width: 100px; position: relative; float: left; padding-left: 35px; margin-top: 25px; }
-	.menu-button .bg { position: absolute; background: #fff; width: 27px; height: 20px; top: 5px; left: 0; display: block; }
-	.menu-button .bg::before { content: ""; position: absolute; width: 27px; height: 5px; top: 4px; left: 0; background: #000; display: block; }
-	.menu-button .bg::after { content: ""; position: absolute; width: 27px; height: 5px; left: 0; background: #000; display: block; top: 12px; }
+	.menu-up { 
+		padding: 10px 0 20px; 
+		float: left;
+		position: relative; 
+	}
+	.menu__li { 
+		list-style: none; 
+		font-size: 10px; 
+	}
+	.menu__li:hover .menu__sub { 
+		display: block; 
+	}
+	.menu__li a { 
+		text-decoration: none; 
+		color: #b5e7f8; 
+		display: block; 
+		line-height: 22px; 
+		padding: 0 23px;
+	}
+	.menu .submenu { 
+		width: 100%;
+		background: #fff; 
+		position: absolute; 
+		top: 100%; 
+		left: 0; 
+		padding: 10px 0 10px 10px; 
+	}
+	.submenu li a { 
+		color: #0099cc; 
+		display: block; 
+		padding: 0 10px; 
+	}
+	.submenu li a:hover { 
+		color: #000; 
+	}
+	.sidebar__link {
+	  width: 290px; 
+	  float: right; 
+	}
+	.sidebar__link .filter { 
+		font-size: 17px; 
+		color: #000; 
+		display: block; 
+		padding: 15px 10px 15px 65px; 
+		text-transform: uppercase; 
+		background: #ca0309 url(../img/sidebar-link-ic.png) 10px 30px no-repeat; 
+	}
+	.sidebar__link i { 
+		color: #fff; 
+		font-style: normal; 
+		padding-right: 3px; 
+	}
+	.sidebar__link .filter-inner { 
+		width: 240px; 
+		margin-left: 50px; 
+		background: #ca0309; 
+		padding: 10px 0; 
+	}
+	.sidebar__link .filter-inner li { 
+		list-style: none; 
+	}
+	.sidebar__link .filter-inner li a { 
+		font-size: 11px; 
+		display: block; 
+		padding: 6px 25px 6px 35px; 
+		color: #fff; 
+		background: url(../img/ic_arow-mini.png) center right 15px no-repeat; 
+	}
+	.menu-button { 
+		cursor: pointer; 
+		font-size: 24px; 
+		color: #fefefe; 
+		width: 100px; 
+		position: relative; 
+		float: left;
+	  padding-left: 35px; 
+	  margin-top: 25px; 
+	}
+	.menu-button .bg { 
+		position: absolute; 
+		background: #fff; 
+		width: 27px; 
+		height: 20px; 
+		top: 5px; 
+		left: 0; 
+		display: block; 
+	}
+	.menu-button .bg::before { 
+		content: ""; 
+		position: absolute; 
+		width: 27px; 
+		height: 5px; 
+		top: 4px; 
+		left: 0; 
+		background: #000; 
+		display: block; 
+	}
+	.menu-button .bg::after { 
+		content: ""; 
+		position: absolute; 
+		width: 27px; 
+		height: 5px; 
+		left: 0;
+		background: #000; 
+		display: block; 
+		top: 12px; 
+	}
 }
 
 

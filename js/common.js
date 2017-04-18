@@ -114,34 +114,21 @@ $(document).ready(function(){
 		});
 
 
-		// ===========================================
-		// ============ АККОРДЕОН ДЛЯ МЕНЮ ===========
-		// ===========================================
-			$('.menu-up').slideUp(0);
-			$('.menu-button').click(function(){
-				if (!$(this).hasClass('active')){
-					$(this).addClass('active');
-					$('.menu-up').slideDown(400)
-				} else {
-					$(this).removeClass('active');
-					$('.menu-up').slideUp(400)
-				}
-			});
+
+	$('.menu-up').slideUp(0);
+	$('.menu-button').click(function(){
+		if (!$(this).hasClass('menu-up-active')){
+			$(this).addClass('menu-up-active');
+			$('.menu-up').slideDown(400)
+		} else {
+			$(this).removeClass('menu-up-active');
+			$('.menu-up').slideUp(400)
+		}
+	});
 
 
-			// ===========================================
-			// ============ АККОРДЕОН ДЛЯ ПОД-МЕНЮ =======
-			// ===========================================
-				$('.submenu').slideUp(0);
-				$('.submenu-button').click(function(){
-					if (!$(this).hasClass('active')){
-						$(this).addClass('active');
-						$('.submenu').slideDown(400)
-					} else {
-						$(this).removeClass('active');
-						$('.submenu').slideUp(400)
-					}
-				});
+
+	
 });
 
 

@@ -1,16 +1,17 @@
-.h2_theme_rosa{
-	font-family: 'Fira Sans Condensed';
-	font-size: 36px;
-	font-weight: 700;
-	line-height: 40px;
-	text-transform: uppercase;
+.h2_theme_rosa {
+	font-family: "SegoeUISemiBold";
+	font-size: 24px;
+	@media screen and (min-width: 992px) {
+		font-size: 36px;
+	}
+	font-weight: 600;
+	line-height: 67px;
 }
-.h2_dark{
-	color: #2b3135;
+
+.h2_pink {
+	color: #673a90;
 }
-.h2_white{
-	color:#fff;
-}
+
 .wrap{
 	background:grey;
 }

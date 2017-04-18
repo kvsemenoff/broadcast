@@ -1,14 +1,15 @@
-.input_theme_rosa {
+.message_theme_rosa {
   display: inline-block;
   line-height: 24px;
   max-width: 355px;
-  width: 100%; }
+  width: 100%;
+  min-height: 125px;
+  resize: none; }
 
-.input__control {
+.message_theme_rosa {
   font-family: "Segoe UI Regular";
   color: #a2a2a2;
   font-size: 16px;
-  line-height: 30px;
   background: transparent;
   padding: 7px 20px;
   outline: none;
@@ -16,16 +17,16 @@
   border: 1px solid #cdcdcd;
   /* Firefox 19+ */
   /* Firefox 18- */ }
-  .input__control::-webkit-input-placeholder {
+  .message_theme_rosa::-webkit-input-placeholder {
     color: #a2a2a2; }
-  .input__control::-moz-placeholder {
+  .message_theme_rosa::-moz-placeholder {
     color: #a2a2a2; }
-  .input__control:-moz-placeholder {
+  .message_theme_rosa:-moz-placeholder {
     color: #a2a2a2; }
-  .input__control:-ms-input-placeholder {
+  .message_theme_rosa:-ms-input-placeholder {
     color: #a2a2a2; }
 
-.input__control:focus, .input__control:active {
+.message_theme_rosa:focus, .message_theme_rosa:active {
   color: #282828;
   border: 1px solid #818181; }
 

@@ -144,13 +144,72 @@
 
 
 
+/*==================command============*/
+.command_bg_color{
+	background-color: #1c1c1c;
+	padding: 215px 0 160px 0;
+	@media only screen and (min-width : 1200px) {
+		background-image: url("../img/commandbg.png");
+		background-repeat: no-repeat;
+		background-position: top 10% center;
+	}
+}
+.command__container{
+	max-width: 1170px;
+	margin: 0 auto;
+}
+.command__textbox{
+	max-width: 515px;
+	width: 100%;
+	float: right;	
+}
+.command__topcaption{
+	padding-bottom: 22px;
+}
+.command__text{
+	font-family: "Segoe UI Regular";
+	font-size: 16px;
+	line-height: 22px;
+	color: #fff;
+	padding-bottom: 22px;
+}
 
 
-
-
-
-
-
+.command__slider{
+	max-width: 530px;
+	width: 100%;
+	float: left;
+}
+.command__slider_img{
+	img{
+		max-width: 100%;
+		height: auto;
+	}
+}
+.df-left, .df-right{
+	position: absolute;
+	bottom: -80px;
+	width: 40px;
+	height: 40px;
+}	
+.df-left{
+	background-image: url("../img/sliderprev.png");
+	background-repeat: no-repeat;
+	background-position: left center;
+	left:40%;
+	&:hover{
+		background-image: url("../img/sliderprevhover.png");
+	}
+}
+.df-right{
+	background-image: url("../img/slidernext.png");
+	background-repeat: no-repeat;
+	background-position: right center;
+	right: 40%;
+	&:hover{
+		background-image: url("../img/slidernexthover.png");
+	}
+}
 @media only screen and (min-width : 320px) {
 }
 

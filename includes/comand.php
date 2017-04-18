@@ -74,7 +74,15 @@
 					</div>
 				</div>
 			</div>
+			<div class="command__counter">
+				<span class="command__counter_change">1</span>/
+				<span class="command__counter_all">12</span>
+			</div>
 		</div>
 		<div class="clearfix"></div>
 	</div>
 </div>	
+
+<script>
+
+</script>

@@ -8,6 +8,7 @@
 <?php require_once('includes/our.php'); ?>
 <?php require_once('includes/footer.php'); ?>
 
+
 <!-- JS_BLOCK -->
 <script src="libs/jquery/jquery-1.11.1.min.js"></script>
 <script src="libs/owl.carousel/owl.carousel.js"></script>
@@ -26,6 +27,7 @@
 );
 	});
 </script>-->
+
 
 </body>
 </html>

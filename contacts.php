@@ -22,14 +22,14 @@
 <script src="js/common.js"></script>
 
 
-<!--<script>
+<script>
 	$(document).ready(function() {
 		$("head").append("<link href='https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:300i,500,600,700&amp;subset=cyrillic' rel='stylesheet'>");
 		$("head").append("<link href='//netdna.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.css' rel='stylesheet'>"
 
 );
 	});
-</script>-->
+</script>
 	
 </body>
 </html>

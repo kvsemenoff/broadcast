@@ -76,6 +76,45 @@ $(document).ready(function(){
 		$('a[href=#thanks]').trigger('click');
 	};
 
+
+	var owl2 = $("#command__owl_carousel");
+	owl2.owlCarousel({
+		loop:false,
+		nav:true, 
+		autoplay:false,
+		smartSpeed:1000,
+		margin:0,
+		mouseDrag:false,
+		touchDrag: false,
+        center:false,     //если нужны обрезаные края
+        navText:['<span class="df-left"></span>','<span class="df-right"></span>'],
+        responsive:{
+        	0:{
+        		items:1
+        	},      
+        	990:{
+        		items:1
+        	},      
+
+        	1248:{
+        		items:1
+        	}
+        }
+	});
+
+
+
+
+		$('.df-right').on('click', function() {			
+			var x = parseFloat($('.command__counter_change').text());	
+			if (x < 12) {
+				x++;
+				$('.command__counter_change').text(x);
+			}			
+		});
+
+
+
 });
 
 

@@ -1,14 +1,22 @@
-.whattodo_bg_img{
-	background-image: url("../img/whatwedo.png");
-	background-repeat: no-repeat;
-	background-position: top 10% center;
+.whattodo_bg_img{	
+	@media only screen and (min-width : 1200px) {
+		background-image: url("../img/whatwedo.png");
+		background-repeat: no-repeat;
+		background-position: top 10% center;
+	}
 }
 .whattodo__container{
 	max-width: 1225px;
 	width: 100%;
 	margin: 0 auto;
-	padding: 175px 0 115px 0;
+	padding: 30px 0 5px 0;
 	text-align: center;
+	@media only screen and (min-width : 1024px) {
+		padding: 50px 0 45px 0;
+	}
+	@media only screen and (min-width : 1200px) {
+		padding: 175px 0 115px 0;
+	}
 }
 .whattodo__leftbox{
 	max-width: 527px;
@@ -16,44 +24,81 @@
 	display: inline-block;
 	text-align: center;
 	vertical-align: top;
+	padding: 15px 20px 0 20px;
+	@media only screen and (min-width : 1200px) {
+		padding: 15px 0px 0 0px;
+	}
 }
-.whattodo__img{
+.whattodo__img{	
+	-webkit-box-shadow: 0px 10px 72px 3px rgba(0,0,0,0.27);
+	-moz-box-shadow: 0px 10px 72px 3px rgba(0,0,0,0.27);
+	box-shadow: 0px 10px 72px 3px rgba(0,0,0,0.27);		
 	img{
 		max-width: 100%;
 		height: auto;
+		display: inline-block;
+		margin-bottom: -7px;
 	}
 }
 
 .whattodo__rightbox{
-	max-width: 580px;
-	width: 100%;
+	
 	display: inline-block;
-	text-align: left;
+	text-align: center;
 	vertical-align: top;
+	@media only screen and (min-width : 1200px) {
+		padding-left: 120px;
+		text-align: left;
+		max-width: 625px;
+		width: 100%;
+	   
+	}
 }
 .whattodo__topcaption{
-	text-align: left;
+	text-align: center;
 	font-family: "Segoe UI Semibold";
-	padding-bottom: 50px;
+	padding-bottom: 30px;
+	padding-top: 40px;
+	font-size: 24px;
+	@media only screen and (min-width : 1024px) {
+		padding-bottom: 30px;		
+		font-size: 36px;
+	}
+	@media only screen and (min-width : 1200px) {
+		text-align: left;
+		padding-bottom: 50px;
+		padding-top: 0;		
+	}
 }
 .whattodo__txtbox{	
 	background-repeat: no-repeat;
-	background-position: left top; 
-	padding-bottom: 27px;
-	padding-left: 45px;
-	outline: 1px solid red;
-	position: relative;
-	padding-top: 6px;
+	background-position: center top; 
+	position: relative;	
 	z-index: 10;
-	&:after{
-		content: "";
-		position: absolute;
-		top: 31px;
-		left: 16px;
-		width: 2px;
-		height: 72%;
-		background-color: #673a90;
-		z-index: 1;
+	padding: 40px 20px 40px 20px;
+	@media only screen and (min-width : 1024px) {
+		display: inline-block;
+		max-width: 370px;
+		width: 100%;
+		margin: 0 40px;
+	}
+	@media only screen and (min-width : 1200px) {
+		&:after{
+			content: "";
+			position: absolute;
+			top: 31px;
+			left: 16px;
+			width: 2px;
+			height: 72%;
+			background-color: #673a90;
+			z-index: 1;
+		}
+		background-repeat: no-repeat;
+		background-position: left top; 
+		padding: 0 0 33px 49px;
+		display: block;
+		max-width: unset;
+		margin: 0px;
 	}
 }
 .whattodo__txtbox_bg1{
@@ -67,31 +112,123 @@
 }
 .whattodo__txtbox_bg4{
 	background-image: url("../img/what4.png");
+	&:after{
+		content: "";		
+		width: 0px;
+		height: 0%;
+		background-color: transparent;		
+	}
 }
 .whattodo__txtbox_caption{
-	font-size: 16px;
+	font-size: 14px;
 	color: #121212;
 	font-family: "Segoe UI Semibold";
 	text-transform: uppercase;
-	line-height: 22px;
+	padding-bottom: 7px;
+	// line-height: 30px;
+	@media only screen and (min-width : 1024px) {
+		font-size: 16px;
+	}
 }
 .whattodo__text{
-	font-size: 16px;
+	font-size: 14px;
 	color: #121212;
 	font-family: "Segoe UI Regular";
-	line-height: 30px;
+	// line-height: 21px;
+	@media only screen and (min-width : 1024px) {
+		font-size: 16px;
+		    display: inline-block;
+	}
 }
 
 
 
 
+/*==================command============*/
+.command_bg_color{
+	background-color: #1c1c1c;
+	padding: 215px 0px 160px 0;
+	@media only screen and (min-width : 1200px) {
+		background-image: url("../img/commandbg.png");
+		background-repeat: no-repeat;
+		background-position: top 10% center;
+	}
+}
+.command__container{
+	max-width: 1170px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+.command__textbox{
+	max-width: 515px;
+	width: 100%;
+	float: right;	
+}
+.command__topcaption{
+	padding-bottom: 22px;
+}
+.command__text{
+	font-family: "Segoe UI Regular";
+	font-size: 16px;
+	line-height: 22px;
+	color: #fff;
+	padding-bottom: 22px;
+}
 
 
-
-
-
-
-
+.command__slider{
+	max-width: 530px;
+	width: 100%;
+	float: left;
+	position: relative;
+}
+.command__slider_img{
+	img{
+		max-width: 100%;
+		height: auto;
+	}
+}
+.df-left, .df-right{
+	position: absolute;
+	bottom: -80px;
+	width: 40px;
+	height: 40px;
+}	
+.df-left{
+	background-image: url("../img/sliderprev.png");
+	background-repeat: no-repeat;
+	background-position: left center;
+	left:38%;
+	&:hover{
+		background-image: url("../img/sliderprevhover.png");
+	}
+}
+.df-right{
+	background-image: url("../img/slidernext.png");
+	background-repeat: no-repeat;
+	background-position: right center;
+	right: 35%;
+	&:hover{
+		background-image: url("../img/slidernexthover.png");
+	}
+}
+.command__counter{
+	width: 70px;
+	text-align: center;
+	font-size: 16px;
+	color: #fff;
+	line-height: 22px;
+	font-family: "Segoe UI Regular";
+	position: absolute;
+	bottom: -70px;
+	left: 45%;
+}
+.command__counter_change{
+	display: inline-block;
+}
+.command__counter_all{
+	display: inline-block;
+}
 @media only screen and (min-width : 320px) {
 }
 
@@ -104,5 +241,3 @@
 @media only screen and (min-width : 992px) {
 }
 
-@media only screen and (min-width : 1248px) {
-}

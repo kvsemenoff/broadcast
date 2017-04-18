@@ -1,11 +1,13 @@
 .h2_theme_rosa {
 	font-family: "SegoeUISemiBold";
 	font-size: 24px;
+	line-height: 32px;
+	text-transform: uppercase;
 	@media screen and (min-width: 992px) {
 		font-size: 36px;
+		line-height: 67px;
 	}
 	font-weight: 600;
-	line-height: 67px;
 }
 
 .h2_pink {

@@ -1,2 +1,22 @@
-.h2_theme_rosa{font-family:"SegoeUISemiBold";font-size:24px;font-weight:600;line-height:67px}@media screen and (min-width: 992px){.h2_theme_rosa{font-size:36px}}.h2_pink{color:#673a90}.wrap{background:grey}
-/*# sourceMappingURL=h2.css.map */
+.h2_theme_rosa {
+  font-family: "SegoeUISemiBold";
+  font-size: 24px;
+  line-height: 32px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+@media screen and (min-width: 992px) {
+  .h2_theme_rosa {
+    font-size: 36px;
+    line-height: 67px;
+  }
+}
+
+.h2_pink {
+  color: #673a90;
+}
+
+.wrap {
+  background: grey;
+}

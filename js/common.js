@@ -115,6 +115,20 @@ $(document).ready(function(){
 
 
 
+	$('.menu-up').slideUp(0);
+	$('.menu-button').click(function(){
+		if (!$(this).hasClass('menu-up-active')){
+			$(this).addClass('menu-up-active');
+			$('.menu-up').slideDown(400)
+		} else {
+			$(this).removeClass('menu-up-active');
+			$('.menu-up').slideUp(400)
+		}
+	});
+
+
+
+	
 });
 
 

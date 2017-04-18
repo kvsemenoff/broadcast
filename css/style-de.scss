@@ -1,56 +1,183 @@
-.autonomous{
-	padding: 109px 0 45px;
-	.autonomous__row_descr{
-		padding: 0 0 35px;
-		border-bottom: 1px solid #ebebeb;
+.header-top{
+	height: 814px;
+	background: url(../img/header-top.jpg) center/cover;
+}
+.menu-g{
+	font-family: "SegoeUIRegular";
+	.menu {
+		padding: 10px 0 30px;
+		&__point { 
+			list-style: none; 
+			font-size: 14px; 
+			position: relative; 
+			display: inline-block; 
+		}
+		&__point:hover .menu__sub { 
+			display: block; 
+		}
+		&__name{
+			font-size: 18px;
+			color: #fff;
+			display: block;
+			line-height: 28px;
+			padding: 5px 25px;
+			position: relative;
+			font-family: "SegoeUIRegular";
+		}
 	}
-	.autonomous__row_text{
-		padding: 50px 0 0;
-	}	
-	@media only screen and (min-width : 992px) {
-		.dfreality__caption{
-			margin-right: 20px;
-		}	
+	.sub {
+		font-family: "SegoeUISemiBold";
+		display: none; 
+		position: absolute; 
+		left: 25px; 
+		top: 100%; 
+		background: #fff; 
+		padding: 0 25px 10px; 
+		width: 310px; 
+		z-index: 100; 
 	}
-	&_h2{
+	.sub__point { 
+		list-style: none; 
+		width: 100%;
+		&_main{
+			font-size: 16px;
+			padding: 10px 0 3px;
+			color: #673a90;
+		}
+	}
+	.sub__point-title {
+		color: #282828; 
+		display: block; 
+		line-height: 23px;
+		&:hover{
+			color: #673a90;
+		}
+	}
+	.menu__point:hover > .sub { 
+		display: block; 
+	}
+}
+
+.menu-burger{ 
+	.menu-up { 
+		padding: 10px 0 20px; 
+		float: left;
+		position: relative; 
+	}
+	.menu__li { 
+		list-style: none; 
+		font-size: 10px; 
+	}
+	.menu__li:hover .menu__sub { 
+		display: block; 
+	}
+	.menu__li a { 
+		text-decoration: none; 
+		color: #b5e7f8; 
+		display: block; 
+		line-height: 22px; 
+		padding: 0 23px;
+	}
+	.menu .submenu { 
+		width: 100%;
+		background: #fff; 
+		position: absolute; 
+		top: 100%; 
+		left: 0; 
+		padding: 10px 0 10px 10px; 
+	}
+	.submenu li a { 
+		color: #0099cc; 
+		display: block; 
+		padding: 0 10px; 
+	}
+	.submenu li a:hover { 
+		color: #000; 
+	}
+	.menu-button { 
+		cursor: pointer; 
+		font-size: 24px; 
+		color: #fefefe; 
+		width: 100px; 
+		position: relative; 
+		float: left;
+	  padding-left: 35px; 
+	  margin-top: 25px; 
+	}
+	.menu-button .bg { 
+		position: absolute; 
+		background: #fff; 
+		width: 27px; 
+		height: 20px; 
+		top: 5px; 
+		left: 0; 
+		display: block; 
+	}
+	.menu-button .bg::before { 
+		content: ""; 
+		position: absolute; 
+		width: 27px; 
+		height: 5px; 
+		top: 4px; 
+		left: 0; 
+		background: #000; 
+		display: block; 
+	}
+	.menu-button .bg::after { 
+		content: ""; 
+		position: absolute; 
+		width: 27px; 
+		height: 5px; 
+		left: 0;
+		background: #000; 
+		display: block; 
+		top: 12px; 
+	}
+}
+
+
+.video{
+	padding: 100px 0 130px;
+	background: url(../img/video-bg.jpg) center/cover;
+	&__block{
+		margin: 0 auto 25px;
+		max-width: 880px;
+		width: 100%;
+		height: 490px;
+		iframe{
+			width: 100%;
+			display: block;
+			height: 100%;
+		}
+	}
+}
+
+.modal{
+	font-family: "SegoeUIRegular", arial, sans-serif;
+	background: #fff url(../img/popup-star.png) center 125px no-repeat;
+	padding: 200px 0 155px;
+	h2{
 		text-align: center;
 	}
-	&__text{
-		padding-bottom: 8px;
-		font-size: 15px;
-		color: #7a7a7a;
-	}
-	&__text_strong{
-		font-family: "LatoSemibold";
-		color: #2b3135;
-	}
-	&__q-descr{
+	&__descr{
+		font-size: 16px;
+		color: #282828;
 		display: block;
-		font-family: "LatoSemiboldItalic";
-		text-align: right;
-		font-size: 15px;
-		color: #949494;
+		text-align: center;
+		padding: 2px 0;
 	}
-	&__img-wrap{
-		width: 100%;
-		overflow: hidden;
-		margin-bottom: 10px;
+}
+@media only screen and (max-width : 1050px) {
+	.video{
+		padding: 65px 0 55px;
 	}
-	&__img{
-		width: 100%;
-		height: auto;
-		display: block;
-	}
-	&__link{
-		color: #fd5c44;
-		font-size: 15px;
-		text-decoration: underline;
-		display: inline-block;
-	}
-	.q_theme_rosa{
-		padding-bottom: 14px;
-		padding-left: 57px;
-    background: url(../../img/quotes.png) no-repeat top left 0px;
+}
+@media only screen and (max-width : 550px) {
+	.video{
+		padding: 30px 0 15px;
+		&__block{
+			height: 170px;
+		}
 	}
 }
 
@@ -64,9 +191,6 @@
 }
 
 @media only screen and (min-width : 992px) {
-	.autonomous_h2 {
-	    text-align: right;
-	}
 }
 
 @media only screen and (min-width : 1248px) {

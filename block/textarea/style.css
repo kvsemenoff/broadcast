@@ -1,0 +1,33 @@
+.message_theme_rosa {
+  display: inline-block;
+  line-height: 24px;
+  max-width: 355px;
+  width: 100%;
+  min-height: 125px;
+  resize: none; }
+
+.message_theme_rosa {
+  font-family: "Segoe UI Regular";
+  color: #a2a2a2;
+  font-size: 16px;
+  background: transparent;
+  padding: 7px 20px;
+  outline: none;
+  width: 100%;
+  border: 1px solid #cdcdcd;
+  /* Firefox 19+ */
+  /* Firefox 18- */ }
+  .message_theme_rosa::-webkit-input-placeholder {
+    color: #a2a2a2; }
+  .message_theme_rosa::-moz-placeholder {
+    color: #a2a2a2; }
+  .message_theme_rosa:-moz-placeholder {
+    color: #a2a2a2; }
+  .message_theme_rosa:-ms-input-placeholder {
+    color: #a2a2a2; }
+
+.message_theme_rosa:focus, .message_theme_rosa:active {
+  color: #282828;
+  border: 1px solid #818181; }
+
+/*# sourceMappingURL=style.css.map */

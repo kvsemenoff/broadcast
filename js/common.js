@@ -79,7 +79,7 @@ $(document).ready(function(){
 
 	var owl2 = $("#command__owl_carousel");
 	owl2.owlCarousel({
-		loop:true,
+		loop:false,
 		nav:true, 
 		autoplay:false,
 		smartSpeed:1000,
@@ -101,6 +101,18 @@ $(document).ready(function(){
         	}
         }
 	});
+
+
+
+
+		$('.df-right').on('click', function() {			
+			var x = parseFloat($('.command__counter_change').text());	
+			if (x < 12) {
+				x++;
+				$('.command__counter_change').text(x);
+			}			
+		});
+
 
 
 });

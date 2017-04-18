@@ -134,7 +134,7 @@
 /*==================command============*/
 .command_bg_color {
   background-color: #1c1c1c;
-  padding: 215px 0 160px 0; }
+  padding: 215px 0px 160px 0; }
   @media only screen and (min-width: 1200px) {
     .command_bg_color {
       background-image: url("../img/commandbg.png");
@@ -143,7 +143,8 @@
 
 .command__container {
   max-width: 1170px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding: 0 15px; }
 
 .command__textbox {
   max-width: 515px;
@@ -163,7 +164,8 @@
 .command__slider {
   max-width: 530px;
   width: 100%;
-  float: left; }
+  float: left;
+  position: relative; }
 
 .command__slider_img img {
   max-width: 100%;
@@ -179,7 +181,7 @@
   background-image: url("../img/sliderprev.png");
   background-repeat: no-repeat;
   background-position: left center;
-  left: 40%; }
+  left: 38%; }
   .df-left:hover {
     background-image: url("../img/sliderprevhover.png"); }
 
@@ -187,8 +189,25 @@
   background-image: url("../img/slidernext.png");
   background-repeat: no-repeat;
   background-position: right center;
-  right: 40%; }
+  right: 35%; }
   .df-right:hover {
     background-image: url("../img/slidernexthover.png"); }
+
+.command__counter {
+  width: 70px;
+  text-align: center;
+  font-size: 16px;
+  color: #fff;
+  line-height: 22px;
+  font-family: "Segoe UI Regular";
+  position: absolute;
+  bottom: -70px;
+  left: 45%; }
+
+.command__counter_change {
+  display: inline-block; }
+
+.command__counter_all {
+  display: inline-block; }
 
 /*# sourceMappingURL=style-df.css.map */

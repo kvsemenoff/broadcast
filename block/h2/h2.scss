@@ -13,7 +13,20 @@
 .h2_pink {
 	color: #673a90;
 }
-
+.h2_inner_page{
+	font-family: "SegoeUISemiBold";
+	font-size: 24px;
+	line-height: 32px;
+	text-transform: uppercase;
+	color: #673a90;
+	@media screen and (min-width: 992px) {
+		font-size: 36px;
+		line-height: 67px;
+		text-transform: none;
+	}
+	font-weight: 600;
+}
 .wrap{
 	background:grey;
 }
+

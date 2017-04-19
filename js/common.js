@@ -77,20 +77,7 @@ $(document).ready(function(){
 	};
 
 
-	$('#command__owl_carousel .df-right').on('click', function() {			
-		var counterChange = parseFloat($('.command__counter_change').text());			
-		if (counterChange < 12) {
-			counterChange++;
-			$('.command__counter_change').text(counterChange);
-		}			
-	});
-	$('#command__owl_carousel .df-left').on('click', function() {			
-		var counterChange = parseFloat($('.command__counter_change').text());			
-		if (counterChange > 1) {
-			counterChange--;
-			$('.command__counter_change').text(counterChange);
-		}			
-	});
+	
 
 	
 
@@ -118,7 +105,21 @@ $(document).ready(function(){
         }
 	});
 
-
+	$('#command__owl_carousel .df-right').on('click', function() {			
+		var counterChange = parseFloat($('.command__counter_change').text());			
+		if (counterChange < 12) {
+			counterChange++;
+			$('.command__counter_change').text(counterChange);
+		}			
+	});
+	$('#command__owl_carousel .df-left').on('click', function() {			
+		var counterChange = parseFloat($('.command__counter_change').text());			
+		if (counterChange > 1) {
+			counterChange--;
+			$('.command__counter_change').text(counterChange);
+		}			
+	});
+	
 	$('#filming__owl_slider .df-right').on('click', function() {			
 		var counterChange = parseFloat($('.command__counter_change').text());			
 		if (counterChange < 5) {

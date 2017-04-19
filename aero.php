@@ -1,5 +1,26 @@
 <?php require_once('includes/header.php'); ?>
+<?php require_once('includes/header-top_inner.php'); ?>
 
+<div class="aero-top">
+	<div class="container clearfix">
+		<div class="aero__sidebar">
+			<ul class="sub">
+				<li class="sub__point sub__point_main">Онлайн трансляции</li>
+				<li class="sub__point"><a href="#" class="sub__point-title">Онлайн трансляции в интернет</a></li>
+				<li class="sub__point"><a href="#" class="sub__point-title">Трансляции на экран</a></li>
+				<li class="sub__point"><a href="#" class="sub__point-title">Проведение телемостов</a></li>
+				<li class="sub__point"><a href="#" class="sub__point-title">Платные видеотрансляции</a></li>
+				<li class="sub__point sub__point_main">Многокамерная видеосъемка</li>
+				<li class="sub__point"><a href="#" class="sub__point-title">Съемка концертов</a></li>
+				<li class="sub__point"><a href="#" class="sub__point-title">Съемка лекций и семинаров</a></li>
+				<li class="sub__point"><a href="#" class="sub__point-title">Съемка презентаций</a></li>
+				<li class="sub__point"><a href="#" class="sub__point-title">Съемка спортивных мероприятий</a></li>
+				<li class="sub__point sub__point_main">Аренда ПТС</li>
+			</ul>
+		</div>
+		<div class="aero-top__content"></div>
+	</div>
+</div>
 
 <div class="price_aero price_aero_theme_rosa">
 	<div class="aero__container aero__container__theme_rosa">

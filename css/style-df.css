@@ -398,18 +398,161 @@
   padding: 8px 0 21px 0; }
 
 /*==========innerpage-aero============*/
+.aero_theme_rosa {
+  background-color: #fff; }
+
+.aero__container {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 30px 15px 30px 15px;
+  text-align: center; }
+  @media only screen and (min-width: 1024px) {
+    .aero__container {
+      padding: 90px 15px 80px 15px;
+      text-align: left; } }
+
+.aero__imgbox {
+  max-width: 475px;
+  width: 100%;
+  display: inline-block;
+  vertical-align: top; }
+  @media only screen and (min-width: 1024px) {
+    .aero__imgbox {
+      float: right;
+      max-width: unset;
+      width: 41%; } }
+
+.aero__img {
+  display: block;
+  height: 280px;
+  overflow: hidden; }
+  .aero__img img {
+    width: 100%;
+    height: 100%; }
+    @media only screen and (min-width: 1024px) {
+      .aero__img img {
+        height: auto; } }
+
+.aero__caption__mobileversion {
+  text-align: left;
+  color: #673a90;
+  font-family: "Segoe UI Semibold";
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 48px; }
+  @media only screen and (min-width: 1024px) {
+    .aero__caption__mobileversion {
+      display: none; } }
+
+.aero__cap_sub {
+  color: #282828;
+  font-family: "Segoe UI Semibold";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 22px;
+  display: block;
+  text-align: left;
+  padding-bottom: 24px; }
+  @media only screen and (min-width: 1024px) {
+    .aero__cap_sub {
+      display: none; } }
+
+.aero__txt_sub {
+  color: #8c8c8c;
+  font-family: "Segoe UI Regular";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  display: block;
+  text-align: left;
+  padding-bottom: 20px;
+  padding-top: 12px; }
+  @media only screen and (min-width: 1024px) {
+    .aero__txt_sub {
+      padding-bottom: 0px; } }
+
+.aero__textbox {
+  vertical-align: top;
+  max-width: 675px;
+  width: 100%;
+  display: inline-block;
+  padding-right: 25px;
+  text-align: left; }
+  @media only screen and (min-width: 1024px) {
+    .aero__textbox {
+      float: left;
+      width: 59%;
+      max-width: unset; } }
+
+.aero__caption {
+  margin-bottom: 30px;
+  text-align: center;
+  line-height: inherit;
+  display: none; }
+  @media only screen and (min-width: 1024px) {
+    .aero__caption {
+      text-align: left;
+      margin-bottom: 40px;
+      display: block; } }
+
+.aero__txt {
+  color: #282828;
+  font-family: "Segoe UI Regular";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  padding-bottom: 20px; }
+
+.foto_job_theme_rosa {
+  background-color: #fbfbfb;
+  padding: 30px 15px 30px 15px; }
+  @media only screen and (min-width: 1024px) {
+    .foto_job_theme_rosa {
+      padding: 70px 15px 110px 15px; } }
+
+.foto_job__container {
+  max-width: 1220px;
+  margin: 0 auto;
+  text-align: center; }
+  .foto_job__container .filming__caption {
+    padding-left: 10px; }
+
+.foto_job__img {
+  max-width: 385px;
+  height: 250px;
+  width: 100%;
+  display: inline-block;
+  position: relative;
+  overflow: hidden; }
+  .foto_job__img img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    height: auto; }
+  @media only screen and (min-width: 1024px) {
+    .foto_job__img {
+      max-width: unset;
+      width: 31.5%;
+      margin-right: 20px; }
+      .foto_job__img:last-child {
+        margin-right: 0; } }
+
 .filming__theme_rosa {
   padding: 30px 0 90px 0;
   background-color: #ffffff; }
   @media only screen and (min-width: 1024px) {
     .filming__theme_rosa {
-      padding: 60px 0 105px 0; } }
+      padding: 50px 0 105px 0; } }
 
 .filming__caption {
-  margin-bottom: 15px; }
+  margin-bottom: 25px;
+  text-align: center; }
   @media only screen and (min-width: 1024px) {
     .filming__caption {
-      margin-bottom: 50px; } }
+      margin-bottom: 50px;
+      text-align: left; } }
 
 .filming__slider {
   max-width: 715px;
@@ -435,7 +578,7 @@
   position: relative; }
   .filming__theme_rosa .df-left, .filming__theme_rosa .df-right {
     position: absolute;
-    bottom: -125px;
+    bottom: -107px;
     width: 40px;
     height: 40px; }
     @media only screen and (min-width: 1024px) {

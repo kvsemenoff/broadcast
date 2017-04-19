@@ -56,3 +56,11 @@
 .contact .info__text_number { color: #673a90; font-size: 20px; padding-bottom: 7px; }
 .contact .info__text_mail { padding-bottom: 30px; }
 @media only screen and (max-width: 500px) { .contact .info__text_mail { padding-bottom: 0px; } }
+
+.our { padding: 90px 0; }
+@media only screen and (max-width: 1200px) { .our { padding: 50px 0; } }
+
+.customer { text-align: center; }
+.customer__logo { display: inline-block; margin: 8px 18px; height: 60px; text-align: center; }
+@media only screen and (max-width: 500px) { .customer__logo { margin: 0; width: 49%; padding: 0px 6px; } }
+.customer__logo img { display: inline-block; vertical-align: middle; max-width: 100%; height: auto; }

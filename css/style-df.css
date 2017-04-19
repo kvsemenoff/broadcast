@@ -135,6 +135,9 @@
 .command_bg_color {
   background-color: #1c1c1c;
   padding: 40px 0px 100px 0; }
+  @media only screen and (min-width: 1024px) {
+    .command_bg_color {
+      padding: 75px 0px 90px 0; } }
   @media only screen and (min-width: 1200px) {
     .command_bg_color {
       background-image: url("../img/commandbg.png");
@@ -154,10 +157,22 @@
   @media only screen and (min-width: 1024px) {
     .command__textbox {
       float: right;
+      max-width: 400px; } }
+  @media only screen and (min-width: 1200px) {
+    .command__textbox {
+      max-width: 507px;
       padding-top: 55px; } }
 
 .command__topcaption {
   padding-bottom: 22px; }
+  @media only screen and (min-width: 1024px) {
+    .command__topcaption {
+      padding-bottom: 40px;
+      line-height: inherit; } }
+  @media only screen and (min-width: 1200px) {
+    .command__topcaption {
+      padding-bottom: 22px;
+      line-height: 67px; } }
 
 .command__text {
   font-family: "Segoe UI Regular";
@@ -172,6 +187,9 @@
   width: 100%;
   margin: 0 auto;
   position: relative; }
+  @media only screen and (min-width: 1024px) {
+    .command__slider {
+      float: left; } }
 
 .command__slider_img {
   display: block; }
@@ -186,6 +204,9 @@
   height: 40px; }
   @media only screen and (min-width: 1024px) {
     .df-left, .df-right {
+      bottom: 10px; } }
+  @media only screen and (min-width: 1200px) {
+    .df-left, .df-right {
       bottom: -85px; } }
 
 .df-left {
@@ -197,7 +218,12 @@
     background-image: url("../img/sliderprevhover.png"); }
   @media only screen and (min-width: 1024px) {
     .df-left {
-      left: 30%; } }
+      left: unset;
+      right: -20%; } }
+  @media only screen and (min-width: 1200px) {
+    .df-left {
+      left: 30%;
+      right: unset; } }
 
 .df-right {
   background-image: url("../img/slidernext.png");
@@ -207,6 +233,9 @@
   .df-right:hover {
     background-image: url("../img/slidernexthover.png"); }
   @media only screen and (min-width: 1024px) {
+    .df-right {
+      right: -45%; } }
+  @media only screen and (min-width: 1200px) {
     .df-right {
       right: 35%; } }
 
@@ -223,7 +252,11 @@
   transform: translateX(-50%); }
   @media only screen and (min-width: 1024px) {
     .command__counter {
+      bottom: 19px;
+      left: 128%; } }
+  @media only screen and (min-width: 1200px) {
+    .command__counter {
       bottom: -75px;
-      left: 41%; } }
+      left: 47%; } }
 
 /*# sourceMappingURL=style-df.css.map */

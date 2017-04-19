@@ -1,97 +1,347 @@
-.header-top { background: url(../img/header-top.jpg) center/cover; }
+.header-top {
+  background: url(../img/header-top.jpg) center/cover; }
 
-.top-line { padding: 30px 0; position: relative; }
-@media only screen and (max-width: 1200px) { .top-line { background: #000; padding: 15px 0; } }
-@media only screen and (max-width: 1000px) { .top-line .container { position: relative; } }
-.top-line__logo-block { float: left; }
-.top-line__right { float: right; }
-.top-line__logo { width: 42px; height: 74px; display: block; background: url(../img/logo.png) center no-repeat; }
-.top-line__phone { float: right; padding: 8px; }
-@media only screen and (max-width: 1200px) and (min-width: 1000px) { .top-line__phone { padding-top: 25px; }
-  .top-line__phone .top-line__btn { position: absolute; bottom: -65%; } }
-@media only screen and (max-width: 1000px) { .top-line__phone { position: absolute; bottom: -150%; right: 15px; } }
-.top-line__number { color: #fff; font-size: 18px; font-family: "SegoeUIRegular"; display: block; text-align: center; padding-bottom: 10px; }
-.top-line__number b { font-family: "SegoeUISemiBold"; }
-.top-line__btn { text-align: center; }
+.top-line {
+  padding: 30px 0;
+  position: relative; }
+  @media only screen and (max-width: 1200px) {
+    .top-line {
+      background: #000;
+      padding: 15px 0; } }
+  @media only screen and (max-width: 1000px) {
+    .top-line .container {
+      position: relative; } }
+  .top-line__logo-block {
+    float: left; }
+  .top-line__right {
+    float: right; }
+  .top-line__logo {
+    width: 42px;
+    height: 74px;
+    display: block;
+    background: url(../img/logo.png) center no-repeat; }
+  .top-line__phone {
+    float: right;
+    padding: 8px; }
+    @media only screen and (max-width: 1200px) and (min-width: 1000px) {
+      .top-line__phone {
+        padding-top: 25px; }
+        .top-line__phone .top-line__btn {
+          position: absolute;
+          bottom: -65%; } }
+    @media only screen and (max-width: 1000px) {
+      .top-line__phone {
+        position: absolute;
+        bottom: -150%;
+        right: 15px; } }
+  .top-line__number {
+    color: #fff;
+    font-size: 18px;
+    font-family: "SegoeUIRegular";
+    display: block;
+    text-align: center;
+    padding-bottom: 10px; }
+    .top-line__number b {
+      font-family: "SegoeUISemiBold"; }
+  .top-line__btn {
+    text-align: center; }
 
-.menu-g { float: left; font-family: "SegoeUIRegular"; }
-@media only screen and (max-width: 1200px) { .menu-g { padding-top: 15px; } }
-@media only screen and (max-width: 1000px) { .menu-g { display: none; } }
-.menu-g .menu__point { list-style: none; font-size: 14px; position: relative; display: inline-block; }
-.menu-g .menu__point:hover .menu__sub { display: block; }
-.menu-g .menu__name { font-size: 18px; color: #fff; display: block; line-height: 28px; padding: 5px 25px; position: relative; font-family: "SegoeUIRegular"; }
-.menu-g .sub { font-family: "SegoeUISemiBold"; display: none; position: absolute; left: 25px; top: 100%; background: #fff; padding: 0 25px 10px; width: 310px; z-index: 100; }
-.menu-g .sub__point { list-style: none; width: 100%; }
-.menu-g .sub__point_main { font-size: 16px; padding: 10px 0 3px; color: #673a90; }
-.menu-g .sub__point-title { color: #282828; display: block; line-height: 23px; }
-.menu-g .sub__point-title:hover { color: #673a90; }
-.menu-g .menu__point:hover > .sub { display: block; }
+.menu-g {
+  float: left;
+  font-family: "SegoeUIRegular"; }
+  @media only screen and (max-width: 1200px) {
+    .menu-g {
+      padding-top: 15px; } }
+  @media only screen and (max-width: 1000px) {
+    .menu-g {
+      display: none; } }
+  .menu-g .menu__point {
+    list-style: none;
+    font-size: 14px;
+    position: relative;
+    display: inline-block; }
+  .menu-g .menu__point:hover .menu__sub {
+    display: block; }
+  .menu-g .menu__name {
+    font-size: 18px;
+    color: #fff;
+    display: block;
+    line-height: 28px;
+    padding: 5px 25px;
+    position: relative;
+    font-family: "SegoeUIRegular"; }
+  .menu-g .sub {
+    font-family: "SegoeUISemiBold";
+    display: none;
+    position: absolute;
+    left: 25px;
+    top: 100%;
+    background: #fff;
+    padding: 0 25px 10px;
+    width: 310px;
+    z-index: 100; }
+  .menu-g .sub__point {
+    list-style: none;
+    width: 100%; }
+    .menu-g .sub__point_main {
+      font-size: 16px;
+      padding: 10px 0 3px;
+      color: #673a90; }
+  .menu-g .sub__point-title {
+    color: #282828;
+    display: block;
+    line-height: 23px; }
+    .menu-g .sub__point-title:hover {
+      color: #673a90; }
+  .menu-g .menu__point:hover > .sub {
+    display: block; }
 
-.menu-burger { display: none; }
-@media only screen and (max-width: 1000px) { .menu-burger { display: block; } }
-.menu-burger .menu-up { background: #fff; padding: 45px 10px 20px; position: absolute; top: -15px; left: 0; width: 100%; z-index: 10000; }
-.menu-burger .tab { font-family: "SegoeUIBold"; font-size: 16px; color: #282828; display: inline-block; border-bottom: 1px solid transparent; padding: 0px 0 10px; margin: 0 8px; cursor: pointer; }
-.menu-burger .tab.active { border-color: #828282; }
-.menu-burger .tab-content { padding: 0 8px; }
-.menu-burger .sub__point { font-size: 14px; padding-bottom: 4px; }
-.menu-burger .sub__point_main { color: #673a90; font-size: 16px; padding: 15px 0 10px; }
-.menu-burger .sub__point a { color: #282828; }
-.menu-burger .menu-button { cursor: pointer; width: 33px; height: 24px; position: absolute; top: 50%; margin-top: -12px; right: 20px; z-index: 10001; transition: 0.3s all ease; }
-.menu-burger .menu-button__bg { position: absolute; background: #fff; width: 33px; height: 3px; border-radius: 5px; left: 0; display: block; }
-.menu-burger .menu-button__bg_top { top: 0; }
-.menu-burger .menu-button__bg_mid { top: 50%; margin-top: -1.5px; }
-.menu-burger .menu-button__bg_bot { bottom: 0; }
-.menu-burger .menu-button.menu-active { width: 14px; height: 14px; top: 19px; background: url(../img/close.png) center/cover no-repeat; }
-.menu-burger .menu-button.menu-active .menu-button__bg { display: none; }
+.menu-burger {
+  display: none; }
+  @media only screen and (max-width: 1000px) {
+    .menu-burger {
+      display: block; } }
+  .menu-burger .menu-up {
+    background: #fff;
+    padding: 45px 10px 20px;
+    position: absolute;
+    top: -15px;
+    left: 0;
+    width: 100%;
+    z-index: 10000; }
+  .menu-burger .tab {
+    font-family: "SegoeUIBold";
+    font-size: 16px;
+    color: #282828;
+    display: inline-block;
+    border-bottom: 1px solid transparent;
+    padding: 0px 0 10px;
+    margin: 0 8px;
+    cursor: pointer; }
+  .menu-burger .tab.active {
+    border-color: #828282; }
+  .menu-burger .tab-content {
+    padding: 0 8px; }
+  .menu-burger .sub__point {
+    font-size: 14px;
+    padding-bottom: 4px; }
+    .menu-burger .sub__point_main {
+      color: #673a90;
+      font-size: 16px;
+      padding: 15px 0 10px; }
+    .menu-burger .sub__point a {
+      color: #282828; }
+  .menu-burger .menu-button {
+    cursor: pointer;
+    width: 33px;
+    height: 24px;
+    position: absolute;
+    top: 50%;
+    margin-top: -12px;
+    right: 20px;
+    z-index: 10001;
+    -webkit-transition: 0.3s all ease;
+    transition: 0.3s all ease; }
+    .menu-burger .menu-button__bg {
+      position: absolute;
+      background: #fff;
+      width: 33px;
+      height: 3px;
+      -webkit-border-radius: 5px;
+              border-radius: 5px;
+      left: 0;
+      display: block; }
+      .menu-burger .menu-button__bg_top {
+        top: 0; }
+      .menu-burger .menu-button__bg_mid {
+        top: 50%;
+        margin-top: -1.5px; }
+      .menu-burger .menu-button__bg_bot {
+        bottom: 0; }
+    .menu-burger .menu-button.menu-active {
+      width: 14px;
+      height: 14px;
+      top: 19px;
+      background: url(../img/close.png) center/cover no-repeat; }
+      .menu-burger .menu-button.menu-active .menu-button__bg {
+        display: none; }
 
-.top-text .container { padding: 170px 15px 220px; position: relative; }
-.top-text__title { font-family: "SegoeUIBold"; font-size: 54px; line-height: 66px; color: #fff; }
-@media only screen and (max-width: 1200px) { .top-text__title { text-align: center; } }
-@media only screen and (max-width: 550px) { .top-text__title { font-size: 31px; line-height: 35px; } }
-.top-text__command { display: block; padding-bottom: 30px; color: #fff; font-size: 18px; text-transform: uppercase; font-family: "SegoeUIRegular"; }
-@media only screen and (max-width: 1200px) { .top-text__command { text-align: center; } }
-@media only screen and (max-width: 550px) { .top-text__command { font-size: 14px; padding-bottom: 10px; } }
-.top-text__command i { color: #9852d8; }
-.top-text .scroll-icon { display: block; font-size: 13px; position: absolute; left: 15px; bottom: 40px; color: rgba(255, 255, 255, 0.5); padding: 5px 0 5px 30px; background: url(../img/scroll_ic.png) 0 0 no-repeat; }
-@media only screen and (max-width: 1200px) { .top-text .scroll-icon { display: none; } }
+.top-text .container {
+  padding: 170px 15px 220px;
+  position: relative; }
 
-.video { padding: 100px 0 130px; background: url(../img/video-bg.jpg) center/cover; }
-@media only screen and (max-width: 1050px) { .video { padding: 65px 0 55px; } }
-@media only screen and (max-width: 550px) { .video { padding: 30px 0 15px; } }
-.video__block { margin: 0 auto 25px; max-width: 880px; width: 100%; height: 490px; }
-@media only screen and (max-width: 550px) { .video__block { height: 170px; } }
-.video__block iframe { width: 100%; display: block; height: 100%; }
+.top-text__title {
+  font-family: "SegoeUIBold";
+  font-size: 54px;
+  line-height: 66px;
+  color: #fff; }
+  @media only screen and (max-width: 1200px) {
+    .top-text__title {
+      text-align: center; } }
+  @media only screen and (max-width: 550px) {
+    .top-text__title {
+      font-size: 31px;
+      line-height: 35px; } }
 
-.modal { font-family: "SegoeUIRegular", arial, sans-serif; background: #fff url(../img/popup-star.png) center 125px no-repeat; padding: 200px 0 155px; }
-.modal h2 { text-align: center; }
-.modal__descr { font-size: 16px; color: #282828; display: block; text-align: center; padding: 2px 0; }
+.top-text__command {
+  display: block;
+  padding-bottom: 30px;
+  color: #fff;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-family: "SegoeUIRegular"; }
+  @media only screen and (max-width: 1200px) {
+    .top-text__command {
+      text-align: center; } }
+  @media only screen and (max-width: 550px) {
+    .top-text__command {
+      font-size: 14px;
+      padding-bottom: 10px; } }
+  .top-text__command i {
+    color: #9852d8; }
 
-.contact { padding: 60px 0; font-family: "SegoeUISemiBold"; }
-@media only screen and (max-width: 500px) { .contact { padding: 30px 0 20px; } }
-.contact h2 { text-transform: none; }
-@media only screen and (max-width: 500px) { .contact h2 { text-align: left; padding-left: 10px; padding-top: 0; padding-bottom: 20px; } }
-.contact__inner { position: relative; }
-.contact__mape { width: 100%; max-width: 650px; overflow: hidden; }
-.contact__mape_mini { display: none; }
-@media only screen and (max-width: 500px) { .contact__mape { height: 195px; }
-  .contact__mape_max { display: none; }
-  .contact__mape_mini { display: block; } }
-.contact .info { position: absolute; left: 600px; top: 68px; z-index: 1000; padding: 50px 20px 45px 48px; background: #fff; max-width: 375px; width: 100%; color: #333; font-size: 16px; -webkit-box-shadow: 15px 15px 28px 0px rgba(0, 0, 0, 0.13); -moz-box-shadow: 15px 15px 28px 0px rgba(0, 0, 0, 0.13); box-shadow: 15px 15px 28px 0px rgba(0, 0, 0, 0.13); }
-@media only screen and (max-width: 1100px) { .contact .info { left: 540px; } }
-@media only screen and (max-width: 1000px) { .contact .info { position: relative; left: 0; top: 0; box-shadow: none; } }
-@media only screen and (max-width: 500px) { .contact .info { padding: 10px 10px 30px 10px; } }
-.contact .info__text { display: block; }
-.contact .info__text_title { padding-bottom: 20px; }
-@media only screen and (max-width: 500px) { .contact .info__text_title { padding-bottom: 10px; } }
-.contact .info__text_time { padding-bottom: 32px; }
-.contact .info__text_number { color: #673a90; font-size: 20px; padding-bottom: 7px; }
-.contact .info__text_mail { padding-bottom: 30px; }
-@media only screen and (max-width: 500px) { .contact .info__text_mail { padding-bottom: 0px; } }
+.top-text .scroll-icon {
+  display: block;
+  font-size: 13px;
+  position: absolute;
+  left: 15px;
+  bottom: 40px;
+  color: rgba(255, 255, 255, 0.5);
+  padding: 5px 0 5px 30px;
+  background: url(../img/scroll_ic.png) 0 0 no-repeat; }
+  @media only screen and (max-width: 1200px) {
+    .top-text .scroll-icon {
+      display: none; } }
 
-.our { padding: 90px 0; }
-@media only screen and (max-width: 1200px) { .our { padding: 50px 0; } }
+.video {
+  padding: 100px 0 130px;
+  background: url(../img/video-bg.jpg) center/cover; }
+  @media only screen and (max-width: 1050px) {
+    .video {
+      padding: 65px 0 55px; } }
+  @media only screen and (max-width: 550px) {
+    .video {
+      padding: 30px 0 15px; } }
+  .video__block {
+    margin: 0 auto 25px;
+    max-width: 880px;
+    width: 100%;
+    height: 490px; }
+    @media only screen and (max-width: 550px) {
+      .video__block {
+        height: 170px; } }
+    .video__block iframe {
+      width: 100%;
+      display: block;
+      height: 100%; }
 
-.customer { text-align: center; }
-.customer__logo { display: inline-block; margin: 8px 18px; height: 60px; text-align: center; }
-@media only screen and (max-width: 500px) { .customer__logo { margin: 0; width: 49%; padding: 0px 6px; } }
-.customer__logo img { display: inline-block; vertical-align: middle; max-width: 100%; height: auto; }
+.modal {
+  font-family: "SegoeUIRegular", arial, sans-serif;
+  background: #fff url(../img/popup-star.png) center 125px no-repeat;
+  padding: 200px 0 155px; }
+  .modal h2 {
+    text-align: center; }
+  .modal__descr {
+    font-size: 16px;
+    color: #282828;
+    display: block;
+    text-align: center;
+    padding: 2px 0; }
+
+.contact {
+  padding: 60px 0;
+  font-family: "SegoeUISemiBold"; }
+  @media only screen and (max-width: 500px) {
+    .contact {
+      padding: 30px 0 20px; } }
+  .contact h2 {
+    text-transform: none; }
+    @media only screen and (max-width: 500px) {
+      .contact h2 {
+        text-align: left;
+        padding-left: 10px;
+        padding-top: 0;
+        padding-bottom: 20px; } }
+  .contact__inner {
+    position: relative; }
+  .contact__mape {
+    width: 100%;
+    max-width: 650px;
+    overflow: hidden; }
+    .contact__mape_mini {
+      display: none; }
+    @media only screen and (max-width: 500px) {
+      .contact__mape {
+        height: 195px; }
+        .contact__mape_max {
+          display: none; }
+        .contact__mape_mini {
+          display: block; } }
+  .contact .info {
+    position: absolute;
+    left: 600px;
+    top: 68px;
+    z-index: 1000;
+    padding: 50px 20px 45px 48px;
+    background: #fff;
+    max-width: 375px;
+    width: 100%;
+    color: #333;
+    font-size: 16px;
+    -webkit-box-shadow: 15px 15px 28px 0px rgba(0, 0, 0, 0.13);
+    box-shadow: 15px 15px 28px 0px rgba(0, 0, 0, 0.13); }
+    @media only screen and (max-width: 1100px) {
+      .contact .info {
+        left: 540px; } }
+    @media only screen and (max-width: 1000px) {
+      .contact .info {
+        position: relative;
+        left: 0;
+        top: 0;
+        -webkit-box-shadow: none;
+                box-shadow: none; } }
+    @media only screen and (max-width: 500px) {
+      .contact .info {
+        padding: 10px 10px 30px 10px; } }
+    .contact .info__text {
+      display: block; }
+      .contact .info__text_title {
+        padding-bottom: 20px; }
+        @media only screen and (max-width: 500px) {
+          .contact .info__text_title {
+            padding-bottom: 10px; } }
+      .contact .info__text_time {
+        padding-bottom: 32px; }
+      .contact .info__text_number {
+        color: #673a90;
+        font-size: 20px;
+        padding-bottom: 7px; }
+      .contact .info__text_mail {
+        padding-bottom: 30px; }
+        @media only screen and (max-width: 500px) {
+          .contact .info__text_mail {
+            padding-bottom: 0px; } }
+
+.our {
+  padding: 90px 0; }
+  @media only screen and (max-width: 1200px) {
+    .our {
+      padding: 50px 0; } }
+
+.customer {
+  text-align: center; }
+  .customer__logo {
+    display: inline-block;
+    margin: 8px 18px;
+    height: 60px;
+    text-align: center; }
+    @media only screen and (max-width: 500px) {
+      .customer__logo {
+        margin: 0;
+        width: 49%;
+        padding: 0px 6px; } }
+    .customer__logo img {
+      display: inline-block;
+      vertical-align: middle;
+      max-width: 100%;
+      height: auto; }

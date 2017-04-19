@@ -5,67 +5,7 @@
 	text-align: center;
 }
 body {
-	font-family: 'LatoRegular';
-	font-size: 15px;
-	line-height: 24px;
-	color: #7a7a7a;
-}
-.menu-ico{
-	position: absolute;
-	display: block;
-	font-size: 25px;
-	top: 10px;
-	cursor: pointer;
-	top: 10px;
-	right: 15px;
-}
-.main-menu{
-	display: block;
-	width: 100%;
-	text-align: center;
-	padding-top: 55px;
-	li{
-		display: block;
-		margin: 0 auto;
-		color: #fff;
-		margin-bottom: 5px;
-		a{
-			color: #fff;
-			display: inline-block;
-		}
-		a:hover{
-			text-decoration: underline;
-		}
-
-
-	}
-}
-.header{
-	padding: 18px 0px;
-	min-height: 40px;
-	background: #2C2B29;
-	position: relative;
-	@media only screen and (min-width : 992px) {
-		.main-menu{
-			width: 100%;
-			padding-top: 0px;
-			display: -webkit-flex; 
-			display: flex; 
-			justify-content: space-between;
-			align-items: center;
-			li{
-				display: inline-block;
-			}
-		}
-	}
-
-}
-
-#toTop {
-	padding:5px;
-	position:fixed;
-	bottom:10px; 
-	right:20px;
-	cursor:pointer;
-	display:none;
+	font-family: 'SegoeUISemiBold';
+	font-size: 16px;
+	line-height: 22px;
 }

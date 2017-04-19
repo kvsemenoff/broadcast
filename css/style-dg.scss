@@ -8,7 +8,7 @@
 }
 .extra_subtitle {
   color: #121212;
-  font-family: "SegoeUISemiBold", sans-serif;
+  font-family: "SegoeUIRegular";
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
@@ -79,6 +79,7 @@
   width: 150px;
   margin: auto;
 }
+
 @media screen and (min-width: 992px) {
   .extra {
     padding: 70px 0 80px 0;

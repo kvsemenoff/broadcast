@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Работа касс в автономной зоне: нюансы применения нового ФЗ-54</title>
+	<title>Главная</title>
 	
 	<link rel="shortcut icon" href="favicon.png" />
 

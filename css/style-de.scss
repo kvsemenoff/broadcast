@@ -8,6 +8,11 @@
 		background: #000;
 		padding: 15px 0;
 	}
+	@media only screen and (max-width : 1000px) {
+		.container{
+			position: relative;
+		}
+	}
 	&__logo-block{
 		float: left;
 	}
@@ -32,7 +37,7 @@
 		}
 		@media only screen and (max-width : 1000px){
 			position: absolute;
-			bottom: -100%;
+			bottom: -150%;
 			right: 15px;
 		}
 	}
@@ -120,9 +125,9 @@
 	}
 	.menu-up {
 		background: #fff;
-		padding: 50px 10px 20px; 
+		padding: 45px 10px 20px; 
 		position: absolute;
-		top: 0;
+		top: -15px;
 		left: 0;
 		width: 100%;
 		z-index: 10000;
@@ -187,7 +192,7 @@
 	  &.menu-active{
 	  	width: 14px;
 	  	height: 14px;
-	  	top: 31px;
+	  	top: 19px;
 	  	background: url(../img/close.png) center/cover no-repeat;
 	  	.menu-button__bg{
 	  		display: none;

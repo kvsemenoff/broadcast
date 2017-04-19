@@ -2,13 +2,14 @@
 
 .top-line { padding: 30px 0; position: relative; }
 @media only screen and (max-width: 1200px) { .top-line { background: #000; padding: 15px 0; } }
+@media only screen and (max-width: 1000px) { .top-line .container { position: relative; } }
 .top-line__logo-block { float: left; }
 .top-line__right { float: right; }
 .top-line__logo { width: 42px; height: 74px; display: block; background: url(../img/logo.png) center no-repeat; }
 .top-line__phone { float: right; padding: 8px; }
 @media only screen and (max-width: 1200px) and (min-width: 1000px) { .top-line__phone { padding-top: 25px; }
   .top-line__phone .top-line__btn { position: absolute; bottom: -65%; } }
-@media only screen and (max-width: 1000px) { .top-line__phone { position: absolute; bottom: -100%; right: 15px; } }
+@media only screen and (max-width: 1000px) { .top-line__phone { position: absolute; bottom: -150%; right: 15px; } }
 .top-line__number { color: #fff; font-size: 18px; font-family: "SegoeUIRegular"; display: block; text-align: center; padding-bottom: 10px; }
 .top-line__number b { font-family: "SegoeUISemiBold"; }
 .top-line__btn { text-align: center; }
@@ -28,7 +29,7 @@
 
 .menu-burger { display: none; }
 @media only screen and (max-width: 1000px) { .menu-burger { display: block; } }
-.menu-burger .menu-up { background: #fff; padding: 50px 10px 20px; position: absolute; top: 0; left: 0; width: 100%; z-index: 10000; }
+.menu-burger .menu-up { background: #fff; padding: 45px 10px 20px; position: absolute; top: -15px; left: 0; width: 100%; z-index: 10000; }
 .menu-burger .tab { font-family: "SegoeUIBold"; font-size: 16px; color: #282828; display: inline-block; border-bottom: 1px solid transparent; padding: 0px 0 10px; margin: 0 8px; cursor: pointer; }
 .menu-burger .tab.active { border-color: #828282; }
 .menu-burger .tab-content { padding: 0 8px; }
@@ -40,7 +41,7 @@
 .menu-burger .menu-button__bg_top { top: 0; }
 .menu-burger .menu-button__bg_mid { top: 50%; margin-top: -1.5px; }
 .menu-burger .menu-button__bg_bot { bottom: 0; }
-.menu-burger .menu-button.menu-active { width: 14px; height: 14px; top: 31px; background: url(../img/close.png) center/cover no-repeat; }
+.menu-burger .menu-button.menu-active { width: 14px; height: 14px; top: 19px; background: url(../img/close.png) center/cover no-repeat; }
 .menu-burger .menu-button.menu-active .menu-button__bg { display: none; }
 
 .top-text .container { padding: 170px 15px 220px; position: relative; }

@@ -197,49 +197,46 @@
     max-width: 100%;
     height: auto; }
 
-.df-left, .df-right {
+.command__container .df-left, .command__container .df-right {
   position: absolute;
   bottom: -70px;
   width: 40px;
   height: 40px; }
   @media only screen and (min-width: 1024px) {
-    .df-left, .df-right {
+    .command__container .df-left, .command__container .df-right {
       bottom: 10px; } }
   @media only screen and (min-width: 1200px) {
-    .df-left, .df-right {
+    .command__container .df-left, .command__container .df-right {
       bottom: -85px; } }
-
-.df-left {
+.command__container .df-left {
   background-image: url("../img/sliderprev.png");
   background-repeat: no-repeat;
   background-position: left center;
   left: 20%; }
-  .df-left:hover {
+  .command__container .df-left:hover {
     background-image: url("../img/sliderprevhover.png"); }
   @media only screen and (min-width: 1024px) {
-    .df-left {
+    .command__container .df-left {
       left: unset;
       right: -20%; } }
   @media only screen and (min-width: 1200px) {
-    .df-left {
+    .command__container .df-left {
       left: 30%;
       right: unset; } }
-
-.df-right {
+.command__container .df-right {
   background-image: url("../img/slidernext.png");
   background-repeat: no-repeat;
   background-position: right center;
   right: 20%; }
-  .df-right:hover {
+  .command__container .df-right:hover {
     background-image: url("../img/slidernexthover.png"); }
   @media only screen and (min-width: 1024px) {
-    .df-right {
+    .command__container .df-right {
       right: -45%; } }
   @media only screen and (min-width: 1200px) {
-    .df-right {
+    .command__container .df-right {
       right: 35%; } }
-
-.command__counter {
+.command__container .command__counter {
   width: 70px;
   text-align: center;
   font-size: 16px;
@@ -251,11 +248,11 @@
   left: 50%;
   transform: translateX(-50%); }
   @media only screen and (min-width: 1024px) {
-    .command__counter {
+    .command__container .command__counter {
       bottom: 19px;
       left: 128%; } }
   @media only screen and (min-width: 1200px) {
-    .command__counter {
+    .command__container .command__counter {
       bottom: -75px;
       left: 47%; } }
 
@@ -401,7 +398,97 @@
   padding: 8px 0 21px 0; }
 
 /*==========innerpage-aero============*/
+.filming__theme_rosa {
+  padding: 30px 0 90px 0;
+  background-color: #ffffff; }
+  @media only screen and (min-width: 1024px) {
+    .filming__theme_rosa {
+      padding: 60px 0 105px 0; } }
+
+.filming__caption {
+  margin-bottom: 15px; }
+  @media only screen and (min-width: 1024px) {
+    .filming__caption {
+      margin-bottom: 50px; } }
+
+.filming__slider {
+  max-width: 715px;
+  width: 100%;
+  margin: 0 auto; }
+
+.filming___img {
+  width: 100%; }
+  .filming___img img {
+    max-width: 100%;
+    height: auto;
+    width: 100%; }
+
+.filming__textbottom {
+  text-align: center;
+  color: #8c8c8c;
+  font-family: "Segoe UI Regular";
+  font-size: 14px;
+  line-height: 18px;
+  margin: 12px 0 10px 0; }
+
+.filming__theme_rosa {
+  position: relative; }
+  .filming__theme_rosa .df-left, .filming__theme_rosa .df-right {
+    position: absolute;
+    bottom: -125px;
+    width: 40px;
+    height: 40px; }
+    @media only screen and (min-width: 1024px) {
+      .filming__theme_rosa .df-left, .filming__theme_rosa .df-right {
+        bottom: -105px; } }
+    @media only screen and (min-width: 1200px) {
+      .filming__theme_rosa .df-left, .filming__theme_rosa .df-right {
+        bottom: -85px; } }
+  .filming__theme_rosa .df-left {
+    background-image: url("../img/sliderprev2.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    left: 20%; }
+    .filming__theme_rosa .df-left:hover {
+      background-image: url("../img/sliderprevhover.png"); }
+    @media only screen and (min-width: 1024px) {
+      .filming__theme_rosa .df-left {
+        left: 37%; } }
+  .filming__theme_rosa .df-right {
+    background-image: url("../img/slidernext2.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+    right: 20%; }
+    .filming__theme_rosa .df-right:hover {
+      background-image: url("../img/slidernexthover.png"); }
+    @media only screen and (min-width: 1024px) {
+      .filming__theme_rosa .df-right {
+        right: 37%; } }
+    @media only screen and (min-width: 1200px) {
+      .filming__theme_rosa .df-right {
+        right: 37%; } }
+  .filming__theme_rosa .command__counter {
+    width: 70px;
+    text-align: center;
+    font-size: 16px;
+    color: #333333;
+    line-height: 22px;
+    font-family: "Segoe UI Regular";
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%); }
+    @media only screen and (min-width: 1024px) {
+      .filming__theme_rosa .command__counter {
+        bottom: 50px;
+        left: 50%; } }
+    @media only screen and (min-width: 1200px) {
+      .filming__theme_rosa .command__counter {
+        bottom: 70px;
+        left: 50%; } }
+
 .video_innerpage {
+  background: none;
   background-color: #fbfbfb;
   padding: 30px 0; }
   @media only screen and (min-width: 1024px) {

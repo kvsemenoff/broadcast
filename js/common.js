@@ -77,14 +77,14 @@ $(document).ready(function(){
 	};
 
 
-	$('.df-right').on('click', function() {			
+	$('#command__owl_carousel .df-right').on('click', function() {			
 		var counterChange = parseFloat($('.command__counter_change').text());			
 		if (counterChange < 12) {
 			counterChange++;
 			$('.command__counter_change').text(counterChange);
 		}			
 	});
-	$('.df-left').on('click', function() {			
+	$('#command__owl_carousel .df-left').on('click', function() {			
 		var counterChange = parseFloat($('.command__counter_change').text());			
 		if (counterChange > 1) {
 			counterChange--;
@@ -92,7 +92,9 @@ $(document).ready(function(){
 		}			
 	});
 
-	var owl2 = $("#command__owl_carousel");
+	
+
+	var owl2 = $("#command__owl_carousel, #filming__owl_slider");
 	owl2.owlCarousel({
 		loop:false,
 		nav:true, 
@@ -117,7 +119,20 @@ $(document).ready(function(){
 	});
 
 
-
+	$('#filming__owl_slider .df-right').on('click', function() {			
+		var counterChange = parseFloat($('.command__counter_change').text());			
+		if (counterChange < 5) {
+			counterChange++;
+			$('.command__counter_change').text(counterChange);
+		}			
+	});
+	$('#filming__owl_slider .df-left').on('click', function() {			
+		var counterChange = parseFloat($('.command__counter_change').text());			
+		if (counterChange > 1) {
+			counterChange--;
+			$('.command__counter_change').text(counterChange);
+		}			
+	});
 
 	
 

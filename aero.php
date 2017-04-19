@@ -2,6 +2,48 @@
 
 
 
+<div class="filming filming__theme_rosa">
+	<div class="container">
+		<h2 class="h2_theme_rosa h2_pink h2_inner_page filming__caption">И процесс съемки</h2>
+		<div class="filming__slider">
+			<div id="filming__owl_slider">
+				<div class="item">
+					<div class="filming___img">
+						<img src="img/whatimg.png" alt="">
+					</div>
+				</div>
+				<div class="item">
+					<div class="filming___img">
+						<img src="img/whatimg.png" alt="">
+					</div>
+				</div>
+				<div class="item">
+					<div class="filming___img">
+						<img src="img/whatimg.png" alt="">
+					</div>
+				</div>
+				<div class="item">
+					<div class="filming___img">
+						<img src="img/whatimg.png" alt="">
+					</div>
+				</div>
+				<div class="item">
+					<div class="filming___img">
+						<img src="img/whatimg.png" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="command__counter">
+				<span class="command__counter_change">1</span>/
+				<span class="command__counter_all">5</span>
+			</div>
+			<p class="filming__textbottom">Проведение аэрофотосъемки ЖК в Сертолово для компании «Балтийский лизинг»</p>
+		</div>
+	</div>
+</div>
+
+
+
 <div class="video video_innerpage">
 	<div class="container">
 		<h2 class="h2_theme_rosa h2_pink h2_inner_page whattodo__topcaption">Посмотрите видео о нас</h2>

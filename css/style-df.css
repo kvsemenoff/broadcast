@@ -413,10 +413,12 @@
   margin-bottom: 25px;
   max-width: 710px;
   text-align: center;
-  line-height: normal; }
+  line-height: normal;
+  text-transform: none; }
   @media only screen and (min-width: 1024px) {
     .price_aero__caption {
-      text-align: left; } }
+      text-align: left;
+      text-transform: uppercase; } }
 
 .price_aero__text {
   color: #282828;
@@ -590,11 +592,13 @@
 
 .filming__caption {
   margin-bottom: 25px;
-  text-align: center; }
+  text-align: center;
+  text-transform: none; }
   @media only screen and (min-width: 1024px) {
     .filming__caption {
       margin-bottom: 50px;
-      text-align: left; } }
+      text-align: left;
+      text-transform: uppercase; } }
 
 .filming__slider {
   max-width: 715px;

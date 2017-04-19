@@ -36,12 +36,42 @@
 .menu-g .sub__point-title:hover, .aero__sidebar .sub__point-title:hover { color: #673a90; }
 .menu-g .menu__point:hover > .sub, .aero__sidebar .menu__point:hover > .sub { display: block; }
 
-.aero-top { overflow: hidden; }
+.aero-top { overflow: hidden; position: relative; }
+.aero-top__bg { text-transform: uppercase; color: rgba(152, 152, 152, 0.04); font-size: 195px; font-family: "SegoeUIBold"; display: block; position: absolute; top: 50%; left: 32%; z-index: 400; letter-spacing: 20px; }
+@media only screen and (max-width: 1200px) { .aero-top__bg { display: none; } }
 .aero-top .container { position: relative; }
-.aero-top__content { height: 600px; }
+@media only screen and (min-width: 1200px) { .aero-top .container { min-height: 540px; } }
 
-.aero__sidebar { width: 270px; float: left; }
-.aero__sidebar .sub { padding: 45px 10px 25px 10px; -webkit-box-shadow: 10px 0px 18px 0px rgba(0, 0, 0, 0.1); -moz-box-shadow: 10px 0px 18px 0px rgba(0, 0, 0, 0.1); box-shadow: 10px 0px 18px 0px rgba(0, 0, 0, 0.1); padding-left: 0; display: block; position: absolute; top: 0; bottom: 0; }
+.aero-top__content { padding: 60px 0 140px 15px; margin-left: 335px; }
+.aero-top__content h2 { text-transform: none !important; }
+.aero-top__content .content__title_mobile { display: none; }
+@media only screen and (max-width: 1200px) { .aero-top__content { margin-left: 0; padding: 60px 0 50px; } }
+@media only screen and (max-width: 600px) { .aero-top__content { padding: 30px 0 0px; }
+  .aero-top__content .content__title_decstop { display: none; }
+  .aero-top__content .content__title_mobile { display: block; } }
+.aero-top__content .content__descr { color: #282828; font-size: 16px; display: block; padding-bottom: 45px; }
+@media only screen and (max-width: 600px) { .aero-top__content .content__descr { font-size: 14px; padding-bottom: 20px; } }
+.aero-top__content .content__img-wrap { z-index: 500; float: left; width: 50%; max-width: 445px; height: 292px; margin-bottom: 25px; }
+@media only screen and (max-width: 600px) { .aero-top__content .content__img-wrap { width: 100%; float: none; height: auto; max-width: none; } }
+.aero-top__content .content__img { width: 100%; height: auto; min-height: 100%; display: block; }
+.aero-top__content .content__text-wrap { width: 50%; padding-left: 35px; float: left; margin-bottom: 20px; }
+@media only screen and (max-width: 600px) { .aero-top__content .content__text-wrap { width: 100%; float: none; padding-left: 0; } }
+.aero-top__content .content__text { color: #282828; font-size: 16px; padding-bottom: 20px; line-height: 22px; font-family: "SegoeUIRegular"; }
+@media only screen and (max-width: 600px) { .aero-top__content .content__text { font-size: 14px; }
+  .aero-top__content .content__text_last { display: none; } }
+
+.aero__sidebar { width: 270px; position: absolute; top: 0; bottom: 0; }
+@media only screen and (max-width: 1200px) { .aero__sidebar { display: none; } }
+.aero__sidebar .sub { top: 0; left: 0; bottom: 0; padding: 45px 10px 25px 10px; -webkit-box-shadow: 10px 0px 18px 0px rgba(0, 0, 0, 0.1); -moz-box-shadow: 10px 0px 18px 0px rgba(0, 0, 0, 0.1); box-shadow: 10px 0px 18px 0px rgba(0, 0, 0, 0.1); padding-left: 0; display: block; }
+
+.aero__nav { display: none; padding: 10px 0; -webkit-box-shadow: 0px 10px 15px 2px rgba(0, 0, 0, 0.15); -moz-box-shadow: 0px 10px 15px 2px rgba(0, 0, 0, 0.15); box-shadow: 0px 10px 15px 2px rgba(0, 0, 0, 0.15); }
+@media only screen and (max-width: 1200px) and (min-width: 600px) { .aero__nav { display: block; } }
+.aero__nav .sub__point { list-style: none; width: 100%; border-left: 1px solid #cacaca; }
+.aero__nav .sub__point_main { display: inline-block; width: auto; padding: 0 25px; line-height: 25px; font-size: 18px; color: #673a90; position: relative; }
+.aero__nav .sub__point_main-first { padding-left: 0; border: none; }
+.aero__nav .sub__list { position: absolute; left: 2px; right: 2px; }
+.aero__nav .sub__point-title { color: #282828; display: block; line-height: 23px; }
+.aero__nav .sub__point-title:hover { color: #673a90; }
 
 .menu-burger { display: none; }
 @media only screen and (max-width: 1000px) { .menu-burger { display: block; } }

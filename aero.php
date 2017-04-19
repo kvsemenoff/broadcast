@@ -2,6 +2,34 @@
 <?php require_once('includes/header-top_inner.php'); ?>
 
 <div class="aero-top">
+	<span class="aero-top__bg">Онлайнтрансляция</span>
+	<div class="aero__nav">
+		<div class="container">
+			<ul class="sub">
+				<li class="sub__point sub__point_main sub__point_main-first">
+					<span class="aero__nav-item">Онлайн трансляции</span>
+					<ul class="sub__list">
+						<li class="sub__point"><a href="#" class="sub__point-title">Онлайн трансляции в интернет</a></li>
+						<li class="sub__point"><a href="#" class="sub__point-title">Трансляции на экран</a></li>
+						<li class="sub__point"><a href="#" class="sub__point-title">Проведение телемостов</a></li>
+						<li class="sub__point"><a href="#" class="sub__point-title">Платные видеотрансляции</a></li>
+					</ul>
+				</li>
+				<li class="sub__point sub__point_main">
+					<span class="aero__nav-item">Многокамерная видеосъемка</span>
+					<ul class="sub__list">
+						<li class="sub__point"><a href="#" class="sub__point-title">Съемка концертов</a></li>
+						<li class="sub__point"><a href="#" class="sub__point-title">Съемка лекций и семинаров</a></li>
+						<li class="sub__point"><a href="#" class="sub__point-title">Съемка презентаций</a></li>
+						<li class="sub__point"><a href="#" class="sub__point-title">Съемка спортивных мероприятий</a></li>
+					</ul>
+				</li>
+				<li class="sub__point sub__point_main">
+					<span class="aero__nav-item">Аренда ПТС</span>
+				</li>
+			</ul>
+		</div>
+	</div>
 	<div class="container clearfix">
 		<div class="aero__sidebar">
 			<ul class="sub">
@@ -18,7 +46,26 @@
 				<li class="sub__point sub__point_main">Аренда ПТС</li>
 			</ul>
 		</div>
-		<div class="aero-top__content"></div>
+		<div class="aero-top__content">
+			<div class="content__title content__title_decstop">
+				<h2 class="h2_theme_rosa h2_pink h2_inner_page">Аэрофотосъемка</h2>
+				<span class="content__descr">Фотосъемка с высоты до 500 метров</span>
+			</div>
+			<div class="content__inner clearfix">
+				<div class="content__img-wrap">
+					<img src="img/whatimg.png" class="content__img" alt="">
+				</div>
+				<div class="content__text-wrap">
+					<div class="content__title content__title_mobile">
+						<h2 class="h2_theme_rosa h2_pink h2_inner_page">Аэрофотосъемка</h2>
+						<span class="content__descr">Фотосъемка с высоты до 500 метров</span>
+					</div>
+					<p class="content__text">Основная специализация компании - видеосъемка мероприятий и организация онлайн трансляций в Санкт-Петербурге и регионах. В нашем парке 16 Full HD видеокамер и 9 камер 4K. Компания основана в 2013 году и мы проводим 7-9 видеотрансляций в месяц.</p>
+					<p class="content__text">Конференции и презентации, спортивные соревнования, интервью со спикерами в перерывах и многое другое. </p>
+					<p class="content__text content__text_last">Проснувшись утром после сна, Грегор обнаружил, что он превратился в страшное насекомое.</p>
+				</div>
+			</div>
+		</div>
 	</div>
 </div>
 

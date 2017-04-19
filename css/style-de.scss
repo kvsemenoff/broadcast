@@ -147,26 +147,167 @@
 }
 .aero-top{
 	overflow: hidden;
+	position: relative;
+	&__bg{
+		text-transform: uppercase;
+		color: rgba(152,152,152,0.04);
+		font-size: 195px;
+		font-family: "SegoeUIBold";
+		display: block;
+		position: absolute;
+		top: 50%;
+		left: 32%;
+		z-index: 400;
+		letter-spacing: 20px;
+		@media only screen and (max-width : 1200px) {
+			display: none;
+		}
+	}
 	.container{
 		position: relative;
+		@media only screen and (min-width : 1200px) {
+			min-height: 540px;
+		}
 	}
-	&__content{
-		height: 600px;
+}
+.aero-top__content{
+	padding: 60px 0 140px 15px;
+	margin-left: 335px;
+	h2{
+		text-transform: none!important;
+	}
+	.content__title_mobile{
+		display: none;
+	}
+	@media only screen and (max-width : 1200px) {
+		margin-left: 0;
+		padding: 60px 0 50px;
+	}
+	@media only screen and (max-width : 600px) {
+		padding: 30px 0 0px;
+		.content__title_decstop{
+			display: none;
+		}
+		.content__title_mobile{
+			display: block;
+		}
+	}
+	.content{
+		&__descr{
+			color: #282828;
+			font-size: 16px;
+			display: block;
+			padding-bottom: 45px;
+			@media only screen and (max-width : 600px) {
+				font-size: 14px;
+				padding-bottom: 20px;
+			}
+		}
+		&__img-wrap{
+			z-index: 500;
+			float: left;
+			width: 50%;
+			max-width: 445px;
+			height: 292px;
+			margin-bottom: 25px;
+			@media only screen and (max-width : 600px) {
+				width: 100%;
+				float: none;
+				height: auto;
+				max-width: none;
+			}
+		}
+		&__img{
+			width: 100%;
+			height: auto;
+			min-height: 100%;
+			display: block;
+		}
+		&__text-wrap{
+			width: 50%;
+			padding-left: 35px;
+			float: left;
+			margin-bottom: 20px;
+			@media only screen and (max-width : 600px) {
+				width: 100%;
+				float: none;
+				padding-left: 0;
+			}
+		}
+		&__text{
+			color: #282828;
+			font-size: 16px;
+			padding-bottom: 20px;
+			line-height: 22px;
+			font-family: "SegoeUIRegular";
+			@media only screen and (max-width : 600px) {
+				font-size: 14px;
+				&_last{
+					display: none;
+				}
+			}
+		}
 	}
 }
 .aero__sidebar{
 	width: 270px;
-	float: left;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	@media only screen and (max-width : 1200px) {
+		display: none;
+	}
 	.sub{
+		top: 0;
+		left: 0;
+		bottom: 0;
     padding: 45px 10px 25px 10px;
 		-webkit-box-shadow: 10px 0px 18px 0px rgba(0,0,0,0.1);
 		-moz-box-shadow: 10px 0px 18px 0px rgba(0,0,0,0.1);
 		box-shadow: 10px 0px 18px 0px rgba(0,0,0,0.1);
 		padding-left: 0;
 		display: block;
+	}
+}
+.aero__nav{
+	display: none;
+	padding: 10px 0;
+	-webkit-box-shadow: 0px 10px 15px 2px rgba(0,0,0,0.15);
+	-moz-box-shadow: 0px 10px 15px 2px rgba(0,0,0,0.15);
+	box-shadow: 0px 10px 15px 2px rgba(0,0,0,0.15);
+	@media only screen and (max-width : 1200px) and (min-width : 600px) {
+		display: block;
+	}
+	.sub__point { 
+		list-style: none;
+		width: 100%;
+		border-left: 1px solid #cacaca;
+		&_main{
+			display: inline-block;
+			width: auto;
+			padding: 0 25px;
+			line-height: 25px;
+			font-size: 18px;
+			color: #673a90;
+			position: relative;
+			&-first{
+				padding-left: 0;
+				border: none;
+			}
+		}
+	}
+	.sub__list{
 		position: absolute;
-		top: 0;
-		bottom: 0;
+		left: 2px;
+		right: 2px;
+	}
+	.sub__point-title {
+		color: #282828; 
+		display: block; 
+		line-height: 23px;
+		&:hover{
+			color: #673a90;
+		}
 	}
 }
 

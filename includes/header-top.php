@@ -149,9 +149,9 @@
 				        <ul class="tab-content tab-4">
 									<li class="sub__point sub__point_main">Онлайн трансляции</li>
 									<li class="sub__point"><a href="#" class="sub__point-title">Трансляции на экран</a></li>
-									<li class="sub__point sub__point_main">Многокамерная видеосъемка</li>
 									<li class="sub__point"><a href="#" class="sub__point-title">Онлайн трансляции в интернет</a></li>
 									<li class="sub__point"><a href="#" class="sub__point-title">Проведение телемостов</a></li>
+									<li class="sub__point sub__point_main">Многокамерная видеосъемка</li>
 									<li class="sub__point"><a href="#" class="sub__point-title">Платные видеотрансляции</a></li>
 									<li class="sub__point"><a href="#" class="sub__point-title">Съемка лекций и семинаров</a></li>
 									<li class="sub__point sub__point_main">Аренда ПТС</li>

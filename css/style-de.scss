@@ -125,6 +125,7 @@
 		top: 0;
 		left: 0;
 		width: 100%;
+		z-index: 10000;
 	}
 	.tab{
 		font-family: "SegoeUIBold";
@@ -132,7 +133,7 @@
 		color: #282828;
 		display: inline-block;
 		border-bottom: 1px solid transparent;
-		padding: 5px 0 10px;
+		padding: 0px 0 10px;
 		margin: 0 8px;
 		cursor: pointer;
 	}
@@ -156,15 +157,14 @@
 	}
 	.menu-button { 
 		cursor: pointer; 
-		font-size: 24px; 
-		color: #fefefe; 
 		width: 33px;
 		height: 24px;
 		position: absolute; 
-		float: left;
 		top: 50%;
 		margin-top: -12px;
 		right: 20px;
+		z-index: 10001;
+		transition: 0.3s all ease;
 	  &__bg{
 	  	position: absolute; 
 			background: #fff; 
@@ -183,6 +183,15 @@
 			&_bot{
 				bottom: 0;
 			}
+	  }
+	  &.menu-active{
+	  	width: 14px;
+	  	height: 14px;
+	  	top: 31px;
+	  	background: url(../img/close.png) center/cover no-repeat;
+	  	.menu-button__bg{
+	  		display: none;
+	  	}
 	  }
 	}
 }

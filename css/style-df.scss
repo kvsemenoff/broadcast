@@ -147,22 +147,30 @@
 /*==================command============*/
 .command_bg_color{
 	background-color: #1c1c1c;
-	padding: 215px 0px 160px 0;
+	padding: 40px 0px 100px 0;
 	@media only screen and (min-width : 1200px) {
 		background-image: url("../img/commandbg.png");
 		background-repeat: no-repeat;
 		background-position: top 10% center;
+		padding: 215px 0px 240px 0;
 	}
 }
 .command__container{
-	max-width: 1170px;
+	max-width: 1195px;
 	margin: 0 auto;
 	padding: 0 15px;
 }
 .command__textbox{
 	max-width: 515px;
 	width: 100%;
-	float: right;	
+	margin: 0 auto;
+	@media only screen and (min-width : 1024px) {
+		float: right;	
+		padding-top: 55px;
+	}
+	@media only screen and (min-width : 1200px) {
+		
+	}
 }
 .command__topcaption{
 	padding-bottom: 22px;
@@ -173,16 +181,19 @@
 	line-height: 22px;
 	color: #fff;
 	padding-bottom: 22px;
+	padding-left: 5px;
 }
 
 
 .command__slider{
 	max-width: 530px;
 	width: 100%;
-	float: left;
+	// float: left;
+	margin: 0 auto;
 	position: relative;
 }
 .command__slider_img{
+	display: block;
 	img{
 		max-width: 100%;
 		height: auto;
@@ -190,26 +201,44 @@
 }
 .df-left, .df-right{
 	position: absolute;
-	bottom: -80px;
+	bottom: -70px;
 	width: 40px;
 	height: 40px;
+	@media only screen and (min-width : 1024px) {
+		bottom: -85px;
+	}
+	@media only screen and (min-width : 1200px) {
+		
+	}
 }	
 .df-left{
 	background-image: url("../img/sliderprev.png");
 	background-repeat: no-repeat;
 	background-position: left center;
-	left:38%;
+	left:20%;
 	&:hover{
 		background-image: url("../img/sliderprevhover.png");
+	}
+	@media only screen and (min-width : 1024px) {
+		left:30%;
+	}
+	@media only screen and (min-width : 1200px) {
+		
 	}
 }
 .df-right{
 	background-image: url("../img/slidernext.png");
 	background-repeat: no-repeat;
 	background-position: right center;
-	right: 35%;
+	right: 20%;
 	&:hover{
 		background-image: url("../img/slidernexthover.png");
+	}
+	@media only screen and (min-width : 1024px) {
+		right: 35%;
+	}
+	@media only screen and (min-width : 1200px) {
+		
 	}
 }
 .command__counter{
@@ -220,15 +249,23 @@
 	line-height: 22px;
 	font-family: "Segoe UI Regular";
 	position: absolute;
-	bottom: -70px;
-	left: 45%;
+	bottom: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    @media only screen and (min-width : 1024px) {
+		bottom: -75px;
+    	left: 41%;
+	}
+	@media only screen and (min-width : 1200px) {
+		
+	}
 }
-.command__counter_change{
-	display: inline-block;
-}
-.command__counter_all{
-	display: inline-block;
-}
+// .command__counter_change{
+// 	display: inline-block;
+// }
+// .command__counter_all{
+// 	display: inline-block;
+// }
 @media only screen and (min-width : 320px) {
 }
 

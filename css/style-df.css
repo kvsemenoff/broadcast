@@ -134,22 +134,27 @@
 /*==================command============*/
 .command_bg_color {
   background-color: #1c1c1c;
-  padding: 215px 0px 160px 0; }
+  padding: 40px 0px 100px 0; }
   @media only screen and (min-width: 1200px) {
     .command_bg_color {
       background-image: url("../img/commandbg.png");
       background-repeat: no-repeat;
-      background-position: top 10% center; } }
+      background-position: top 10% center;
+      padding: 215px 0px 240px 0; } }
 
 .command__container {
-  max-width: 1170px;
+  max-width: 1195px;
   margin: 0 auto;
   padding: 0 15px; }
 
 .command__textbox {
   max-width: 515px;
   width: 100%;
-  float: right; }
+  margin: 0 auto; }
+  @media only screen and (min-width: 1024px) {
+    .command__textbox {
+      float: right;
+      padding-top: 55px; } }
 
 .command__topcaption {
   padding-bottom: 22px; }
@@ -159,39 +164,51 @@
   font-size: 16px;
   line-height: 22px;
   color: #fff;
-  padding-bottom: 22px; }
+  padding-bottom: 22px;
+  padding-left: 5px; }
 
 .command__slider {
   max-width: 530px;
   width: 100%;
-  float: left;
+  margin: 0 auto;
   position: relative; }
 
-.command__slider_img img {
-  max-width: 100%;
-  height: auto; }
+.command__slider_img {
+  display: block; }
+  .command__slider_img img {
+    max-width: 100%;
+    height: auto; }
 
 .df-left, .df-right {
   position: absolute;
-  bottom: -80px;
+  bottom: -70px;
   width: 40px;
   height: 40px; }
+  @media only screen and (min-width: 1024px) {
+    .df-left, .df-right {
+      bottom: -85px; } }
 
 .df-left {
   background-image: url("../img/sliderprev.png");
   background-repeat: no-repeat;
   background-position: left center;
-  left: 38%; }
+  left: 20%; }
   .df-left:hover {
     background-image: url("../img/sliderprevhover.png"); }
+  @media only screen and (min-width: 1024px) {
+    .df-left {
+      left: 30%; } }
 
 .df-right {
   background-image: url("../img/slidernext.png");
   background-repeat: no-repeat;
   background-position: right center;
-  right: 35%; }
+  right: 20%; }
   .df-right:hover {
     background-image: url("../img/slidernexthover.png"); }
+  @media only screen and (min-width: 1024px) {
+    .df-right {
+      right: 35%; } }
 
 .command__counter {
   width: 70px;
@@ -201,13 +218,12 @@
   line-height: 22px;
   font-family: "Segoe UI Regular";
   position: absolute;
-  bottom: -70px;
-  left: 45%; }
-
-.command__counter_change {
-  display: inline-block; }
-
-.command__counter_all {
-  display: inline-block; }
+  bottom: -60px;
+  left: 50%;
+  transform: translateX(-50%); }
+  @media only screen and (min-width: 1024px) {
+    .command__counter {
+      bottom: -75px;
+      left: 41%; } }
 
 /*# sourceMappingURL=style-df.css.map */

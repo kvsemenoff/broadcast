@@ -77,6 +77,21 @@ $(document).ready(function(){
 	};
 
 
+	$('.df-right').on('click', function() {			
+		var counterChange = parseFloat($('.command__counter_change').text());			
+		if (counterChange < 12) {
+			counterChange++;
+			$('.command__counter_change').text(counterChange);
+		}			
+	});
+	$('.df-left').on('click', function() {			
+		var counterChange = parseFloat($('.command__counter_change').text());			
+		if (counterChange > 1) {
+			counterChange--;
+			$('.command__counter_change').text(counterChange);
+		}			
+	});
+
 	var owl2 = $("#command__owl_carousel");
 	owl2.owlCarousel({
 		loop:false,
@@ -94,8 +109,7 @@ $(document).ready(function(){
         	},      
         	990:{
         		items:1
-        	},      
-
+        	},  
         	1248:{
         		items:1
         	}
@@ -105,13 +119,7 @@ $(document).ready(function(){
 
 
 
-		$('.df-right').on('click', function() {			
-			var x = parseFloat($('.command__counter_change').text());	
-			if (x < 12) {
-				x++;
-				$('.command__counter_change').text(x);
-			}			
-		});
+	
 
 
 

@@ -79,8 +79,9 @@
 				<span class="command__counter_all">12</span>
 			</div>
 		</div>
-		<div class="clearfix"></div>
+		
 	</div>
+	<div class="clearfix"></div>
 </div>	
 
 <script>

@@ -1,6 +1,43 @@
 <?php require_once('includes/header.php'); ?>
 
+<div class="aero aero_theme_rosa">
+	<div class="aero__container">
 
+		<div class="aero__imgbox">
+			<h2 class="aero__caption__mobileversion">Аэрофотосъемка</h2>
+			<span class="aero__cap_sub">Фотосъемка с высоты до 500 метров</span>
+			<div class="aero__img"><img src="img/whatimg.png" alt=""></div>
+			<span class="aero__txt_sub">Ноябрь 2016, ресторан «Бали»</span>
+		</div>
+
+		<div class="aero__textbox">
+			<h2 class="h2_theme_rosa h2_pink h2_inner_page aero__caption">Аэрофотосъемка</h2>
+			<p class="aero__txt">Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он
+				у себя в постели превратился в страшное насекомое. Лежа на панцирнотвердой спине,
+				он видел, стоило ему приподнять голову, свой коричневый, выпуклый, разделенный дугообразными чешуйками живот, на верхушке которого еле держалось готовое вот-вот окончательно сползти одеяло. </p>
+			<p class="aero__txt">
+				Его комната, настоящая, разве что слишком маленькая, но обычная комната, мирно покоилась в своих четырех хорошо знакомых стенах. Над столом, где были разложены распакованные образцы сукон – Замза был коммивояжером, – висел портрет, который
+				он недавно вырезал из журнала и вставил в красивую золоченую рамку. </p>			
+		</div>
+		<div class="clearfix"></div>	
+	</div>
+</div>	
+
+
+<div class="foto_job foto_job_theme_rosa">
+	<div class="foto_job__container">
+		<h2 class="h2_theme_rosa h2_pink h2_inner_page filming__caption">Фотографии процесса нашей работы</h2>
+		<div class="foto_job__img">
+			<img src="img/whatimg.png" alt="">
+		</div>
+		<div class="foto_job__img">
+			<img src="img/whatimg.png" alt="">
+		</div>
+		<div class="foto_job__img">
+			<img src="img/whatimg.png" alt="">
+		</div>
+	</div>
+</div>
 
 <div class="filming filming__theme_rosa">
 	<div class="container">

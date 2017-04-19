@@ -119,10 +119,12 @@
 		display: block;
 	}
 	.menu-up {
-		transition: 0.3s all ease;
 		background: #fff;
-		padding: 10px 10px 20px; 
-		position: relative;
+		padding: 50px 10px 20px; 
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
 	}
 	.tab{
 		font-family: "SegoeUIBold";

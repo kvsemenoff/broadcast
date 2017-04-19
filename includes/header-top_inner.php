@@ -174,8 +174,8 @@
 	</div>
 	<div class="container">
 		<div class="navigation">
-			<a href="#" class="navigation__item navigation__item_enabled">Главная ></a>
-			<span class="navigation__item navigation__item_disabled">Онлайн трансляции в интернет</span>
+			<a href="#" class="navigation__item navigation__item_enabled">Главная</a>
+			<span class="navigation__item navigation__item_disabled"><i>> </i>Онлайн трансляции в интернет</span>
 		</div>
 	</div>
 </div>

@@ -83,7 +83,8 @@
 		text-align: center;
 	}
 }
-.menu-g{
+.menu-g,
+.aero__sidebar{
 	float: left;
 	font-family: "SegoeUIRegular";
 	@media only screen and (max-width : 1200px) {
@@ -142,6 +143,30 @@
 	}
 	.menu__point:hover > .sub { 
 		display: block; 
+	}
+}
+.aero-top{
+	overflow: hidden;
+	.container{
+		position: relative;
+	}
+	&__content{
+		height: 600px;
+	}
+}
+.aero__sidebar{
+	width: 270px;
+	float: left;
+	.sub{
+    padding: 45px 10px 25px 10px;
+		-webkit-box-shadow: 10px 0px 18px 0px rgba(0,0,0,0.1);
+		-moz-box-shadow: 10px 0px 18px 0px rgba(0,0,0,0.1);
+		box-shadow: 10px 0px 18px 0px rgba(0,0,0,0.1);
+		padding-left: 0;
+		display: block;
+		position: absolute;
+		top: 0;
+		bottom: 0;
 	}
 }
 

@@ -398,16 +398,58 @@
   padding: 8px 0 21px 0; }
 
 /*==========innerpage-aero============*/
+.price_aero_theme_rosa {
+  background-color: #fbfbfb; }
+
+.aero__container__theme_rosa {
+  padding: 30px 15px 0px 15px;
+  text-align: center; }
+  @media only screen and (min-width: 1024px) {
+    .aero__container__theme_rosa {
+      padding: 50px 15px;
+      text-align: left; } }
+
+.price_aero__caption {
+  margin-bottom: 25px;
+  max-width: 710px;
+  text-align: center;
+  line-height: normal; }
+  @media only screen and (min-width: 1024px) {
+    .price_aero__caption {
+      text-align: left; } }
+
+.price_aero__text {
+  color: #282828;
+  font-family: "Segoe UI Regular";
+  font-size: 16px;
+  line-height: 22px;
+  display: inline-block;
+  max-width: 590px;
+  width: 100%;
+  text-align: left;
+  vertical-align: top;
+  padding-bottom: 30px; }
+  @media only screen and (min-width: 1024px) {
+    .price_aero__text {
+      max-width: unset;
+      width: 48%;
+      margin-right: 35px;
+      padding-bottom: 0; }
+      .price_aero__text:last-child {
+        margin-right: 0; } }
+
 .aero_theme_rosa {
   background-color: #fff; }
 
 .aero__container {
   max-width: 1220px;
-  margin: 0 auto;
+  margin: 0 auto; }
+
+.aero__container_theme_rosa {
   padding: 30px 15px 30px 15px;
   text-align: center; }
   @media only screen and (min-width: 1024px) {
-    .aero__container {
+    .aero__container_theme_rosa {
       padding: 90px 15px 80px 15px;
       text-align: left; } }
 
@@ -481,7 +523,7 @@
   @media only screen and (min-width: 1024px) {
     .aero__textbox {
       float: left;
-      width: 59%;
+      width: 55%;
       max-width: unset; } }
 
 .aero__caption {
@@ -668,5 +710,11 @@
   @media only screen and (min-width: 1024px) {
     .online__container_innerpage {
       padding: 60px 15px; } }
+
+.our__inner_page_mobile {
+  background-color: #fbfbfb; }
+  @media only screen and (min-width: 992px) {
+    .our__inner_page_mobile {
+      display: none; } }
 
 /*# sourceMappingURL=style-df.css.map */

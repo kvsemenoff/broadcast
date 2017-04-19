@@ -444,12 +444,60 @@
 
 
 /*==========innerpage-aero============*/
+
+
+.price_aero_theme_rosa{
+	background-color: #fbfbfb;	
+}
+.aero__container__theme_rosa{
+	padding: 30px 15px 0px 15px;
+	text-align: center;
+	@media only screen and (min-width : 1024px) {		
+		padding: 50px 15px;
+		text-align: left;
+	}
+}
+.price_aero__caption{
+	margin-bottom: 25px;
+	max-width: 710px;
+	text-align: center;
+	line-height: normal;
+	@media only screen and (min-width : 1024px) {		
+		text-align: left;
+	}
+}
+.price_aero__text{
+	color: #282828;
+	font-family: "Segoe UI Regular";
+	font-size: 16px;	
+	line-height: 22px;
+	display: inline-block;
+	max-width: 590px;
+	width: 100%;
+	text-align: left;
+	vertical-align: top;
+	padding-bottom: 30px;
+	@media only screen and (min-width : 1024px) {		
+		max-width: unset;
+		width: 48%;
+		margin-right: 35px;
+		padding-bottom: 0;
+		&:last-child{
+			margin-right: 0;
+		}
+	}
+}
+
+
 .aero_theme_rosa{
 	background-color: #fff;
 }
 .aero__container{
 	max-width: 1220px;
 	margin: 0 auto;
+	
+}
+.aero__container_theme_rosa{
 	padding: 30px 15px 30px 15px;
 	text-align: center;
 	@media only screen and (min-width : 1024px) {		
@@ -528,7 +576,7 @@
 	text-align: left;
 	@media only screen and (min-width : 1024px) {		
 		float: left;
-		width: 59%;
+		width: 55%;
 		max-width: unset;
 	}
 }
@@ -739,6 +787,14 @@
 	padding: 35px 15px;
 	@media only screen and (min-width : 1024px) {
 		padding: 60px 15px;
+	}
+}
+
+
+.our__inner_page_mobile{
+	background-color: #fbfbfb;
+	@media only screen and (min-width : 992px) {
+		display: none;
 	}
 }
 

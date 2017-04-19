@@ -1,12 +1,30 @@
 .header-top{
 	background: url(../img/header-top.jpg) center/cover;
 	&_inner{
-		padding-bottom: 60px;
-		@media only screen and (max-width : 1200px) {
-			padding-bottom: 130px;
+		.top-line{
+			margin-bottom: 40px;
+			@media only screen and (max-width : 1200px) {
+				margin-bottom: 95px;
+			}
+			@media only screen and (max-width : 1000px) {
+				margin-bottom: 100px;
+			}	
 		}
+	}
+}
+.navigation{
+	padding-bottom: 20px;
+	&__item{
+		font-size: 18px;
+		color: #fff;
+		padding: 1px;
 		@media only screen and (max-width : 1000px) {
-			padding-bottom: 120px;
+			font-size: 14px;		}	
+		&_enabled{
+			font-family: "SegoeUIBold";
+		}
+		&_disabled{
+			font-family: "SegoeUIRegular";
 		}
 	}
 }

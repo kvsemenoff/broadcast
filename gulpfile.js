@@ -3,16 +3,12 @@ var css_files = new Array(
 	'libs/bootstrap/bootstrap-grid-3.3.1.min.css',
 	'libs/fancybox/jquery.fancybox.css', 
 	'libs/owl.carousel/assets/owl.carousel.css',
-	'css/jquery.jscrollpane.css',
 	'css/reset.css',
 	'css/fonts.css',
 	'css/style.css',
 	'block/h2/h2.css',
 	'block/button/button.css',
 	'block/inputtext/style.css',
-	'block/q/q.css',
-	'block/ol/ol.css',
-	'block/form/form.css',
 	'css/style-db.css',
 	'css/style-dc.css',
 	'css/style-dd.css',
@@ -22,10 +18,8 @@ var css_files = new Array(
 	'css/style-dh.css',
 	'css/style-di.css',
 	'css/style-dj.css'
-
-	
-	
 );
+
 //Название общего фала для всех стилей
 var css_style_name = 'style.min.css';
 
@@ -35,9 +29,9 @@ var js_files = new Array(
 	'libs/owl.carousel/owl.carousel.js',
 	'libs/fancybox/jquery.fancybox.pack.js',
 	'js/jquery.mousewheel.js',
-	'js/responsiveTabs.js',
 	'js/jquery.maskedinput.min.js',
-	'js/common.js'
+	'js/common.js',
+	'js/outerstyles.js'
 );
 //Название общего файла для всех js-скриптов
 var js_scripts_name = 'scripts.min.js';

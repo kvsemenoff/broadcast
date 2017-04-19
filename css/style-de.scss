@@ -139,11 +139,20 @@
 .video{
 	padding: 100px 0 130px;
 	background: url(../img/video-bg.jpg) center/cover;
+	@media only screen and (max-width : 1050px) {
+		padding: 65px 0 55px;
+	}
+	@media only screen and (max-width : 550px) {
+		padding: 30px 0 15px;
+	}
 	&__block{
 		margin: 0 auto 25px;
 		max-width: 880px;
 		width: 100%;
 		height: 490px;
+		@media only screen and (max-width : 550px) {
+			height: 170px;
+		}
 		iframe{
 			width: 100%;
 			display: block;
@@ -167,19 +176,94 @@
 		padding: 2px 0;
 	}
 }
-@media only screen and (max-width : 1050px) {
-	.video{
-		padding: 65px 0 55px;
+
+.contact{
+	padding: 60px 0;
+	font-family: "SegoeUISemiBold";
+	@media only screen and (max-width : 500px) {
+		padding: 30px 0 20px;
 	}
-}
-@media only screen and (max-width : 550px) {
-	.video{
-		padding: 30px 0 15px;
-		&__block{
-			height: 170px;
+	h2{
+		text-transform: none;
+		@media only screen and (max-width : 500px) {
+			text-align: left;
+			padding-left: 10px;
+			padding-top: 0;
+			padding-bottom: 20px;
+		}
+	}
+	&__inner{
+		position: relative;
+	}
+	&__mape{
+		width: 100%;
+		max-width: 650px;
+		overflow: hidden;
+		&_mini{
+			display: none;
+		}
+		@media only screen and (max-width : 500px) {
+			height: 195px;
+			&_max{
+				display: none;
+			}
+			&_mini{
+				display: block;
+			}
+		}
+	}
+	.info{
+		position: absolute;
+		left: 600px;
+		top: 68px;
+		z-index: 1000;
+		padding: 50px 20px 45px 48px;
+		background: #fff;
+		max-width: 375px;
+		width: 100%;
+		color: #333;
+		font-size: 16px;
+		-webkit-box-shadow: 15px 15px 28px 0px rgba(0,0,0,0.13);
+		-moz-box-shadow: 15px 15px 28px 0px rgba(0,0,0,0.13);
+		box-shadow: 15px 15px 28px 0px rgba(0,0,0,0.13);
+		@media only screen and (max-width : 1100px) {
+			left: 540px;
+		}
+		@media only screen and (max-width : 1000px) {
+			position: relative;
+			left: 0;
+			top: 0;
+			box-shadow: none;
+		}
+		@media only screen and (max-width : 500px) {
+			padding: 10px 10px 30px 10px;
+		}
+		&__text{
+			display: block;
+			&_title{
+				padding-bottom: 20px;
+				@media only screen and (max-width : 500px) {
+					padding-bottom: 10px;
+				}
+			}
+			&_time{
+				padding-bottom: 32px;
+			}
+			&_number{
+				color: #673a90;
+				font-size: 20px;
+				padding-bottom: 7px;
+			}
+			&_mail{
+				padding-bottom: 30px;
+				@media only screen and (max-width : 500px) {
+					padding-bottom: 0px;
+				}
+			}
 		}
 	}
 }
+
 
 @media only screen and (min-width : 320px) {
 }

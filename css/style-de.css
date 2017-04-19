@@ -25,13 +25,34 @@
 .menu-burger .menu-button .bg::after { content: ""; position: absolute; width: 27px; height: 5px; left: 0; background: #000; display: block; top: 12px; }
 
 .video { padding: 100px 0 130px; background: url(../img/video-bg.jpg) center/cover; }
+@media only screen and (max-width: 1050px) { .video { padding: 65px 0 55px; } }
+@media only screen and (max-width: 550px) { .video { padding: 30px 0 15px; } }
 .video__block { margin: 0 auto 25px; max-width: 880px; width: 100%; height: 490px; }
+@media only screen and (max-width: 550px) { .video__block { height: 170px; } }
 .video__block iframe { width: 100%; display: block; height: 100%; }
 
 .modal { font-family: "SegoeUIRegular", arial, sans-serif; background: #fff url(../img/popup-star.png) center 125px no-repeat; padding: 200px 0 155px; }
 .modal h2 { text-align: center; }
 .modal__descr { font-size: 16px; color: #282828; display: block; text-align: center; padding: 2px 0; }
 
-@media only screen and (max-width: 1050px) { .video { padding: 65px 0 55px; } }
-@media only screen and (max-width: 550px) { .video { padding: 30px 0 15px; }
-  .video__block { height: 170px; } }
+.contact { padding: 60px 0; font-family: "SegoeUISemiBold"; }
+@media only screen and (max-width: 500px) { .contact { padding: 30px 0 20px; } }
+.contact h2 { text-transform: none; }
+@media only screen and (max-width: 500px) { .contact h2 { text-align: left; padding-left: 10px; padding-top: 0; padding-bottom: 20px; } }
+.contact__inner { position: relative; }
+.contact__mape { width: 100%; max-width: 650px; overflow: hidden; }
+.contact__mape_mini { display: none; }
+@media only screen and (max-width: 500px) { .contact__mape { height: 195px; }
+  .contact__mape_max { display: none; }
+  .contact__mape_mini { display: block; } }
+.contact .info { position: absolute; left: 600px; top: 68px; z-index: 1000; padding: 50px 20px 45px 48px; background: #fff; max-width: 375px; width: 100%; color: #333; font-size: 16px; -webkit-box-shadow: 15px 15px 28px 0px rgba(0, 0, 0, 0.13); -moz-box-shadow: 15px 15px 28px 0px rgba(0, 0, 0, 0.13); box-shadow: 15px 15px 28px 0px rgba(0, 0, 0, 0.13); }
+@media only screen and (max-width: 1100px) { .contact .info { left: 540px; } }
+@media only screen and (max-width: 1000px) { .contact .info { position: relative; left: 0; top: 0; box-shadow: none; } }
+@media only screen and (max-width: 500px) { .contact .info { padding: 10px 10px 30px 10px; } }
+.contact .info__text { display: block; }
+.contact .info__text_title { padding-bottom: 20px; }
+@media only screen and (max-width: 500px) { .contact .info__text_title { padding-bottom: 10px; } }
+.contact .info__text_time { padding-bottom: 32px; }
+.contact .info__text_number { color: #673a90; font-size: 20px; padding-bottom: 7px; }
+.contact .info__text_mail { padding-bottom: 30px; }
+@media only screen and (max-width: 500px) { .contact .info__text_mail { padding-bottom: 0px; } }

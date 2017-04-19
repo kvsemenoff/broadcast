@@ -122,19 +122,16 @@ $(document).ready(function(){
 	
 
 
-
 	$('.menu-up').slideUp(0);
 	$('.menu-button').click(function(){
-		if (!$(this).hasClass('menu-up-active')){
-			$(this).addClass('menu-up-active');
-			$('.menu-up').slideDown(400)
+		if (!$(this).hasClass('menu-active')){
+			$(this).addClass('menu-active');
+			$('.menu-up').slideDown(300)
 		} else {
-			$(this).removeClass('menu-up-active');
-			$('.menu-up').slideUp(400)
+			$(this).removeClass('.menu-active');
+			$('.menu-up').slideUp(300)
 		}
 	});
-
-
 
 	
 });

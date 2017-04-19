@@ -483,6 +483,13 @@
 	font-family: "SegoeUIRegular", arial, sans-serif;
 	background: #fff url(../img/popup-star.png) center 125px no-repeat;
 	padding: 200px 0 155px;
+	width: 86%;
+	max-width: 870px;
+	margin: 0 auto;
+	@media only screen and (max-width : 800px) {
+		padding: 120px 0 50px;
+		background: #fff url(../img/popup-star.png) center 75px no-repeat;
+	}
 	h2{
 		text-align: center;
 	}
@@ -491,7 +498,11 @@
 		color: #282828;
 		display: block;
 		text-align: center;
-		padding: 2px 0;
+		i{
+			@media only screen and (max-width : 500px) {
+				display: inline-block;
+			}
+		}
 	}
 }
 

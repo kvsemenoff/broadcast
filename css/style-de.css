@@ -28,7 +28,10 @@
 
 .menu-burger { display: none; }
 @media only screen and (max-width: 1000px) { .menu-burger { display: block; } }
-.menu-burger .menu-up { transition: 0.3s all ease; background: #fff; padding: 10px 0 20px; position: relative; display: block; }
+.menu-burger .menu-up { transition: 0.3s all ease; background: #fff; padding: 10px 10px 20px; position: relative; }
+.menu-burger .tab { font-family: "SegoeUIBold"; font-size: 16px; color: #282828; display: inline-block; border-bottom: 1px solid transparent; padding: 5px 0 10px; margin: 0 8px; cursor: pointer; }
+.menu-burger .tab.active { border-color: #828282; }
+.menu-burger .tab-content { padding: 0 8px; }
 .menu-burger .sub__point { font-size: 14px; padding-bottom: 4px; }
 .menu-burger .sub__point_main { color: #673a90; font-size: 16px; padding: 15px 0 10px; }
 .menu-burger .sub__point a { color: #282828; }

@@ -121,9 +121,24 @@
 	.menu-up {
 		transition: 0.3s all ease;
 		background: #fff;
-		padding: 10px 0 20px; 
+		padding: 10px 10px 20px; 
 		position: relative;
-		display: block;
+	}
+	.tab{
+		font-family: "SegoeUIBold";
+		font-size: 16px;
+		color: #282828;
+		display: inline-block;
+		border-bottom: 1px solid transparent;
+		padding: 5px 0 10px;
+		margin: 0 8px;
+		cursor: pointer;
+	}
+	.tab.active{
+		border-color: #828282;
+	}
+	.tab-content{
+		padding: 0 8px;
 	}
 	.sub__point{
 		font-size: 14px;

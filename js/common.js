@@ -149,6 +149,19 @@ $(document).ready(function(){
 		}
 	});
 
+	$('.sub__list').slideUp(0);
+	$('.aero__nav-item').click(function(){
+		if (!$(this).hasClass('aero-active')){
+			$('.aero__nav-item').removeClass('aero-active');
+			$(this).addClass('aero-active');
+			$('.sub__list').slideUp(300);
+			$(this).next('.sub__list').slideDown(300)
+		} else {
+			$(this).removeClass('aero-active');
+			$('.sub__list').slideUp(300)
+		}
+	});
+
 
 	$('.tabs-content > .tab-content').each(function(index){
 		if (index != 0) {

@@ -45,10 +45,10 @@
 .aero-top__content { padding: 60px 0 140px 15px; margin-left: 335px; }
 .aero-top__content h2 { text-transform: none !important; }
 .aero-top__content .content__title_mobile { display: none; }
-@media only screen and (max-width: 1200px) { .aero-top__content { margin-left: 0; padding: 60px 0 50px; } }
-@media only screen and (max-width: 600px) { .aero-top__content { padding: 30px 0 0px; }
+@media only screen and (max-width: 1200px) { .aero-top__content { margin-left: 0; padding: 60px 0 50px; }
   .aero-top__content .content__title_decstop { display: none; }
   .aero-top__content .content__title_mobile { display: block; } }
+@media only screen and (max-width: 600px) { .aero-top__content { padding: 30px 0 0px; } }
 .aero-top__content .content__descr { color: #282828; font-size: 16px; display: block; padding-bottom: 45px; }
 @media only screen and (max-width: 600px) { .aero-top__content .content__descr { font-size: 14px; padding-bottom: 20px; } }
 .aero-top__content .content__img-wrap { z-index: 500; float: left; width: 50%; max-width: 445px; height: 292px; margin-bottom: 25px; }
@@ -65,12 +65,12 @@
 .aero__sidebar .sub { top: 0; left: 0; bottom: 0; padding: 45px 10px 25px 10px; -webkit-box-shadow: 10px 0px 18px 0px rgba(0, 0, 0, 0.1); -moz-box-shadow: 10px 0px 18px 0px rgba(0, 0, 0, 0.1); box-shadow: 10px 0px 18px 0px rgba(0, 0, 0, 0.1); padding-left: 0; display: block; }
 
 .aero__nav { display: none; padding: 10px 0; -webkit-box-shadow: 0px 10px 15px 2px rgba(0, 0, 0, 0.15); -moz-box-shadow: 0px 10px 15px 2px rgba(0, 0, 0, 0.15); box-shadow: 0px 10px 15px 2px rgba(0, 0, 0, 0.15); }
-@media only screen and (max-width: 1200px) and (min-width: 600px) { .aero__nav { display: block; } }
-.aero__nav .sub__point { list-style: none; width: 100%; border-left: 1px solid #cacaca; }
-.aero__nav .sub__point_main { display: inline-block; width: auto; padding: 0 25px; line-height: 25px; font-size: 18px; color: #673a90; position: relative; }
+@media only screen and (max-width: 1200px) and (min-width: 1000px) { .aero__nav { display: block; } }
+.aero__nav .sub__point { list-style: none; width: 100%; }
+.aero__nav .sub__point_main { border-left: 1px solid #cacaca; display: inline-block; width: auto; padding: 0 25px; line-height: 25px; font-size: 18px; color: #673a90; position: relative; }
 .aero__nav .sub__point_main-first { padding-left: 0; border: none; }
-.aero__nav .sub__list { position: absolute; left: 2px; right: 2px; }
-.aero__nav .sub__point-title { color: #282828; display: block; line-height: 23px; }
+.aero__nav .sub__list { -webkit-box-shadow: 0px 13px 15px 1px rgba(0, 0, 0, 0.15); -moz-box-shadow: 0px 13px 15px 1px rgba(0, 0, 0, 0.15); box-shadow: 0px 13px 15px 1px rgba(0, 0, 0, 0.15); position: absolute; left: -1px; right: -1px; background: #fff; top: 35px; padding: 0 10px 10px 25px; z-index: 10000; }
+.aero__nav .sub__point-title { color: #282828; display: block; line-height: 20px; font-size: 16px; padding: 4px 0; }
 .aero__nav .sub__point-title:hover { color: #673a90; }
 
 .menu-burger { display: none; }

@@ -58,7 +58,7 @@ gulp.task('sass', function(){
 });
 
 //Объединение и минификация всех собственных 
-gulp.task('default', ['concatCSS','compressJS', 'imagemin', 'imageMenu', 'includeFiles', 'fonts',  'htaccessFiles', 'fileinclude'], function() {
+gulp.task('default', ['concatCSS','compressJS', 'imagemin', 'imageMenu', 'includeFiles', 'fonts',  'htaccessFiles', 'rootFiles'], function() {
    return gulp.src('css/*.scss') 
 		.pipe(sass()) 
 		.pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true })) // Создаем префиксы

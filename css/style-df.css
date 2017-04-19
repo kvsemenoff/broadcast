@@ -30,7 +30,6 @@
 
 .whattodo__img {
   -webkit-box-shadow: 0px 10px 72px 3px rgba(0, 0, 0, 0.27);
-  -moz-box-shadow: 0px 10px 72px 3px rgba(0, 0, 0, 0.27);
   box-shadow: 0px 10px 72px 3px rgba(0, 0, 0, 0.27); }
   .whattodo__img img {
     max-width: 100%;
@@ -208,6 +207,7 @@
   @media only screen and (min-width: 1200px) {
     .command__container .df-left, .command__container .df-right {
       bottom: -85px; } }
+
 .command__container .df-left {
   background-image: url("../img/sliderprev.png");
   background-repeat: no-repeat;
@@ -223,6 +223,7 @@
     .command__container .df-left {
       left: 30%;
       right: unset; } }
+
 .command__container .df-right {
   background-image: url("../img/slidernext.png");
   background-repeat: no-repeat;
@@ -236,6 +237,7 @@
   @media only screen and (min-width: 1200px) {
     .command__container .df-right {
       right: 35%; } }
+
 .command__container .command__counter {
   width: 70px;
   text-align: center;
@@ -246,7 +248,9 @@
   position: absolute;
   bottom: -60px;
   left: 50%;
-  transform: translateX(-50%); }
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%); }
   @media only screen and (min-width: 1024px) {
     .command__container .command__counter {
       bottom: 19px;
@@ -313,10 +317,12 @@
   background-color: white;
   margin-right: 10px;
   margin-bottom: 17px;
+  -webkit-transition: 0.4s;
   transition: 0.4s; }
   .online__cam_box:hover {
     border-color: transparent;
-    box-shadow: 0 35px 59px rgba(0, 0, 0, 0.13); }
+    -webkit-box-shadow: 0 35px 59px rgba(0, 0, 0, 0.13);
+            box-shadow: 0 35px 59px rgba(0, 0, 0, 0.13); }
   @media only screen and (min-width: 1024px) {
     .online__cam_box {
       width: 23.6%;
@@ -572,7 +578,9 @@
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     max-width: 100%;
     height: auto; }
   @media only screen and (min-width: 1024px) {
@@ -666,7 +674,9 @@
     position: absolute;
     bottom: 50px;
     left: 50%;
-    transform: translateX(-50%); }
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%); }
     @media only screen and (min-width: 1024px) {
       .filming__theme_rosa .command__counter {
         bottom: 50px;
@@ -720,5 +730,3 @@
   @media only screen and (min-width: 992px) {
     .our__inner_page_mobile {
       display: none; } }
-
-/*# sourceMappingURL=style-df.css.map */

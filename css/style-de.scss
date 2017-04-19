@@ -182,15 +182,15 @@
 	@media only screen and (max-width : 1200px) {
 		margin-left: 0;
 		padding: 60px 0 50px;
-	}
-	@media only screen and (max-width : 600px) {
-		padding: 30px 0 0px;
 		.content__title_decstop{
 			display: none;
 		}
 		.content__title_mobile{
 			display: block;
 		}
+	}
+	@media only screen and (max-width : 600px) {
+		padding: 30px 0 0px;
 	}
 	.content{
 		&__descr{
@@ -275,14 +275,14 @@
 	-webkit-box-shadow: 0px 10px 15px 2px rgba(0,0,0,0.15);
 	-moz-box-shadow: 0px 10px 15px 2px rgba(0,0,0,0.15);
 	box-shadow: 0px 10px 15px 2px rgba(0,0,0,0.15);
-	@media only screen and (max-width : 1200px) and (min-width : 600px) {
+	@media only screen and (max-width : 1200px) and (min-width : 1000px) {
 		display: block;
 	}
 	.sub__point { 
 		list-style: none;
 		width: 100%;
-		border-left: 1px solid #cacaca;
 		&_main{
+			border-left: 1px solid #cacaca;
 			display: inline-block;
 			width: auto;
 			padding: 0 25px;
@@ -297,14 +297,23 @@
 		}
 	}
 	.sub__list{
+		-webkit-box-shadow: 0px 13px 15px 1px rgba(0,0,0,0.15);
+		-moz-box-shadow: 0px 13px 15px 1px rgba(0,0,0,0.15);
+		box-shadow: 0px 13px 15px 1px rgba(0,0,0,0.15);
 		position: absolute;
-		left: 2px;
-		right: 2px;
+		left: -1px;
+		right: -1px;
+		background: #fff;
+		top: 35px;
+		padding: 0 10px 10px 25px;
+		z-index: 10000;
 	}
 	.sub__point-title {
-		color: #282828; 
-		display: block; 
-		line-height: 23px;
+    color: #282828;
+    display: block;
+    line-height: 20px;
+    font-size: 16px;
+    padding: 4px 0;
 		&:hover{
 			color: #673a90;
 		}

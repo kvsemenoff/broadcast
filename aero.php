@@ -1,7 +1,22 @@
 <?php require_once('includes/header.php'); ?>
 
+
+<div class="price_aero price_aero_theme_rosa">
+	<div class="aero__container aero__container__theme_rosa">
+		<h2 class="h2_theme_rosa h2_pink h2_inner_page price_aero__caption">Стоимость проведения аэрофотосъемки
+и оборудования</h2>
+		<p class="price_aero__text">Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое.
+		Лежа на панцирнотвердой спине, он видел, стоило ему приподнять голову,
+		свой коричневый, выпуклый, разделенный дугообразными чешуйками живот, на верхушке которого еле держалось готовое вот-вот окончательно сползти одеяло. Его многочисленные, убого тонкие по сравнению с остальным телом ножки беспомощно копошились у него перед глазами.</p>
+		<p class="price_aero__text">«Что со мной случилось?» – подумал он. Это не было сном. Его комната, настоящая, разве что слишком маленькая, но обычная комната, мирно покоилась в своих четырех хорошо знакомых стенах. Над столом, где были разложены распакованные образцы сукон – Замза был коммивояжером, – висел портрет, который он недавно вырезал из иллюстрированного журнала и вставил в красивую золоченую рамку. На портрете была изображена дама в меховой шляпе, в которой целиком исчезала ее рука.</p>
+	</div>
+
+</div>
+
+
+
 <div class="aero aero_theme_rosa">
-	<div class="aero__container">
+	<div class="aero__container aero__container_theme_rosa">
 
 		<div class="aero__imgbox">
 			<h2 class="aero__caption__mobileversion">Аэрофотосъемка</h2>
@@ -137,6 +152,23 @@
 		</div>
 	</div>
 </div>	
+<div class="our our__inner_page_mobile">
+	<div class="container">
+		<h2 class="h2_theme_rosa h2_pink whattodo__topcaption">Наши заказчики</h2>
+		<div class="our__customer customer">
+			<a href="#" class="customer__logo"><img src="img/herbalife-medium.png" alt=""></a>
+			<a href="#" class="customer__logo"><img src="img/ros-medium.png" alt=""></a>
+			<a href="#" class="customer__logo"><img src="img/rzd-medium.png" alt=""></a>
+			<a href="#" class="customer__logo"><img src="img/remar-medium.png" alt=""></a>
+			<a href="#" class="customer__logo"><img src="img/tvch-medium.png" alt=""></a>
+			<a href="#" class="customer__logo"><img src="img/tricolor-meidum.png" alt=""></a>
+			<a href="#" class="customer__logo"><img src="img/rostelecom-medium.png" alt=""></a>
+			<a href="#" class="customer__logo"><img src="img/main-division.png" alt=""></a>
+			<a href="#" class="customer__logo"><img src="img/eco-medium.png" alt=""></a>
+			<a href="#" class="customer__logo"><img src="img/bm-medium.png" alt=""></a>
+		</div>
+	</div>	
+</div>
 
 <?php require_once('includes/footer.php'); ?>
 

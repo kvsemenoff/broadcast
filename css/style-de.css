@@ -1,7 +1,21 @@
-.header-top { height: 814px; background: url(../img/header-top.jpg) center/cover; }
+.header-top { background: url(../img/header-top.jpg) center/cover; }
 
-.menu-g { font-family: "SegoeUIRegular"; }
-.menu-g .menu { padding: 10px 0 30px; }
+.top-line { padding: 30px 0; position: relative; }
+@media only screen and (max-width: 1200px) { .top-line { background: #000; padding: 15px 0; } }
+.top-line__logo-block { float: left; }
+.top-line__right { float: right; }
+.top-line__logo { width: 42px; height: 74px; display: block; background: url(../img/logo.png) center no-repeat; }
+.top-line__phone { float: right; padding: 8px; }
+@media only screen and (max-width: 1200px) and (min-width: 1000px) { .top-line__phone { padding-top: 25px; }
+  .top-line__phone .top-line__btn { position: absolute; bottom: -65%; } }
+@media only screen and (max-width: 1000px) { .top-line__phone { position: absolute; bottom: -100%; right: 15px; } }
+.top-line__number { color: #fff; font-size: 18px; font-family: "SegoeUIRegular"; display: block; text-align: center; padding-bottom: 10px; }
+.top-line__number b { font-family: "SegoeUISemiBold"; }
+.top-line__btn { text-align: center; }
+
+.menu-g { float: left; font-family: "SegoeUIRegular"; }
+@media only screen and (max-width: 1200px) { .menu-g { padding-top: 15px; } }
+@media only screen and (max-width: 1000px) { .menu-g { display: none; } }
 .menu-g .menu__point { list-style: none; font-size: 14px; position: relative; display: inline-block; }
 .menu-g .menu__point:hover .menu__sub { display: block; }
 .menu-g .menu__name { font-size: 18px; color: #fff; display: block; line-height: 28px; padding: 5px 25px; position: relative; font-family: "SegoeUIRegular"; }
@@ -12,17 +26,28 @@
 .menu-g .sub__point-title:hover { color: #673a90; }
 .menu-g .menu__point:hover > .sub { display: block; }
 
-.menu-burger .menu-up { padding: 10px 0 20px; float: left; position: relative; }
-.menu-burger .menu__li { list-style: none; font-size: 10px; }
-.menu-burger .menu__li:hover .menu__sub { display: block; }
-.menu-burger .menu__li a { text-decoration: none; color: #b5e7f8; display: block; line-height: 22px; padding: 0 23px; }
-.menu-burger .menu .submenu { width: 100%; background: #fff; position: absolute; top: 100%; left: 0; padding: 10px 0 10px 10px; }
-.menu-burger .submenu li a { color: #0099cc; display: block; padding: 0 10px; }
-.menu-burger .submenu li a:hover { color: #000; }
-.menu-burger .menu-button { cursor: pointer; font-size: 24px; color: #fefefe; width: 100px; position: relative; float: left; padding-left: 35px; margin-top: 25px; }
-.menu-burger .menu-button .bg { position: absolute; background: #fff; width: 27px; height: 20px; top: 5px; left: 0; display: block; }
-.menu-burger .menu-button .bg::before { content: ""; position: absolute; width: 27px; height: 5px; top: 4px; left: 0; background: #000; display: block; }
-.menu-burger .menu-button .bg::after { content: ""; position: absolute; width: 27px; height: 5px; left: 0; background: #000; display: block; top: 12px; }
+.menu-burger { display: none; }
+@media only screen and (max-width: 1000px) { .menu-burger { display: block; } }
+.menu-burger .menu-up { transition: 0.3s all ease; background: #fff; padding: 10px 0 20px; position: relative; display: block; }
+.menu-burger .sub__point { font-size: 14px; padding-bottom: 4px; }
+.menu-burger .sub__point_main { color: #673a90; font-size: 16px; padding: 15px 0 10px; }
+.menu-burger .sub__point a { color: #282828; }
+.menu-burger .menu-button { cursor: pointer; font-size: 24px; color: #fefefe; width: 33px; height: 24px; position: absolute; float: left; top: 50%; margin-top: -12px; right: 20px; }
+.menu-burger .menu-button__bg { position: absolute; background: #fff; width: 33px; height: 3px; border-radius: 5px; left: 0; display: block; }
+.menu-burger .menu-button__bg_top { top: 0; }
+.menu-burger .menu-button__bg_mid { top: 50%; margin-top: -1.5px; }
+.menu-burger .menu-button__bg_bot { bottom: 0; }
+
+.top-text .container { padding: 170px 15px 220px; position: relative; }
+.top-text__title { font-family: "SegoeUIBold"; font-size: 54px; line-height: 66px; color: #fff; }
+@media only screen and (max-width: 1200px) { .top-text__title { text-align: center; } }
+@media only screen and (max-width: 550px) { .top-text__title { font-size: 31px; line-height: 35px; } }
+.top-text__command { display: block; padding-bottom: 30px; color: #fff; font-size: 18px; text-transform: uppercase; font-family: "SegoeUIRegular"; }
+@media only screen and (max-width: 1200px) { .top-text__command { text-align: center; } }
+@media only screen and (max-width: 550px) { .top-text__command { font-size: 14px; padding-bottom: 10px; } }
+.top-text__command i { color: #9852d8; }
+.top-text .scroll-icon { display: block; font-size: 13px; position: absolute; left: 15px; bottom: 40px; color: rgba(255, 255, 255, 0.5); padding: 5px 0 5px 30px; background: url(../img/scroll_ic.png) 0 0 no-repeat; }
+@media only screen and (max-width: 1200px) { .top-text .scroll-icon { display: none; } }
 
 .video { padding: 100px 0 130px; background: url(../img/video-bg.jpg) center/cover; }
 @media only screen and (max-width: 1050px) { .video { padding: 65px 0 55px; } }

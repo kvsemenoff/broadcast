@@ -1,11 +1,66 @@
 .header-top{
-	height: 814px;
 	background: url(../img/header-top.jpg) center/cover;
 }
+.top-line{
+	padding: 30px 0;
+	position: relative;
+	@media only screen and (max-width : 1200px) {
+		background: #000;
+		padding: 15px 0;
+	}
+	&__logo-block{
+		float: left;
+	}
+	&__right{
+		float: right;
+	}
+	&__logo{
+		width: 42px;
+		height: 74px;
+		display: block;
+		background: url(../img/logo.png) center no-repeat;
+	}
+	&__phone{
+		float: right;
+		padding: 8px;
+		@media only screen and (max-width : 1200px) and (min-width : 1000px) {
+			padding-top: 25px;
+			.top-line__btn{
+				position: absolute;
+				bottom: -65%;
+			}
+		}
+		@media only screen and (max-width : 1000px){
+			position: absolute;
+			bottom: -100%;
+			right: 15px;
+		}
+	}
+	&__number{
+		color: #fff;
+		font-size: 18px;
+		font-family: "SegoeUIRegular";
+		display: block;
+		text-align: center;
+		padding-bottom: 10px;
+		b{
+			font-family: "SegoeUISemiBold";
+		}
+	}
+	&__btn{
+		text-align: center;
+	}
+}
 .menu-g{
+	float: left;
 	font-family: "SegoeUIRegular";
+	@media only screen and (max-width : 1200px) {
+		padding-top: 15px;
+	}
+	@media only screen and (max-width : 1000px) {
+		display: none;
+	}
 	.menu {
-		padding: 10px 0 30px;
 		&__point { 
 			list-style: none; 
 			font-size: 14px; 
@@ -58,83 +113,113 @@
 	}
 }
 
-.menu-burger{ 
-	.menu-up { 
+.menu-burger{
+	display: none;
+	@media only screen and (max-width : 1000px) {
+		display: block;
+	}
+	.menu-up {
+		transition: 0.3s all ease;
+		background: #fff;
 		padding: 10px 0 20px; 
-		float: left;
-		position: relative; 
+		position: relative;
+		display: block;
 	}
-	.menu__li { 
-		list-style: none; 
-		font-size: 10px; 
-	}
-	.menu__li:hover .menu__sub { 
-		display: block; 
-	}
-	.menu__li a { 
-		text-decoration: none; 
-		color: #b5e7f8; 
-		display: block; 
-		line-height: 22px; 
-		padding: 0 23px;
-	}
-	.menu .submenu { 
-		width: 100%;
-		background: #fff; 
-		position: absolute; 
-		top: 100%; 
-		left: 0; 
-		padding: 10px 0 10px 10px; 
-	}
-	.submenu li a { 
-		color: #0099cc; 
-		display: block; 
-		padding: 0 10px; 
-	}
-	.submenu li a:hover { 
-		color: #000; 
+	.sub__point{
+		font-size: 14px;
+		padding-bottom: 4px;
+		&_main{
+			color: #673a90;
+			font-size: 16px;
+			padding: 15px 0 10px;
+		}
+		a{
+			color: #282828;
+		}
 	}
 	.menu-button { 
 		cursor: pointer; 
 		font-size: 24px; 
 		color: #fefefe; 
-		width: 100px; 
-		position: relative; 
+		width: 33px;
+		height: 24px;
+		position: absolute; 
 		float: left;
-	  padding-left: 35px; 
-	  margin-top: 25px; 
-	}
-	.menu-button .bg { 
-		position: absolute; 
-		background: #fff; 
-		width: 27px; 
-		height: 20px; 
-		top: 5px; 
-		left: 0; 
-		display: block; 
-	}
-	.menu-button .bg::before { 
-		content: ""; 
-		position: absolute; 
-		width: 27px; 
-		height: 5px; 
-		top: 4px; 
-		left: 0; 
-		background: #000; 
-		display: block; 
-	}
-	.menu-button .bg::after { 
-		content: ""; 
-		position: absolute; 
-		width: 27px; 
-		height: 5px; 
-		left: 0;
-		background: #000; 
-		display: block; 
-		top: 12px; 
+		top: 50%;
+		margin-top: -12px;
+		right: 20px;
+	  &__bg{
+	  	position: absolute; 
+			background: #fff; 
+			width: 33px; 
+			height: 3px;
+			border-radius: 5px;
+			left: 0; 
+			display: block;
+			&_top{
+				top: 0;
+			}
+			&_mid{
+				top: 50%;
+				margin-top: -1.5px;
+			}
+			&_bot{
+				bottom: 0;
+			}
+	  }
 	}
 }
 
+.top-text{
+	.container{
+		padding: 170px 15px 220px;
+		position: relative;
+	}
+	&__title{
+		font-family: "SegoeUIBold";
+		font-size: 54px;
+		line-height: 66px;
+		color: #fff;
+		@media only screen and (max-width : 1200px) {
+			text-align: center;
+		}
+		@media only screen and (max-width : 550px) {
+			font-size: 31px;
+			line-height: 35px;
+		}
+	}
+	&__command{
+		display: block;
+		padding-bottom: 30px;
+		color: #fff;
+		font-size: 18px;
+		text-transform: uppercase;
+		font-family: "SegoeUIRegular";
+		@media only screen and (max-width : 1200px) {
+			text-align: center;
+		}
+		@media only screen and (max-width : 550px) {
+			font-size: 14px;
+			padding-bottom: 10px;
+		}
+		i{
+			color: #9852d8;
+		}
+	}
+	.scroll-icon{
+		display: block;
+		font-size: 13px;
+		position: absolute;
+		left: 15px;
+		bottom: 40px;
+		color: rgba(255,255,255,0.5);
+		padding: 5px 0 5px 30px;
+		background: url(../img/scroll_ic.png) 0 0 no-repeat;
+		@media only screen and (max-width : 1200px) {
+			display: none;
+		}
+	}
+}
 
 .video{
 	padding: 100px 0 130px;

@@ -259,4 +259,87 @@
       bottom: -75px;
       left: 47%; } }
 
+/*============online======*/
+.button_order {
+  background-color: #fff;
+  color: #673a90;
+  border: 2px solid #673a90;
+  padding: 7px 10px;
+  width: 142px;
+  text-align: center; }
+  .button_order:hover {
+    background-color: #673a90;
+    color: #fff; }
+
+@media only screen and (min-width: 1200px) {
+  .online_bg_img {
+    background-image: url("../img/onlinebg.png");
+    background-repeat: no-repeat;
+    background-position: top 10% center; } }
+
+.online__container {
+  max-width: 1215px;
+  margin: 0 auto;
+  padding: 30px 0 30px; }
+  @media only screen and (min-width: 1200px) {
+    .online__container {
+      padding: 70px 0 85px; } }
+  @media only screen and (min-width: 1200px) {
+    .online__container {
+      padding: 140px 0 130px; } }
+
+.online__topcaption {
+  padding-bottom: 120px; }
+
+.online__camers {
+  text-align: center; }
+
+.online__cam_box {
+  max-width: 288px;
+  width: 100%;
+  display: inline-block;
+  padding: 33px 0 40px 0;
+  border: 1px solid #e6e6e6; }
+
+.online__boxcaption {
+  color: #121212;
+  font-family: "Segoe UI Semibold";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+  padding-bottom: 5px; }
+
+.online__boxsub {
+  font-family: "Segoe UI Regular";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #121212;
+  display: block;
+  text-align: center;
+  padding-bottom: 25px; }
+
+.online__text {
+  color: #909090;
+  font-family: "Segoe UI Regular";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  padding-bottom: 50px; }
+
+.online__pricetext {
+  color: #121212;
+  line-height: 22px;
+  font-family: "Segoe UI Semibold";
+  font-size: 16px;
+  font-weight: 600;
+  display: block;
+  text-align: center;
+  padding-bottom: 25px; }
+  .online__pricetext em {
+    font-size: 20px;
+    font-weight: 400; }
+  .online__pricetext i {
+    display: inline-block; }
+
 /*# sourceMappingURL=style-df.css.map */

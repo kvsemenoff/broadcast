@@ -458,14 +458,14 @@
 	}
 }
 .price_aero__caption{
-	margin-bottom: 25px;
-	max-width: 710px;
+	margin-bottom: 25px;	
 	text-align: center;
 	line-height: normal;
 	text-transform: none;
 	@media only screen and (min-width : 1024px) {		
 		text-align: left;
 		text-transform: uppercase;
+		max-width: 710px;
 	}
 }
 .price_aero__text{

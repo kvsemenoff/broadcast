@@ -11,7 +11,7 @@
 						<input type="tel" class="input__control js-phone" name="phone" placeholder="Номер телефона" required>
 					</span>
 					<span class="input input_theme_rosa theme__rosa__form-input">
-						<textarea name="message" placeholder="Сообщите краткую информацию"></textarea>
+						<textarea name="text" placeholder="Сообщите краткую информацию"></textarea>
 					</span>
 					<a href="#modal__thanks" class="fancybox button button_theme_rosa ">Отправить заявку</a>
 				</form>

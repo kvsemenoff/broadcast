@@ -572,10 +572,17 @@
 			float: none;
 			margin: 0 auto;
 			padding: 0 0 10px;
-			width: 200px;
+			border-top: 1px solid #bbb;
+	    max-width: 355px;
+	    width: 100%;
+	    text-align: center;
 		}
 		@media only screen and (max-width : 500px) {
 			margin: 0;
+		}
+		@media only screen and (max-width : 400px) {
+			text-align: left;
+			width: 200px;
 		}
 	}
 	.modal__in-descr{
@@ -584,7 +591,6 @@
 		font-size: 12px;
 		color: #282828;
 		@media only screen and (max-width : 1000px) {
-			border-top: 1px solid #bbb;
 			padding-top: 9px;
 			display: inline-block;
 			font-size: 9px;

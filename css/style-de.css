@@ -15,13 +15,13 @@
 .top-line__logo-block { float: left; }
 .top-line__right { float: right; }
 .top-line__logo { width: 42px; height: 74px; display: block; background: url(../img/logo.png) center no-repeat; }
-.top-line__phone { float: right; padding: 8px; }
+.top-line__phone { float: right; padding: 8px; z-index: 1000; }
 @media only screen and (max-width: 1200px) and (min-width: 1000px) { .top-line__phone { padding-top: 25px; }
   .top-line__phone .top-line__btn { position: absolute; bottom: -65%; } }
 @media only screen and (max-width: 1000px) { .top-line__phone { position: absolute; bottom: -150%; right: 15px; } }
 .top-line__number { color: #fff; font-size: 18px; font-family: "SegoeUIRegular"; display: block; text-align: center; padding-bottom: 10px; }
 .top-line__number b { font-family: "SegoeUISemiBold"; }
-.top-line__btn { text-align: center; }
+.top-line__btn { text-align: center; z-index: 1000; }
 
 .menu-g, .aero__sidebar { float: left; font-family: "SegoeUIRegular"; }
 @media only screen and (max-width: 1200px) { .menu-g, .aero__sidebar { padding-top: 15px; } }
@@ -82,12 +82,12 @@
 .menu-burger .sub__point { font-size: 14px; padding-bottom: 4px; }
 .menu-burger .sub__point_main { color: #673a90; font-size: 16px; padding: 15px 0 10px; }
 .menu-burger .sub__point a { color: #282828; }
-.menu-burger .menu-button { cursor: pointer; width: 33px; height: 24px; position: absolute; top: 50%; margin-top: -12px; right: 20px; z-index: 10001; transition: 0.3s all ease; }
+.menu-burger .menu-button { cursor: pointer; width: 33px; height: 24px; position: absolute; top: 50%; margin-top: -12px; right: 20px; transition: 0.3s all ease; }
 .menu-burger .menu-button__bg { position: absolute; background: #fff; width: 33px; height: 3px; border-radius: 5px; left: 0; display: block; }
 .menu-burger .menu-button__bg_top { top: 0; }
 .menu-burger .menu-button__bg_mid { top: 50%; margin-top: -1.5px; }
 .menu-burger .menu-button__bg_bot { bottom: 0; }
-.menu-burger .menu-button.menu-active { width: 14px; height: 14px; top: 19px; background: url(../img/close.png) center/cover no-repeat; }
+.menu-burger .menu-button.menu-active { width: 14px; height: 14px; top: 19px; background: url(../img/close.png) center/cover no-repeat; z-index: 10001; }
 .menu-burger .menu-button.menu-active .menu-button__bg { display: none; }
 
 .top-text .container { padding: 170px 15px 220px; position: relative; }
@@ -108,11 +108,49 @@
 @media only screen and (max-width: 550px) { .video__block { height: 170px; } }
 .video__block iframe { width: 100%; display: block; height: 100%; }
 
-.modal { font-family: "SegoeUIRegular", arial, sans-serif; background: #fff url(../img/popup-star.png) center 125px no-repeat; padding: 200px 0 155px; width: 86%; max-width: 870px; margin: 0 auto; }
-@media only screen and (max-width: 800px) { .modal { padding: 120px 0 50px; background: #fff url(../img/popup-star.png) center 75px no-repeat; } }
-.modal h2 { text-align: center; }
-.modal__descr { font-size: 16px; color: #282828; display: block; text-align: center; }
-@media only screen and (max-width: 500px) { .modal__descr i { display: inline-block; } }
+.fancybox-opened, .fancybox-wrap { width: 90% !important; max-width: 870px; left: 5%; }
+
+.fancybox-inner { width: 100% !important; }
+
+.fancybox-skin { padding: 0 !important; }
+
+.fancybox-close { background: url(../img/close.png); width: 14px; height: 14px; top: 19px; right: 19px; }
+
+.modal { font-family: "SegoeUIRegular", arial, sans-serif; max-width: 870px; width: 100%; margin: 0 auto; background-color: #fff; }
+
+.modal__thanks { padding: 200px 0 155px; background: #fff url(../img/popup-star.png) center 125px no-repeat; }
+@media only screen and (max-width: 800px) { .modal__thanks { padding: 120px 0 50px; background-position: center 75px; } }
+.modal__thanks h2 { text-align: center; }
+.modal__thanks .modal__descr { font-size: 16px; color: #282828; display: block; text-align: center; }
+@media only screen and (max-width: 500px) { .modal__thanks .modal__descr i { display: inline-block; } }
+
+.modal__form { padding: 50px 60px; }
+@media only screen and (max-width: 1000px) { .modal__form { padding: 10px 15px 20px; } }
+.modal__form .modal__in { position: relative; float: left; }
+.modal__form .modal__in_left { padding-right: 60px; width: 420px; }
+@media only screen and (max-width: 1000px) { .modal__form .modal__in_left { float: none; padding: 0; margin: 0 auto; }
+  .modal__form .modal__in_left::before { display: none; } }
+@media only screen and (max-width: 500px) { .modal__form .modal__in_left { margin: 0; } }
+.modal__form .modal__in_left::before { content: ""; position: absolute; top: 3px; bottom: 0; right: 0; width: 1px; height: 100%; background: #673a90; }
+.modal__form .modal__in_right { width: 270px; float: right; padding: 65px 0 85px 10px; border-bottom: 1px solid #bbb; }
+@media only screen and (max-width: 1000px) { .modal__form .modal__in_right { float: none; margin: 0 auto; padding: 0 0 10px; width: 200px; } }
+@media only screen and (max-width: 500px) { .modal__form .modal__in_right { margin: 0; } }
+.modal__form .modal__in-descr { text-transform: uppercase; display: block; font-size: 12px; color: #282828; }
+@media only screen and (max-width: 1000px) { .modal__form .modal__in-descr { border-top: 1px solid #bbb; padding-top: 9px; display: inline-block; font-size: 9px; } }
+.modal__form .modal__in-descr_last { border-bottom: 1px solid #bbb; padding-bottom: 9px; margin-bottom: 70px; }
+@media only screen and (max-width: 1000px) { .modal__form .modal__in-descr_last { margin-bottom: 15px; border: none; padding-top: 0; display: block; } }
+.modal__form .info__title { text-transform: uppercase; font-size: 12px; color: #282828; display: block; padding-bottom: 8px; }
+@media only screen and (max-width: 1000px) { .modal__form .info__title { font-size: 9px; padding-bottom: 0; } }
+.modal__form .info__number { display: block; font-size: 24px; color: #282828; padding-bottom: 20px; font-family: "SegoeUIRegular"; }
+@media only screen and (max-width: 1000px) { .modal__form .info__number { font-size: 17px; } }
+.modal__form h2 { text-transform: none; font-size: 18px; padding-bottom: 35px; text-align: left; padding-top: 0; line-height: 1.3; }
+.modal__form .theme__rosa__form-block { display: block; }
+.modal__form .input { display: block; margin-bottom: 25px; }
+@media only screen and (max-width: 1000px) { .modal__form .input { margin-bottom: 16px; } }
+.modal__form .input textarea { resize: none; width: 100%; height: 125px; padding: 10px 20px; border-color: #cdcdcd; outline: none; }
+.modal__form .input textarea:focus { border-color: #000; }
+.modal__form .button { margin: 7px 0; }
+@media only screen and (max-width: 1000px) { .modal__form .button { margin: 0 0 30px; } }
 
 .contact { padding: 60px 0; font-family: "SegoeUISemiBold"; }
 @media only screen and (max-width: 500px) { .contact { padding: 30px 0 20px; } }

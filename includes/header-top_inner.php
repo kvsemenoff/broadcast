@@ -166,7 +166,7 @@
 				<div class="top-line__phone clearfix">
 					<span class="top-line__number">+7 (921) <b>000-12-05</b></span>
 					<div class="top-line__btn">
-						<a href="#" class="button button_theme_rosa ">Заказать звонок</a>
+						<a href="#modal__form" class="fancybox button button_theme_rosa ">Заказать звонок</a>
 					</div>
 				</div>
 			</div>

@@ -238,6 +238,7 @@
 	</div>	
 </div>
 
+<?php require_once('includes/popup.php'); ?>
 <?php require_once('includes/footer.php'); ?>
 
 </body>

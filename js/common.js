@@ -182,6 +182,13 @@ $(document).ready(function(){
 		};
 	});
 	
+	$(".fancybox").fancybox({
+		fitToView	: false,
+		closeClick	: false,
+		openEffect	: 'true',
+		closeEffect	: 'true'
+	});
+
 });
 
 

@@ -27,6 +27,8 @@
 	</div>
 </div>
 
+<?php require_once('includes/popup.php'); ?>
+
 <div class="n-wrapper">
 	<div class="n-header">
 	</div>
@@ -38,7 +40,6 @@
 	<?php require_once('includes/footer.php'); ?>
 	</div>
 </div>
-
 
 <!-- JS_BLOCK -->
 <!-- <script src="libs/jquery/jquery-1.11.1.min.js"></script> -->

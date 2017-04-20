@@ -6,6 +6,7 @@
 <?php require_once('includes/online.php'); ?>
 <?php require_once('includes/comand.php'); ?>
 <?php require_once('includes/our.php'); ?>
+<?php require_once('includes/popup.php'); ?>
 <?php require_once('includes/footer.php'); ?>
 
 

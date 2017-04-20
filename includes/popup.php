@@ -13,7 +13,9 @@
 					<span class="input input_theme_rosa theme__rosa__form-input">
 						<textarea name="text" placeholder="Сообщите краткую информацию"></textarea>
 					</span>
-					<a href="#modal__thanks" class="fancybox button button_theme_rosa ">Отправить заявку</a>
+					<span class="input input_theme_rosa theme__rosa__form-input">
+						<a href="#" class="button button_theme_rosa ">Отправить заявку</a>
+					</span>
 				</form>
 			</div>
 		</div>

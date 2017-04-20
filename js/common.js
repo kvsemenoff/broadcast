@@ -85,7 +85,7 @@ $(document).ready(function(){
 
 	
 
-	var owl2 = $("#command__owl_carousel, #filming__owl_slider");
+	var owl2 = $("#command__owl_carousel, #filming__owl_slider, #whattodo__owl_slider");
 	owl2.owlCarousel({
 		loop:false,
 		nav:true, 
@@ -136,6 +136,13 @@ $(document).ready(function(){
 	});
 	$('#filming__owl_slider .df-left').on('click', function() {			
 		counterChangeMinus('.command__counter_change', 1);			
+	});
+
+	$('#whattodo__owl_slider .df-right').on('click', function() {			
+		counterChangePlus('.what__counter_change', 12);	
+	});
+	$('#whattodo__owl_slider .df-left').on('click', function() {			
+		counterChangeMinus('.what__counter_change', 1);			
 	});
 
 	

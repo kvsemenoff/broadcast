@@ -131,6 +131,65 @@
       font-size: 16px;
       display: inline-block; } }
 
+.whattodo__leftbox {
+  position: relative; }
+  .whattodo__leftbox .df-left, .whattodo__leftbox .df-right {
+    position: absolute;
+    bottom: -70px;
+    width: 40px;
+    height: 40px; }
+    @media only screen and (min-width: 1024px) {
+      .whattodo__leftbox .df-left, .whattodo__leftbox .df-right {
+        bottom: 10px; } }
+    @media only screen and (min-width: 1200px) {
+      .whattodo__leftbox .df-left, .whattodo__leftbox .df-right {
+        bottom: -85px; } }
+  .whattodo__leftbox .df-left {
+    background-image: url("../img/sliderprev2.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    left: 20%; }
+    .whattodo__leftbox .df-left:hover {
+      background-image: url("../img/sliderprevhover.png"); }
+    @media only screen and (min-width: 1024px) {
+      .whattodo__leftbox .df-left {
+        left: 20%; } }
+    @media only screen and (min-width: 1200px) {
+      .whattodo__leftbox .df-left {
+        left: 30%; } }
+  .whattodo__leftbox .df-right {
+    background-image: url("../img/slidernext2.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+    right: 20%; }
+    .whattodo__leftbox .df-right:hover {
+      background-image: url("../img/slidernexthover.png"); }
+    @media only screen and (min-width: 1024px) {
+      .whattodo__leftbox .df-right {
+        right: 10%; } }
+    @media only screen and (min-width: 1200px) {
+      .whattodo__leftbox .df-right {
+        right: 35%; } }
+  .whattodo__leftbox .command__counter {
+    width: 70px;
+    text-align: center;
+    font-size: 16px;
+    color: #000;
+    line-height: 22px;
+    font-family: "SegoeUIRegular";
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%); }
+    @media only screen and (min-width: 1024px) {
+      .whattodo__leftbox .command__counter {
+        bottom: -40px;
+        left: 50%; } }
+    @media only screen and (min-width: 1200px) {
+      .whattodo__leftbox .command__counter {
+        bottom: -40px;
+        left: 50%; } }
+
 /*==================command============*/
 .command_bg_color {
   background-color: #1c1c1c;

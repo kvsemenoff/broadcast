@@ -141,6 +141,72 @@
 	}
 }
 
+.whattodo__leftbox{
+	position: relative;
+	.df-left, .df-right{
+		position: absolute;
+		bottom: -70px;
+		width: 40px;
+		height: 40px;
+		@media only screen and (min-width : 1024px) {
+			bottom: 10px;
+		}
+		@media only screen and (min-width : 1200px) {
+			bottom: -85px;
+		}
+	}	
+	.df-left{
+		background-image: url("../img/sliderprev2.png");
+		background-repeat: no-repeat;
+		background-position: left center;
+		left:20%;
+		&:hover{
+			background-image: url("../img/sliderprevhover.png");
+		}
+		@media only screen and (min-width : 1024px) {			
+			left: 20%
+		}
+		@media only screen and (min-width : 1200px) {
+			left:30%;			
+		}
+	}
+	.df-right{
+		background-image: url("../img/slidernext2.png");
+		background-repeat: no-repeat;
+		background-position: right center;
+		right: 20%;
+		&:hover{
+			background-image: url("../img/slidernexthover.png");
+		}
+		@media only screen and (min-width : 1024px) {
+			right: 10%;
+		}
+		@media only screen and (min-width : 1200px) {
+			right: 35%;
+		}
+	}
+	.command__counter{
+		width: 70px;
+		text-align: center;
+		font-size: 16px;
+		color: #000;
+		line-height: 22px;
+		font-family: "SegoeUIRegular";
+		position: absolute;
+		bottom: -40px;
+		left: 50%;
+		transform: translateX(-50%);
+		@media only screen and (min-width : 1024px) {
+			bottom: -40px;
+			left: 50%;
+		}
+		@media only screen and (min-width : 1200px) {
+			bottom: -40px;
+			left: 50%;
+		}
+	}
+}
+
 
 
 
@@ -767,9 +833,9 @@
 
 .video_innerpage_textbox{
 	padding-top: 30px;
-	    max-width: 880px;
-    width: 100%;
-    margin: 0 auto;
+	max-width: 880px;
+	width: 100%;
+	margin: 0 auto;
 }
 .video__textcaption{
 	color: #282828;

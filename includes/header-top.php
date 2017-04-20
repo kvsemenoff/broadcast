@@ -9,7 +9,7 @@
 					<nav class="menu">
 						<ul class="menu__list">
 							<li class="menu__point">
-								<a class="menu__name" href="#">Главная</a>
+								<a class="menu__name" href="/">Главная</a>
 								<ul class="sub">
 									<li class="sub__point sub__point_main">Онлайн трансляции</li>
 									<li class="sub__point"><a href="#" class="sub__point-title">Онлайн трансляции в интернет</a></li>
@@ -41,7 +41,7 @@
 								</ul>
 							</li>
 							<li class="menu__point">
-								<a class="menu__name" href="#">Проекты</a>
+								<a class="menu__name" href="#projects">Проекты</a>
 								<ul class="sub">
 									<li class="sub__point sub__point_main">Онлайн трансляции</li>
 									<li class="sub__point"><a href="#" class="sub__point-title">Онлайн трансляции в интернет</a></li>
@@ -50,7 +50,7 @@
 								</ul>
 							</li>
 							<li class="menu__point">
-								<a class="menu__name" href="#">Команда</a>
+								<a class="menu__name" href="#team">Команда</a>
 								<ul class="sub">
 									<li class="sub__point sub__point_main">Онлайн трансляции</li>
 									<li class="sub__point"><a href="#" class="sub__point-title">Онлайн трансляции в интернет</a></li>
@@ -174,8 +174,10 @@
 	</div>
 	<div class="header-top__text top-text">
 		<div class="container">
-			<span class="top-text__command">Команда №1 <i>в Санкт-Петербурге</i></span>
-			<h1 class="top-text__title">Организация трансляций <br>и многокамерная видеосъемка <br>мероприятий</h1>
+			
+			<h1 class="top-text__title">Организация трансляций <br>и многокамерная видеосъемка <br> мероприятий</h1>
+			<span class="top-text__command">от 1 до 16 камер. Трансляции на экран и в интернет,<br> проведение телемостов в Санкт-Петербурге</span>
+
 			<span class="scroll-icon">Крутите вниз</span>
 		</div>
 	</div>

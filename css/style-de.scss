@@ -406,28 +406,33 @@
 
 .top-text{
 	.container{
-		padding: 170px 15px 220px;
+		padding: 120px 15px 220px;
 		position: relative;
 	}
 	&__title{
+		display: inline-block;
+
+		letter-spacing: 0.02em;
 		font-family: "SegoeUIBold";
-		font-size: 54px;
-		line-height: 66px;
+		font-size: 40px;
+		line-height: 40px;
 		color: #fff;
+		margin-bottom: 50px;
 		@media only screen and (max-width : 1200px) {
 			text-align: center;
 		}
 		@media only screen and (max-width : 550px) {
 			font-size: 31px;
-			line-height: 35px;
+			
 		}
 	}
 	&__command{
 		display: block;
 		padding-bottom: 30px;
 		color: #fff;
-		font-size: 18px;
-		text-transform: uppercase;
+		font-size: 20px;
+		letter-spacing: 0.02em;
+		line-height: 25px;
 		font-family: "SegoeUIRegular";
 		@media only screen and (max-width : 1200px) {
 			text-align: center;

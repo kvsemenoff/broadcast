@@ -77,6 +77,7 @@ $(document).ready(function(){
 		$('.js-window').hide();
 		$("input[type=text]").val("");
 		$("input[type=tel]").val("");
+		$("textarea").val("");
 		$('a[href=#modal__thanks]').trigger('click');
 				// location = "thanks.php";
 			};

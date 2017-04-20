@@ -24,7 +24,7 @@
 	display: inline-block;
 	text-align: center;
 	vertical-align: top;
-	padding: 15px 20px 0 20px;
+	padding: 15px 20px 40px 20px;
 	@media only screen and (min-width : 1200px) {
 		padding: 15px 0px 0 0px;
 	}
@@ -145,11 +145,11 @@
 	position: relative;
 	.df-left, .df-right{
 		position: absolute;
-		bottom: -70px;
+		bottom: -55px;
 		width: 40px;
 		height: 40px;
 		@media only screen and (min-width : 1024px) {
-			bottom: 10px;
+			bottom: -50px;
 		}
 		@media only screen and (min-width : 1200px) {
 			bottom: -85px;
@@ -167,7 +167,8 @@
 			left: 20%
 		}
 		@media only screen and (min-width : 1200px) {
-			left:30%;			
+			left:30%;	
+			bottom: -50px;		
 		}
 	}
 	.df-right{
@@ -179,10 +180,11 @@
 			background-image: url("../img/slidernexthover.png");
 		}
 		@media only screen and (min-width : 1024px) {
-			right: 10%;
+			right: 20%;
 		}
 		@media only screen and (min-width : 1200px) {
-			right: 35%;
+			right: 30%;
+			bottom: -50px;
 		}
 	}
 	.command__counter{
@@ -193,11 +195,11 @@
 		line-height: 22px;
 		font-family: "SegoeUIRegular";
 		position: absolute;
-		bottom: -40px;
+		bottom: -7px;
 		left: 50%;
 		transform: translateX(-50%);
 		@media only screen and (min-width : 1024px) {
-			bottom: -40px;
+			bottom: 0px;
 			left: 50%;
 		}
 		@media only screen and (min-width : 1200px) {

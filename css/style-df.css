@@ -23,7 +23,7 @@
   display: inline-block;
   text-align: center;
   vertical-align: top;
-  padding: 15px 20px 0 20px; }
+  padding: 15px 20px 40px 20px; }
   @media only screen and (min-width: 1200px) {
     .whattodo__leftbox {
       padding: 15px 0px 0 0px; } }
@@ -135,12 +135,12 @@
   position: relative; }
   .whattodo__leftbox .df-left, .whattodo__leftbox .df-right {
     position: absolute;
-    bottom: -70px;
+    bottom: -55px;
     width: 40px;
     height: 40px; }
     @media only screen and (min-width: 1024px) {
       .whattodo__leftbox .df-left, .whattodo__leftbox .df-right {
-        bottom: 10px; } }
+        bottom: -50px; } }
     @media only screen and (min-width: 1200px) {
       .whattodo__leftbox .df-left, .whattodo__leftbox .df-right {
         bottom: -85px; } }
@@ -156,7 +156,8 @@
         left: 20%; } }
     @media only screen and (min-width: 1200px) {
       .whattodo__leftbox .df-left {
-        left: 30%; } }
+        left: 30%;
+        bottom: -50px; } }
   .whattodo__leftbox .df-right {
     background-image: url("../img/slidernext2.png");
     background-repeat: no-repeat;
@@ -166,10 +167,11 @@
       background-image: url("../img/slidernexthover.png"); }
     @media only screen and (min-width: 1024px) {
       .whattodo__leftbox .df-right {
-        right: 10%; } }
+        right: 20%; } }
     @media only screen and (min-width: 1200px) {
       .whattodo__leftbox .df-right {
-        right: 35%; } }
+        right: 30%;
+        bottom: -50px; } }
   .whattodo__leftbox .command__counter {
     width: 70px;
     text-align: center;
@@ -178,12 +180,12 @@
     line-height: 22px;
     font-family: "SegoeUIRegular";
     position: absolute;
-    bottom: -40px;
+    bottom: -7px;
     left: 50%;
     transform: translateX(-50%); }
     @media only screen and (min-width: 1024px) {
       .whattodo__leftbox .command__counter {
-        bottom: -40px;
+        bottom: 0px;
         left: 50%; } }
     @media only screen and (min-width: 1200px) {
       .whattodo__leftbox .command__counter {

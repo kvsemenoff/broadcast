@@ -3,7 +3,7 @@
 		<div class="modal__in modal__in_left">
 			<h2 class="h2_theme_rosa h2_pink whattodo__topcaption">Получите КП и смету</h2>
 			<div class="form-wrap">
-				<form action="#" method="post" class="form1 theme__rosa__form-block">
+				<form action="#" method="post" class="form1 theme__rosa__form-block js-submit">
 					<span class="input input_theme_rosa theme__rosa__form-input">
 						<input type="text" class="input__control" name="uname" placeholder="Ваше имя">
 					</span> 

@@ -56,7 +56,7 @@
 }
 .whattodo__topcaption{
 	text-align: center;
-	font-family: "Segoe UI Semibold";
+	font-family: "SegoeUISemiBold";
 	padding-bottom: 30px;
 	padding-top: 40px;
 	font-size: 24px;
@@ -122,7 +122,7 @@
 .whattodo__txtbox_caption{
 	font-size: 14px;
 	color: #121212;
-	font-family: "Segoe UI Semibold";
+	font-family: "SegoeUISemiBold";
 	text-transform: uppercase;
 	padding-bottom: 7px;
 	// line-height: 30px;
@@ -133,7 +133,7 @@
 .whattodo__text{
 	font-size: 14px;
 	color: #121212;
-	font-family: "Segoe UI Regular";
+	font-family: "SegoeUIRegular";
 	// line-height: 21px;
 	@media only screen and (min-width : 1024px) {
 		font-size: 16px;
@@ -188,7 +188,7 @@
 	}
 }
 .command__text{
-	font-family: "Segoe UI Regular";
+	font-family: "SegoeUIRegular";
 	font-size: 16px;
 	line-height: 22px;
 	color: #fff;
@@ -267,7 +267,7 @@
 		font-size: 16px;
 		color: #fff;
 		line-height: 22px;
-		font-family: "Segoe UI Regular";
+		font-family: "SegoeUIRegular";
 		position: absolute;
 		bottom: -60px;
 		left: 50%;
@@ -368,14 +368,14 @@
 }
 .online__boxcaption{
 	color: #121212;
-	font-family: "Segoe UI Semibold";	
+	font-family: "SegoeUISemiBold";	
 	font-size: 16px;
 	font-weight: 600;
 	line-height: 22px;	
 	padding-bottom: 2px;
 }
 .online__boxsub{
-	font-family: "Segoe UI Regular";
+	font-family: "SegoeUIRegular";
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 24px;
@@ -387,7 +387,7 @@
 }
 .online__text{
 	color: #909090;
-	font-family: "Segoe UI Regular";
+	font-family: "SegoeUIRegular";
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 20px;	
@@ -396,7 +396,7 @@
 .online__pricetext{
 	color: #121212;
 	line-height: 22px;
-	font-family: "Segoe UI Semibold";	
+	font-family: "SegoeUISemiBold";	
 	font-size: 16px;
 	font-weight: 600;
 	display: block;
@@ -427,14 +427,14 @@
 	}	
 }
 .online__textbottom_caption{
-	font-family: "Segoe UI Semibold";	
+	font-family: "SegoeUISemiBold";	
 	font-size: 18px;
 	font-weight: 600;
 	line-height: 22px;
 	color: #121212;	
 }
 .online__textbottom_txt{
-	font-family: "Segoe UI Regular";
+	font-family: "SegoeUIRegular";
 	font-size: 16px;
 	font-weight: 400;	
 	color: #121212;
@@ -458,19 +458,19 @@
 	}
 }
 .price_aero__caption{
-	margin-bottom: 25px;
-	max-width: 710px;
+	margin-bottom: 25px;	
 	text-align: center;
 	line-height: normal;
 	text-transform: none;
 	@media only screen and (min-width : 1024px) {		
 		text-align: left;
 		text-transform: uppercase;
+		max-width: 710px;
 	}
 }
 .price_aero__text{
 	color: #282828;
-	font-family: "Segoe UI Regular";
+	font-family: "SegoeUIRegular";
 	font-size: 16px;	
 	line-height: 22px;
 	display: inline-block;
@@ -533,7 +533,7 @@
 .aero__caption__mobileversion{
 	text-align: left;
 	color: #673a90;
-	font-family: "Segoe UI Semibold";	
+	font-family: "SegoeUISemiBold";	
 	font-size: 24px;
 	font-weight: 600;
 	line-height: 48px;
@@ -543,7 +543,7 @@
 }
 .aero__cap_sub{
 	color: #282828;
-	font-family: "Segoe UI Semibold";	
+	font-family: "SegoeUISemiBold";	
 	font-size: 14px;
 	font-weight: 600;
 	line-height: 22px;
@@ -556,7 +556,7 @@
 }
 .aero__txt_sub{
 	color: #8c8c8c;
-	font-family: "Segoe UI Regular";
+	font-family: "SegoeUIRegular";
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 22px;
@@ -595,7 +595,7 @@
 }
 .aero__txt{
 	color: #282828;
-	font-family: "Segoe UI Regular";
+	font-family: "SegoeUIRegular";
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 22px;
@@ -678,7 +678,7 @@
 .filming__textbottom{
 	text-align: center;
 	color: #8c8c8c;
-	font-family: "Segoe UI Regular";
+	font-family: "SegoeUIRegular";
 	font-size: 14px;	
 	line-height: 18px;
 	margin: 12px 0 10px 0;
@@ -731,7 +731,7 @@
 		font-size: 16px;
 		color: #333333;
 		line-height: 22px;
-		font-family: "Segoe UI Regular";
+		font-family: "SegoeUIRegular";
 		position: absolute;
 		bottom: 50px;
 		left: 50%;
@@ -773,7 +773,7 @@
 }
 .video__textcaption{
 	color: #282828;
-	font-family: "Segoe UI Semibold";	
+	font-family: "SegoeUISemiBold";	
 	font-size: 16px;
 	font-weight: 600;
 	line-height: 22px;
@@ -781,7 +781,7 @@
 }
 .video__text{
 	color: #282828;
-	font-family: "Segoe UI Regular";
+	font-family: "SegoeUIRegular";
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 22px;

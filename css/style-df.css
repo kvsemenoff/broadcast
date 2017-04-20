@@ -30,6 +30,7 @@
 
 .whattodo__img {
   -webkit-box-shadow: 0px 10px 72px 3px rgba(0, 0, 0, 0.27);
+  -moz-box-shadow: 0px 10px 72px 3px rgba(0, 0, 0, 0.27);
   box-shadow: 0px 10px 72px 3px rgba(0, 0, 0, 0.27); }
   .whattodo__img img {
     max-width: 100%;
@@ -50,7 +51,7 @@
 
 .whattodo__topcaption {
   text-align: center;
-  font-family: "Segoe UI Semibold";
+  font-family: "SegoeUISemiBold";
   padding-bottom: 30px;
   padding-top: 40px;
   font-size: 24px; }
@@ -114,7 +115,7 @@
 .whattodo__txtbox_caption {
   font-size: 14px;
   color: #121212;
-  font-family: "Segoe UI Semibold";
+  font-family: "SegoeUISemiBold";
   text-transform: uppercase;
   padding-bottom: 7px; }
   @media only screen and (min-width: 1024px) {
@@ -124,7 +125,7 @@
 .whattodo__text {
   font-size: 14px;
   color: #121212;
-  font-family: "Segoe UI Regular"; }
+  font-family: "SegoeUIRegular"; }
   @media only screen and (min-width: 1024px) {
     .whattodo__text {
       font-size: 16px;
@@ -174,7 +175,7 @@
       line-height: 67px; } }
 
 .command__text {
-  font-family: "Segoe UI Regular";
+  font-family: "SegoeUIRegular";
   font-size: 16px;
   line-height: 22px;
   color: #fff;
@@ -207,7 +208,6 @@
   @media only screen and (min-width: 1200px) {
     .command__container .df-left, .command__container .df-right {
       bottom: -85px; } }
-
 .command__container .df-left {
   background-image: url("../img/sliderprev.png");
   background-repeat: no-repeat;
@@ -223,7 +223,6 @@
     .command__container .df-left {
       left: 30%;
       right: unset; } }
-
 .command__container .df-right {
   background-image: url("../img/slidernext.png");
   background-repeat: no-repeat;
@@ -237,20 +236,17 @@
   @media only screen and (min-width: 1200px) {
     .command__container .df-right {
       right: 35%; } }
-
 .command__container .command__counter {
   width: 70px;
   text-align: center;
   font-size: 16px;
   color: #fff;
   line-height: 22px;
-  font-family: "Segoe UI Regular";
+  font-family: "SegoeUIRegular";
   position: absolute;
   bottom: -60px;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%); }
+  transform: translateX(-50%); }
   @media only screen and (min-width: 1024px) {
     .command__container .command__counter {
       bottom: 19px;
@@ -317,12 +313,10 @@
   background-color: white;
   margin-right: 10px;
   margin-bottom: 17px;
-  -webkit-transition: 0.4s;
   transition: 0.4s; }
   .online__cam_box:hover {
     border-color: transparent;
-    -webkit-box-shadow: 0 35px 59px rgba(0, 0, 0, 0.13);
-            box-shadow: 0 35px 59px rgba(0, 0, 0, 0.13); }
+    box-shadow: 0 35px 59px rgba(0, 0, 0, 0.13); }
   @media only screen and (min-width: 1024px) {
     .online__cam_box {
       width: 23.6%;
@@ -337,14 +331,14 @@
 
 .online__boxcaption {
   color: #121212;
-  font-family: "Segoe UI Semibold";
+  font-family: "SegoeUISemiBold";
   font-size: 16px;
   font-weight: 600;
   line-height: 22px;
   padding-bottom: 2px; }
 
 .online__boxsub {
-  font-family: "Segoe UI Regular";
+  font-family: "SegoeUIRegular";
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
@@ -355,7 +349,7 @@
 
 .online__text {
   color: #909090;
-  font-family: "Segoe UI Regular";
+  font-family: "SegoeUIRegular";
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
@@ -364,7 +358,7 @@
 .online__pricetext {
   color: #121212;
   line-height: 22px;
-  font-family: "Segoe UI Semibold";
+  font-family: "SegoeUISemiBold";
   font-size: 16px;
   font-weight: 600;
   display: block;
@@ -390,14 +384,14 @@
       padding-top: 30px; } }
 
 .online__textbottom_caption {
-  font-family: "Segoe UI Semibold";
+  font-family: "SegoeUISemiBold";
   font-size: 18px;
   font-weight: 600;
   line-height: 22px;
   color: #121212; }
 
 .online__textbottom_txt {
-  font-family: "Segoe UI Regular";
+  font-family: "SegoeUIRegular";
   font-size: 16px;
   font-weight: 400;
   color: #121212;
@@ -417,18 +411,18 @@
 
 .price_aero__caption {
   margin-bottom: 25px;
-  max-width: 710px;
   text-align: center;
   line-height: normal;
   text-transform: none; }
   @media only screen and (min-width: 1024px) {
     .price_aero__caption {
       text-align: left;
-      text-transform: uppercase; } }
+      text-transform: uppercase;
+      max-width: 710px; } }
 
 .price_aero__text {
   color: #282828;
-  font-family: "Segoe UI Regular";
+  font-family: "SegoeUIRegular";
   font-size: 16px;
   line-height: 22px;
   display: inline-block;
@@ -486,7 +480,7 @@
 .aero__caption__mobileversion {
   text-align: left;
   color: #673a90;
-  font-family: "Segoe UI Semibold";
+  font-family: "SegoeUISemiBold";
   font-size: 24px;
   font-weight: 600;
   line-height: 48px; }
@@ -496,7 +490,7 @@
 
 .aero__cap_sub {
   color: #282828;
-  font-family: "Segoe UI Semibold";
+  font-family: "SegoeUISemiBold";
   font-size: 14px;
   font-weight: 600;
   line-height: 22px;
@@ -509,7 +503,7 @@
 
 .aero__txt_sub {
   color: #8c8c8c;
-  font-family: "Segoe UI Regular";
+  font-family: "SegoeUIRegular";
   font-size: 14px;
   font-weight: 400;
   line-height: 22px;
@@ -547,7 +541,7 @@
 
 .aero__txt {
   color: #282828;
-  font-family: "Segoe UI Regular";
+  font-family: "SegoeUIRegular";
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
@@ -578,9 +572,7 @@
     position: absolute;
     left: 50%;
     top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     max-width: 100%;
     height: auto; }
   @media only screen and (min-width: 1024px) {
@@ -623,7 +615,7 @@
 .filming__textbottom {
   text-align: center;
   color: #8c8c8c;
-  font-family: "Segoe UI Regular";
+  font-family: "SegoeUIRegular";
   font-size: 14px;
   line-height: 18px;
   margin: 12px 0 10px 0; }
@@ -670,13 +662,11 @@
     font-size: 16px;
     color: #333333;
     line-height: 22px;
-    font-family: "Segoe UI Regular";
+    font-family: "SegoeUIRegular";
     position: absolute;
     bottom: 50px;
     left: 50%;
-    -webkit-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-            transform: translateX(-50%); }
+    transform: translateX(-50%); }
     @media only screen and (min-width: 1024px) {
       .filming__theme_rosa .command__counter {
         bottom: 50px;
@@ -706,7 +696,7 @@
 
 .video__textcaption {
   color: #282828;
-  font-family: "Segoe UI Semibold";
+  font-family: "SegoeUISemiBold";
   font-size: 16px;
   font-weight: 600;
   line-height: 22px;
@@ -714,7 +704,7 @@
 
 .video__text {
   color: #282828;
-  font-family: "Segoe UI Regular";
+  font-family: "SegoeUIRegular";
   font-size: 16px;
   font-weight: 400;
   line-height: 22px; }
@@ -730,3 +720,5 @@
   @media only screen and (min-width: 992px) {
     .our__inner_page_mobile {
       display: none; } }
+
+/*# sourceMappingURL=style-df.css.map */

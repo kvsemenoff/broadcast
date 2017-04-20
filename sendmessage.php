@@ -1,7 +1,6 @@
 <?php
 $to = "test@yandex.ru ";
 $phone = $_POST['phone'];
-$email = $_POST['email'];
 $uname = $_POST['uname'];
 $text = $_POST['text'];
 // Формирование заголовка письма
@@ -15,7 +14,6 @@ $msg  = "<html><body>";
 $msg .= "<h2>Новое сообщение</h2>\r\n";
 $msg .= "<p><strong>Телефон:</strong> ".$phone."</p>\r\n";
 $msg .= "<p><strong>Имя:</strong> ".$uname."</p>\r\n";
-$msg .= "<p><strong>Email:</strong> ".$email."</p>\r\n";
 $msg .= "<p><strong>Сообщение:</strong> ".$text."</p>\r\n";
 $msg .= "</body></html>";
 

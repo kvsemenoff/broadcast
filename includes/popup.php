@@ -14,7 +14,7 @@
 						<textarea name="text" placeholder="Сообщите краткую информацию"></textarea>
 					</span>
 					<span class="input input_theme_rosa theme__rosa__form-input">
-						<a href="#" class="button button_theme_rosa ">Отправить заявку</a>
+						<input type="submit" class="button button_theme_rosa " value="Отправить заявку">
 					</span>
 				</form>
 			</div>

@@ -46,16 +46,20 @@ $(document).ready(function(){
 		$('.window').hide();
 	}); 
 
-	$(".form1").submit(function() { 
-		var tel = $(this).find('input[name="phone"]');
-		var empty = false;
-		if (tel.val() == ""){
-			empty = true;
+	
+
+
+
+/*MODAL SUBMIT*/
+	$('.js-submit').submit(function(){
+		var phone = $(this).find('input[name="phone"]');
+		
+		if(phone.val() == ""){
+			phone.focus();
+			return false;
 		}
-		if (empty == true){
-			tel.addClass("error-input");
-			tel.focus();
-		}else{
+
+		else{
 			var form_data = $(this).serialize(); 
 			$.ajax({
 				type: "POST", 
@@ -70,13 +74,13 @@ $(document).ready(function(){
 	});
 
 	function cleanTnanks(form){
-		$('input[type="text"]').removeClass("error-input");
-		$("input[type=text], textarea").val("");
-		$('.window').hide();
-		$('a[href=#thanks]').trigger('click');
-	};
-
-
+		$('.js-window').hide();
+		$("input[type=text]").val("");
+		$("input[type=tel]").val("");
+		$("textarea").val("");
+		$('a[href=#modal__thanks]').trigger('click');
+				// location = "thanks.php";
+			};
 	
 
 	

@@ -85,34 +85,120 @@
 		z-index: 1000;
 	}
 }
-.menu-g,
+.main-menu,
 .aero__sidebar{
 	float: left;
 	font-family: "SegoeUIRegular";
 	@media only screen and (max-width : 1200px) {
 		padding-top: 15px;
 	}
-	@media only screen and (max-width : 1000px) {
+	.menu-button {
 		display: none;
+		cursor: pointer; 
+		width: 33px;
+		height: 24px;
+		position: absolute; 
+		top: 50%;
+		margin-top: -12px;
+		right: 20px;
+		transition: 0.3s all ease;
+		@media only screen and (max-width : 1000px) {
+			display: block;
+		}
+	  &__bg{
+	  	position: absolute; 
+			background: #fff; 
+			width: 33px; 
+			height: 3px;
+			border-radius: 5px;
+			left: 0; 
+			display: block;
+			&_top{
+				top: 0;
+			}
+			&_mid{
+				top: 50%;
+				margin-top: -1.5px;
+			}
+			&_bot{
+				bottom: 0;
+			}
+	  }
+	  &.menu-active{
+	  	width: 14px;
+	  	height: 14px;
+	  	top: 19px;
+	  	background: url(../img/close.png) center/cover no-repeat;
+	  	z-index: 10001;
+	  	.menu-button__bg{
+	  		display: none;
+	  	}
+	  }
 	}
 	.menu {
-		&__point { 
-			list-style: none; 
-			font-size: 14px; 
-			position: relative; 
-			display: inline-block; 
+		@media only screen and (max-width : 1000px) {
+			display: none;
+			background: #fff;
+			padding: 45px 10px 20px; 
+			position: absolute;
+			top: -15px;
+			left: 0;
+			width: 100%;
+			z-index: 10000;
+			.point-active{
+				display: block;
+			}
 		}
-		&__point:hover .menu__sub { 
-			display: block; 
+		@media only screen and (min-width : 1000px) {
+			.point:hover .sub { 
+				display: block;
+			}
 		}
-		&__name{
-			font-size: 18px;
-			color: #fff;
+	}
+	.mobile-nav{
+		display: none;
+		@media only screen and (max-width : 1000px) {
 			display: block;
-			line-height: 28px;
-			padding: 5px 25px;
-			position: relative;
-			font-family: "SegoeUIRegular";
+		}
+		li{
+			float: left;
+		}
+		a{
+			font-family: "SegoeUIBold";
+			font-size: 16px;
+			color: #282828;
+			display: inline-block;
+			padding: 0px 0 10px;
+			margin: 0 8px 4px;
+			border-bottom: 1px solid transparent;
+		}
+		.mobile-active{
+			border-color: #828282;
+		}
+	}
+	.point { 
+		list-style: none; 
+		font-size: 14px; 
+		position: relative; 
+		display: inline-block;
+		@media only screen and (max-width : 1000px) {
+			display: none;
+		}
+	}
+	.point:hover > .sub { 
+		display: block; 
+	}
+	.point-name{
+		font-size: 18px;
+		color: #fff;
+		display: block;
+		line-height: 28px;
+		padding: 5px 25px;
+		position: relative;
+		font-family: "SegoeUIRegular";
+		border-bottom: 1px solid transparent;
+		@media only screen and (max-width : 1000px) {
+			display: none;
 		}
 	}
 	.sub {
@@ -123,28 +209,36 @@
 		top: 100%; 
 		background: #fff; 
 		padding: 0 25px 10px; 
-		width: 310px; 
-		z-index: 100; 
+		width: 310px;
+		z-index: 10003;
+		@media only screen and (max-width : 1000px) {
+			display: block;
+			left: 0;
+			position: relative;
+		}
+		@media only screen and (max-width : 400px) {
+			left: 0;
+			right: 0;
+			width: 100%;
+		}
 	}
-	.sub__point { 
+	.sub-point { 
 		list-style: none; 
 		width: 100%;
-		&_main{
-			font-size: 16px;
-			padding: 10px 0 3px;
-			color: #673a90;
+		a {
+			color: #282828; 
+			display: block; 
+			line-height: 23px;
+			&:hover{
+				color: #673a90;
+			}
 		}
 	}
-	.sub__point-title {
-		color: #282828; 
-		display: block; 
-		line-height: 23px;
-		&:hover{
-			color: #673a90;
-		}
-	}
-	.menu__point:hover > .sub { 
-		display: block; 
+	.sub-main-point a { 
+		font-size: 16px;
+		padding: 10px 0 3px;
+		color: #673a90;
+		display: block;
 	}
 }
 .aero-top{
@@ -318,89 +412,6 @@
 		&:hover{
 			color: #673a90;
 		}
-	}
-}
-
-.menu-burger{
-	display: none;
-	@media only screen and (max-width : 1000px) {
-		display: block;
-	}
-	.menu-up {
-		background: #fff;
-		padding: 45px 10px 20px; 
-		position: absolute;
-		top: -15px;
-		left: 0;
-		width: 100%;
-		z-index: 10000;
-	}
-	.tab{
-		font-family: "SegoeUIBold";
-		font-size: 16px;
-		color: #282828;
-		display: inline-block;
-		border-bottom: 1px solid transparent;
-		padding: 0px 0 10px;
-		margin: 0 8px;
-		cursor: pointer;
-	}
-	.tab.active{
-		border-color: #828282;
-	}
-	.tab-content{
-		padding: 0 8px;
-	}
-	.sub__point{
-		font-size: 14px;
-		padding-bottom: 4px;
-		&_main{
-			color: #673a90;
-			font-size: 16px;
-			padding: 15px 0 10px;
-		}
-		a{
-			color: #282828;
-		}
-	}
-	.menu-button { 
-		cursor: pointer; 
-		width: 33px;
-		height: 24px;
-		position: absolute; 
-		top: 50%;
-		margin-top: -12px;
-		right: 20px;
-		transition: 0.3s all ease;
-	  &__bg{
-	  	position: absolute; 
-			background: #fff; 
-			width: 33px; 
-			height: 3px;
-			border-radius: 5px;
-			left: 0; 
-			display: block;
-			&_top{
-				top: 0;
-			}
-			&_mid{
-				top: 50%;
-				margin-top: -1.5px;
-			}
-			&_bot{
-				bottom: 0;
-			}
-	  }
-	  &.menu-active{
-	  	width: 14px;
-	  	height: 14px;
-	  	top: 19px;
-	  	background: url(../img/close.png) center/cover no-repeat;
-	  	z-index: 10001;
-	  	.menu-button__bg{
-	  		display: none;
-	  	}
-	  }
 	}
 }
 

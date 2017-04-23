@@ -1,8 +1,5 @@
 //файлы css-файлов
-var css_files = new Array(
-	'libs/bootstrap/bootstrap-grid-3.3.1.min.css',
-	'libs/fancybox/jquery.fancybox.css', 
-	'libs/owl.carousel/assets/owl.carousel.css',
+var css_our = new Array(
 	'css/reset.css',
 	'css/fonts.css',
 	'css/style.css',
@@ -20,19 +17,31 @@ var css_files = new Array(
 	'css/style-dj.css'
 );
 
+var css_libs = new Array(
+	'libs/bootstrap/bootstrap-grid-3.3.1.min.css',
+	'libs/fancybox/jquery.fancybox.css', 
+	'libs/owl.carousel/assets/owl.carousel.css'
+);
+
+var css_all = css_libs.concat(css_our); 
+
 //Название общего фала для всех стилей
 var css_style_name = 'style.min.css';
 
 //файлы js-скриптов
-var js_files = new Array(
+var js_our = new Array(
+	'js/common.js',
+	'js/outerstyles.js'
+);
+var js_libs = new Array(
 	'libs/jquery/jquery-1.11.1.min.js',
 	'libs/owl.carousel/owl.carousel.js',
 	'libs/fancybox/jquery.fancybox.pack.js',
 	'js/jquery.mousewheel.js',
-	'js/jquery.maskedinput.min.js',
-	'js/common.js',
-	'js/outerstyles.js'
+	'js/jquery.maskedinput.min.js'
 );
+var js_all = js_libs.concat(js_our);
+
 //Название общего файла для всех js-скриптов
 var js_scripts_name = 'scripts.min.js';
 	
@@ -58,7 +67,7 @@ gulp.task('sass', function(){
 });
 
 //Объединение и минификация всех собственных 
-gulp.task('default', ['concatCSS','compressJS', 'imagemin', 'imageMenu', 'includeFiles', 'fonts',  'htaccessFiles', 'rootFiles'], function() {
+gulp.task('default', ['concatAllCSS', 'concatOurSS', 'concatLibCSS', 'compressJSAll', 'compressJSLibs', 'compressJSOur', 'imagemin', 'imageMenu', 'includeFiles', 'fonts',  'htaccessFiles', 'rootFiles'], function() {
    return gulp.src('css/*.scss') 
 		.pipe(sass()) 
 		.pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true })) // Создаем префиксы
@@ -66,20 +75,45 @@ gulp.task('default', ['concatCSS','compressJS', 'imagemin', 'imageMenu', 'includ
 });
 
 //Объединение и минификация всех стилей подключаемых библиотек и общих стилей
-gulp.task('concatCSS', function() {
-  return gulp.src(css_files)
+gulp.task('concatAllCSS', function() {
+  return gulp.src(css_all)
     .pipe(concat(css_style_name)) 
     .pipe(cleanCSS({compatibility: 'ie8'}))
-    .pipe(gulp.dest('product/css/'));
+    .pipe(gulp.dest('product/css/'))
 });
 
+gulp.task('concatOurSS', function() {
+  return gulp.src(css_our)
+    .pipe(concat('style.css')) 
+    .pipe(gulp.dest('product/css/'))
+});
+gulp.task('concatLibCSS', function() {
+  return gulp.src(css_libs)
+    .pipe(concat('libs.min.css')) 
+    .pipe(cleanCSS({compatibility: 'ie8'}))
+    .pipe(gulp.dest('product/css/'))
+});
+
+
 //Объединение и сжатие всех js-скриптов
-gulp.task('compressJS', function(){
-    return gulp.src(js_files)
+gulp.task('compressJSAll', function(){
+    return gulp.src(js_all)
         .pipe(concat(js_scripts_name))
         .pipe(uglify())
         .pipe(gulp.dest('product/js/'));
 });
+gulp.task('compressJSLibs', function(){
+    return gulp.src(js_libs)
+        .pipe(concat('libs.min.js'))
+        .pipe(uglify())
+        .pipe(gulp.dest('product/js/'));
+});
+gulp.task('compressJSOur', function(){
+    return gulp.src(js_our)
+        .pipe(concat('common.js'))
+        .pipe(gulp.dest('product/js/'));
+});
+
 
 //Оптимизаця картинок
 gulp.task('imagemin', function() {
@@ -114,7 +148,7 @@ gulp.task('fonts', function() {
 
 //Перенос файлов в корне
 gulp.task('rootFiles', function() {
-	return gulp.src('*.*')
+	return gulp.src(['*.html','*.php'])
 		
 		.pipe(gulp.dest('product/')); 
 });

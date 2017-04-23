@@ -139,16 +139,14 @@ $(document).ready(function(){
 	});
 
 	
-
-
-	$('.menu-up').slideUp(0);
+	
 	$('.menu-button').click(function(){
 		if (!$(this).hasClass('menu-active')){
 			$(this).addClass('menu-active');
-			$('.menu-up').slideDown(300)
+			$('.menu').slideDown(300)
 		} else {
 			$(this).removeClass('menu-active');
-			$('.menu-up').slideUp(300)
+			$('.menu').slideUp(300)
 		}
 	});
 

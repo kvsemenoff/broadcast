@@ -1,8 +1,71 @@
 <div class="whattodo whattodo_bg_img">
 	<div class="whattodo__container">
 		<div class="whattodo__leftbox">
-			<div class="whattodo__img">
-				<img src="img/whatimg.png" alt="">
+			<div id="whattodo__owl_slider">
+				<div class="item">
+					<div class="whattodo__img">
+						<img src="img/whatimg.png" alt="">
+					</div>
+				</div>
+				<div class="item">
+					<div class="whattodo__img">
+						<img src="img/whatimg.png" alt="">
+					</div>
+				</div>
+				<div class="item">
+					<div class="whattodo__img">
+						<img src="img/whatimg.png" alt="">
+					</div>
+				</div>
+				<div class="item">
+					<div class="whattodo__img">
+						<img src="img/whatimg.png" alt="">
+					</div>
+				</div>
+				<div class="item">
+					<div class="whattodo__img">
+						<img src="img/whatimg.png" alt="">
+					</div>
+				</div>
+				<div class="item">
+					<div class="whattodo__img">
+						<img src="img/whatimg.png" alt="">
+					</div>
+				</div>
+				<div class="item">
+					<div class="whattodo__img">
+						<img src="img/whatimg.png" alt="">
+					</div>
+				</div>
+				<div class="item">
+					<div class="whattodo__img">
+						<img src="img/whatimg.png" alt="">
+					</div>
+				</div>
+				<div class="item">
+					<div class="whattodo__img">
+						<img src="img/whatimg.png" alt="">
+					</div>
+				</div>
+				<div class="item">
+					<div class="whattodo__img">
+						<img src="img/whatimg.png" alt="">
+					</div>
+				</div>
+				<div class="item">
+					<div class="whattodo__img">
+						<img src="img/whatimg.png" alt="">
+					</div>
+				</div>
+				<div class="item">
+					<div class="whattodo__img">
+						<img src="img/whatimg.png" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="command__counter">
+				<span class="what__counter_change">1</span>/
+				<span class="command__counter_all">12</span>
 			</div>
 		</div>
 		<div class="whattodo__rightbox">

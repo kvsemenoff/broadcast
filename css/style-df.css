@@ -23,14 +23,13 @@
   display: inline-block;
   text-align: center;
   vertical-align: top;
-  padding: 15px 20px 0 20px; }
+  padding: 15px 20px 40px 20px; }
   @media only screen and (min-width: 1200px) {
     .whattodo__leftbox {
       padding: 15px 0px 0 0px; } }
 
 .whattodo__img {
   -webkit-box-shadow: 0px 10px 72px 3px rgba(0, 0, 0, 0.27);
-  -moz-box-shadow: 0px 10px 72px 3px rgba(0, 0, 0, 0.27);
   box-shadow: 0px 10px 72px 3px rgba(0, 0, 0, 0.27); }
   .whattodo__img img {
     max-width: 100%;
@@ -131,6 +130,69 @@
       font-size: 16px;
       display: inline-block; } }
 
+.whattodo__leftbox {
+  position: relative; }
+  .whattodo__leftbox .df-left, .whattodo__leftbox .df-right {
+    position: absolute;
+    bottom: -55px;
+    width: 40px;
+    height: 40px; }
+    @media only screen and (min-width: 1024px) {
+      .whattodo__leftbox .df-left, .whattodo__leftbox .df-right {
+        bottom: -50px; } }
+    @media only screen and (min-width: 1200px) {
+      .whattodo__leftbox .df-left, .whattodo__leftbox .df-right {
+        bottom: -85px; } }
+  .whattodo__leftbox .df-left {
+    background-image: url("../img/sliderprev2.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    left: 20%; }
+    .whattodo__leftbox .df-left:hover {
+      background-image: url("../img/sliderprevhover.png"); }
+    @media only screen and (min-width: 1024px) {
+      .whattodo__leftbox .df-left {
+        left: 20%; } }
+    @media only screen and (min-width: 1200px) {
+      .whattodo__leftbox .df-left {
+        left: 30%;
+        bottom: -50px; } }
+  .whattodo__leftbox .df-right {
+    background-image: url("../img/slidernext2.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+    right: 20%; }
+    .whattodo__leftbox .df-right:hover {
+      background-image: url("../img/slidernexthover.png"); }
+    @media only screen and (min-width: 1024px) {
+      .whattodo__leftbox .df-right {
+        right: 20%; } }
+    @media only screen and (min-width: 1200px) {
+      .whattodo__leftbox .df-right {
+        right: 30%;
+        bottom: -50px; } }
+  .whattodo__leftbox .command__counter {
+    width: 70px;
+    text-align: center;
+    font-size: 16px;
+    color: #000;
+    line-height: 22px;
+    font-family: "SegoeUIRegular";
+    position: absolute;
+    bottom: -7px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%); }
+    @media only screen and (min-width: 1024px) {
+      .whattodo__leftbox .command__counter {
+        bottom: 0px;
+        left: 50%; } }
+    @media only screen and (min-width: 1200px) {
+      .whattodo__leftbox .command__counter {
+        bottom: -40px;
+        left: 50%; } }
+
 /*==================command============*/
 .command_bg_color {
   background-color: #1c1c1c;
@@ -208,6 +270,7 @@
   @media only screen and (min-width: 1200px) {
     .command__container .df-left, .command__container .df-right {
       bottom: -85px; } }
+
 .command__container .df-left {
   background-image: url("../img/sliderprev.png");
   background-repeat: no-repeat;
@@ -223,6 +286,7 @@
     .command__container .df-left {
       left: 30%;
       right: unset; } }
+
 .command__container .df-right {
   background-image: url("../img/slidernext.png");
   background-repeat: no-repeat;
@@ -236,6 +300,7 @@
   @media only screen and (min-width: 1200px) {
     .command__container .df-right {
       right: 35%; } }
+
 .command__container .command__counter {
   width: 70px;
   text-align: center;
@@ -246,7 +311,9 @@
   position: absolute;
   bottom: -60px;
   left: 50%;
-  transform: translateX(-50%); }
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%); }
   @media only screen and (min-width: 1024px) {
     .command__container .command__counter {
       bottom: 19px;
@@ -313,10 +380,12 @@
   background-color: white;
   margin-right: 10px;
   margin-bottom: 17px;
+  -webkit-transition: 0.4s;
   transition: 0.4s; }
   .online__cam_box:hover {
     border-color: transparent;
-    box-shadow: 0 35px 59px rgba(0, 0, 0, 0.13); }
+    -webkit-box-shadow: 0 35px 59px rgba(0, 0, 0, 0.13);
+            box-shadow: 0 35px 59px rgba(0, 0, 0, 0.13); }
   @media only screen and (min-width: 1024px) {
     .online__cam_box {
       width: 23.6%;
@@ -572,7 +641,9 @@
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     max-width: 100%;
     height: auto; }
   @media only screen and (min-width: 1024px) {
@@ -666,7 +737,9 @@
     position: absolute;
     bottom: 50px;
     left: 50%;
-    transform: translateX(-50%); }
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%); }
     @media only screen and (min-width: 1024px) {
       .filming__theme_rosa .command__counter {
         bottom: 50px;
@@ -720,5 +793,3 @@
   @media only screen and (min-width: 992px) {
     .our__inner_page_mobile {
       display: none; } }
-
-/*# sourceMappingURL=style-df.css.map */

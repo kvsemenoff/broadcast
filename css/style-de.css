@@ -131,7 +131,7 @@
 .modal__form .modal__in_left { padding-right: 60px; width: 420px; }
 @media only screen and (max-width: 1000px) { .modal__form .modal__in_left { float: none; padding: 0; margin: 0 auto; }
   .modal__form .modal__in_left::before { display: none; } }
-@media only screen and (max-width: 500px) { .modal__form .modal__in_left { margin: 0; } }
+@media only screen and (max-width: 500px) { .modal__form .modal__in_left { margin: 0; width: 100%; max-width: 420px; } }
 .modal__form .modal__in_left::before { content: ""; position: absolute; top: 3px; bottom: 0; right: 0; width: 1px; height: 100%; background: #673a90; }
 .modal__form .modal__in_right { width: 270px; float: right; padding: 65px 0 85px 10px; border-bottom: 1px solid #bbb; }
 @media only screen and (max-width: 1000px) { .modal__form .modal__in_right { float: none; margin: 0 auto; padding: 0 0 10px; border-top: 1px solid #bbb; max-width: 355px; width: 100%; text-align: center; } }

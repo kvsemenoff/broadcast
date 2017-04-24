@@ -3,29 +3,29 @@
 
 <div class="aero-top">
 	<div class="container clearfix">
-		<div class="aero__sidebar">
+		<div class="aero-sidebar">
 			<span class="aero-top__bg">Онлайнтрансляция</span>
 			<ul class="sub">
-				<li class="sub-point sub-point-main sub-point-main-first">
-					<a href="#" class="aero-nav-item">Онлайн трансляции</a>
+				<li>
+					<a href="#">Онлайн трансляции</a>
 					<ul class="sub-list">
-						<li class="sub-point"><a href="#" class="sub-point-title">Онлайн трансляции в интернет</a></li>
-						<li class="sub-point"><a href="#" class="sub-point-title">Трансляции на экран</a></li>
-						<li class="sub-point"><a href="#" class="sub-point-title">Проведение телемостов</a></li>
-						<li class="sub-point"><a href="#" class="sub-point-title">Платные видеотрансляции</a></li>
+						<li><a href="#">Онлайн трансляции в интернет</a></li>
+						<li><a href="#">Трансляции на экран</a></li>
+						<li><a href="#">Проведение телемостов</a></li>
+						<li><a href="#">Платные видеотрансляции</a></li>
 					</ul>
 				</li>
-				<li class="sub-point sub-point-main">
-					<a href="#" class="aero-nav-item">Многокамерная видеосъемка</a>
+				<li>
+					<a href="#">Многокамерная видеосъемка</a>
 					<ul class="sub-list">
-						<li class="sub-point"><a href="#" class="sub-point-title">Съемка концертов</a></li>
-						<li class="sub-point"><a href="#" class="sub-point-title">Съемка лекций и семинаров</a></li>
-						<li class="sub-point"><a href="#" class="sub-point-title">Съемка презентаций</a></li>
-						<li class="sub-point"><a href="#" class="sub-point-title">Съемка спортивных мероприятий</a></li>
+						<li><a href="#">Съемка концертов</a></li>
+						<li><a href="#">Съемка лекций и семинаров</a></li>
+						<li><a href="#">Съемка презентаций</a></li>
+						<li><a href="#">Съемка спортивных мероприятий</a></li>
 					</ul>
 				</li>
-				<li class="sub-point sub-point-main">
-					<a href="#" class="aero-nav-item">Аренда ПТС</a>
+				<li>
+					<a href="#">Аренда ПТС</a>
 				</li>
 			</ul>
 		</div>

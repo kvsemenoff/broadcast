@@ -13,62 +13,62 @@
 					</div>
 					<nav class="menu">
 						<ul class="main-menu clearfix">
-							<li class="mobile-nav">
+							<li>
 								<ul class="clearfix">
-									<li><a class="mobile-active" href="#">Главная</a></li>
+									<li><a class="mobile-nav-active" href="#">Главная</a></li>
 									<li><a href="#">Услуги</a></li>
 									<li><a href="#">Проекты</a></li>
 									<li><a href="#">Команда</a></li>
 									<li><a href="#">Контакты</a></li>
 								</ul>
 							</li>
-							<li class="point point-active">
+							<li class="point-active">
 								<a href="#">Главная</a>
-								<ul class="sub-active">
-									<li class="sub-main-point"><a href="#">Онлайн трансляции</a></li>
+								<ul>
+									<li><a href="#"><span>Онлайн трансляции</span></a></li>
 									<li><a href="#"">Онлайн трансляции в интернет</a></li>
 									<li><a href="#"">Трансляции на экран</a></li>
 									<li><a href="#"">Проведение телемостов</a></li>
 									<li><a href="#"">Платные видеотрансляции</a></li>
-									<li class="sub-main-point"><a href="#">Многокамерная видеосъемка</a></li>
+									<li><a href="#"><span>Многокамерная видеосъемка</span></a></li>
 									<li><a href="#"">Съемка концертов</a></li>
 									<li><a href="#"">Съемка лекций и семинаров</a></li>
 									<li><a href="#"">Съемка презентаций</a></li>
 									<li><a href="#"">Съемка спортивных мероприятий</a></li>
-									<li class="sub-main-point"><a href="#">Аренда ПТС</a></li>
+									<li><a href="#"><span>Аренда ПТС</span></a></li>
 								</ul>
 							</li>
-							<li class="point">
+							<li>
 								<a href="#">Услуги</a>
 								<ul>
-									<li class="sub-main-point"><a href="#">Аренда ПТС</a></li>
+									<li><a href="#"><span>Аренда ПТС</span></a></li>
 									<li><a href="#"">Съемка лекций и семинаров</a></li>
 									<li><a href="#"">Съемка презентаций</a></li>
 									<li><a href="#"">Съемка спортивных мероприятий</a></li>
 								</ul>
 							</li>
-							<li class="point">
+							<li>
 								<a href="#">Проекты</a>
 								<ul>
-									<li class="sub-main-point"><a href="#">Онлайн трансляции</a></li>
+									<li><a href="#"><span>Многокамерная видеосъемка</span></a></li>
 									<li><a href="#"">Онлайн трансляции в интернет</a></li>
 									<li><a href="#"">Съемка спортивных мероприятий</a></li>
-									<li class="sub-main-point"><a href="#">Аренда ПТС</a></li>
+									<li><a href="#"><span>Аренда ПТС</span></a></li>
 								</ul>
 							</li>
-							<li class="point">
+							<li>
 								<a href="#">Команда</a>
 								<ul>
-									<li class="sub-main-point"><a href="#">Онлайн трансляции</a></li>
+									<li><a href="#"><span>Аренда ПТС</span></a></li>
 									<li><a href="#"">Онлайн трансляции в интернет</a></li>
 									<li><a href="#"">Съемка спортивных мероприятий</a></li>
-									<li class="sub-main-point"><a href="#">Аренда ПТС</a></li>
+									<li><a href="#"><span>Многокамерная видеосъемка</span></a></li>
 								</ul>
 							</li>
-							<li class="point">
+							<li>
 								<a href="#">Контакты</a>
 								<ul>
-									<li class="sub-main-point"><a href="#">Онлайн трансляции</a></li>
+									<li><a href="#"><span>Многокамерная видеосъемка</span></a></li>
 									<li><a href="#"">Онлайн трансляции в интернет</a></li>
 									<li><a href="#"">Трансляции на экран</a></li>
 									<li><a href="#"">Проведение телемостов</a></li>
@@ -80,7 +80,7 @@
 				<div class="top-line__phone clearfix">
 					<span class="top-line__number">+7 (921) <b>000-12-05</b></span>
 					<div class="top-line__btn">
-						<a href="#modal__form" class="fancybox button button_theme_rosa ">Заказать звонок</a>
+						<a href="#modal__form" class="fancybox button button_theme_rosa">Заказать звонок</a>
 					</div>
 				</div>
 			</div>

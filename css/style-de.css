@@ -56,15 +56,14 @@
 .menu-wrap .main-menu > li:first-child .mobile-nav-active { border-color: #828282; }
 
 .aero-top { overflow: hidden; position: relative; }
-.aero-top__bg { text-transform: uppercase; color: rgba(152, 152, 152, 0.04); font-size: 195px; font-family: "SegoeUIBold"; display: block; position: absolute; top: 50%; left: 32%; z-index: 400; letter-spacing: 20px; }
+.aero-top__bg { text-transform: uppercase; color: rgba(152, 152, 152, 0.04); font-size: 195px; font-family: "SegoeUIBold"; display: block; position: absolute; top: 50%; left: 17%; z-index: 400; letter-spacing: 20px; }
 @media only screen and (max-width: 1200px) { .aero-top__bg { display: none; } }
 .aero-top .container { position: relative; }
-@media only screen and (min-width: 1200px) { .aero-top .container { min-height: 540px; } }
 
-.aero-top__content { padding: 60px 0 140px 15px; margin-left: 335px; }
+.aero-top__content { padding: 50px 0 140px 15px; margin-left: 335px; }
 .aero-top__content h2 { text-transform: none !important; }
 .aero-top__content .content__title_mobile { display: none; }
-@media only screen and (max-width: 1200px) { .aero-top__content { margin-left: 0; padding: 60px 0 50px; }
+@media only screen and (max-width: 1200px) { .aero-top__content { margin-left: 0; padding: 50px 0 50px; }
   .aero-top__content .content__title_decstop { display: none; }
   .aero-top__content .content__title_mobile { display: block; } }
 @media only screen and (max-width: 600px) { .aero-top__content { padding: 30px 0 0px; } }
@@ -78,6 +77,22 @@
 .aero-top__content .content__text { color: #282828; font-size: 16px; padding-bottom: 20px; line-height: 22px; font-family: "SegoeUIRegular"; }
 @media only screen and (max-width: 600px) { .aero-top__content .content__text { font-size: 14px; }
   .aero-top__content .content__text_last { display: none; } }
+
+.aero-sidebar { position: relative; }
+@media only screen and (min-width: 1200px) { .aero-sidebar { left: 15px; top: 0; bottom: 0; width: 270px; position: absolute; -webkit-box-shadow: 10px 0px 13px 0px rgba(0, 0, 0, 0.1); -moz-box-shadow: 10px 0px 13px 0px rgba(0, 0, 0, 0.1); box-shadow: 10px 0px 13px 0px rgba(0, 0, 0, 0.1); padding: 10px 40px 10px 0; } }
+.aero-sidebar > ul { font-family: "SegoeUISemiBold"; font-size: 16px; }
+@media only screen and (max-width: 1200px) { .aero-sidebar > ul { padding: 5px 0; -webkit-box-shadow: 0px 5px 13px 0px rgba(0, 0, 0, 0.1); -moz-box-shadow: 0px 5px 13px 0px rgba(0, 0, 0, 0.1); box-shadow: 0px 5px 13px 0px rgba(0, 0, 0, 0.1); } }
+@media only screen and (max-width: 1000px) { .aero-sidebar > ul { display: none; } }
+.aero-sidebar > ul > li { position: relative; }
+@media only screen and (max-width: 1200px) { .aero-sidebar > ul > li { display: inline-block; border-left: 1px solid #cacaca; }
+  .aero-sidebar > ul > li:first-child { border: none; }
+  .aero-sidebar > ul > li:hover ul { display: block; } }
+.aero-sidebar > ul > li a { color: #282828; line-height: 18px; padding: 4px 0; display: block; }
+@media only screen and (max-width: 1200px) { .aero-sidebar > ul > li a { padding: 6px 0; } }
+.aero-sidebar > ul > li > a { padding: 25px 0 10px; font-size: 18px; color: #673a90; }
+@media only screen and (max-width: 1200px) { .aero-sidebar > ul > li > a { padding: 10px 23px; } }
+.aero-sidebar > ul > li ul { background: #fff; }
+@media only screen and (max-width: 1200px) { .aero-sidebar > ul > li ul { display: none; position: absolute; left: 2px; right: 2px; top: 100%; padding: 10px 28px 15px; } }
 
 .top-text .container { padding: 170px 15px 220px; position: relative; }
 .top-text__title { font-family: "SegoeUIBold"; font-size: 54px; line-height: 66px; color: #fff; }

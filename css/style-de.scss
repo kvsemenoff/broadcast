@@ -256,7 +256,7 @@
 		display: block;
 		position: absolute;
 		top: 50%;
-		left: 32%;
+		left: 17%;
 		z-index: 400;
 		letter-spacing: 20px;
 		@media only screen and (max-width : 1200px) {
@@ -265,13 +265,10 @@
 	}
 	.container{
 		position: relative;
-		@media only screen and (min-width : 1200px) {
-			min-height: 540px;
-		}
 	}
 }
 .aero-top__content{
-	padding: 60px 0 140px 15px;
+	padding: 50px 0 140px 15px;
 	margin-left: 335px;
 	h2{
 		text-transform: none!important;
@@ -281,7 +278,7 @@
 	}
 	@media only screen and (max-width : 1200px) {
 		margin-left: 0;
-		padding: 60px 0 50px;
+		padding: 50px 0 50px;
 		.content__title_decstop{
 			display: none;
 		}
@@ -350,7 +347,74 @@
 }
 
 .aero-sidebar{
-	
+	position: relative;
+	@media only screen and (min-width : 1200px) {
+		left: 15px;
+		top: 0;
+		bottom: 0;
+		width: 270px;
+		position: absolute;
+		-webkit-box-shadow: 10px 0px 13px 0px rgba(0,0,0,0.1);
+		-moz-box-shadow: 10px 0px 13px 0px rgba(0,0,0,0.1);
+		box-shadow: 10px 0px 13px 0px rgba(0,0,0,0.1);
+		padding: 10px 40px 10px 0;
+	}
+	& > ul{
+		font-family: "SegoeUISemiBold";
+		font-size: 16px;
+		@media only screen and (max-width : 1200px) {
+			padding: 5px 0;
+			-webkit-box-shadow: 0px 5px 13px 0px rgba(0,0,0,0.1);
+			-moz-box-shadow: 0px 5px 13px 0px rgba(0,0,0,0.1);
+			box-shadow: 0px 5px 13px 0px rgba(0,0,0,0.1);
+		}
+		@media only screen and (max-width : 1000px) {
+			display: none;
+		}
+		& > li{
+			position: relative;
+			@media only screen and (max-width : 1200px) {
+				display: inline-block;
+				border-left: 1px solid #cacaca;
+				&:first-child{
+					border: none;
+				}
+				&:hover{
+					& ul{
+						display: block;
+					}
+				}
+			}
+			a{
+				color: #282828;
+				line-height: 18px;
+				padding: 4px 0;
+				display: block;
+				@media only screen and (max-width : 1200px) {
+					padding: 6px 0;
+				}
+			}
+			& > a{
+				padding: 25px 0 10px;
+				font-size: 18px;
+				color: #673a90;
+				@media only screen and (max-width : 1200px) {
+					padding: 10px 23px;
+				}
+			}
+			& ul{
+				background: #fff;
+				@media only screen and (max-width : 1200px) {
+					display: none;
+					position: absolute;
+					left: 2px;
+					right: 2px;
+					top: 100%;
+					padding: 10px 28px 15px;
+				}
+			}
+		}
+	}
 }
 
 .top-text{

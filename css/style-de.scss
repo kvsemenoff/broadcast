@@ -348,25 +348,38 @@
 
 .aero-sidebar{
 	position: relative;
+	z-index: 10;
+	&::before{
+		content: "";
+		display: none;
+		-webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.3);
+		-moz-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.3);
+		box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.3);
+		width: 1000vw;
+		height: 2px;
+		position: absolute;
+		bottom: 0px;
+		left: -30%;
+		z-index: 9;
+	}
 	@media only screen and (min-width : 1200px) {
 		left: 15px;
 		top: 0;
 		bottom: 0;
 		width: 270px;
 		position: absolute;
-		-webkit-box-shadow: 10px 0px 13px 0px rgba(0,0,0,0.1);
-		-moz-box-shadow: 10px 0px 13px 0px rgba(0,0,0,0.1);
-		box-shadow: 10px 0px 13px 0px rgba(0,0,0,0.1);
 		padding: 10px 40px 10px 0;
+	}
+	@media only screen and (max-width : 1200px) and (min-width : 1000px) {
+		&::before{
+			display: block;
+		}
 	}
 	& > ul{
 		font-family: "SegoeUISemiBold";
 		font-size: 16px;
 		@media only screen and (max-width : 1200px) {
 			padding: 5px 0;
-			-webkit-box-shadow: 0px 5px 13px 0px rgba(0,0,0,0.1);
-			-moz-box-shadow: 0px 5px 13px 0px rgba(0,0,0,0.1);
-			box-shadow: 0px 5px 13px 0px rgba(0,0,0,0.1);
 		}
 		@media only screen and (max-width : 1000px) {
 			display: none;
@@ -382,6 +395,7 @@
 				&:hover{
 					& ul{
 						display: block;
+						z-index: 100;
 					}
 				}
 			}

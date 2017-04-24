@@ -78,15 +78,17 @@
 @media only screen and (max-width: 600px) { .aero-top__content .content__text { font-size: 14px; }
   .aero-top__content .content__text_last { display: none; } }
 
-.aero-sidebar { position: relative; }
-@media only screen and (min-width: 1200px) { .aero-sidebar { left: 15px; top: 0; bottom: 0; width: 270px; position: absolute; -webkit-box-shadow: 10px 0px 13px 0px rgba(0, 0, 0, 0.1); -moz-box-shadow: 10px 0px 13px 0px rgba(0, 0, 0, 0.1); box-shadow: 10px 0px 13px 0px rgba(0, 0, 0, 0.1); padding: 10px 40px 10px 0; } }
+.aero-sidebar { position: relative; z-index: 10; }
+.aero-sidebar::before { content: ""; display: none; -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.3); -moz-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.3); box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.3); width: 1000vw; height: 2px; position: absolute; bottom: 0px; left: -30%; z-index: 9; }
+@media only screen and (min-width: 1200px) { .aero-sidebar { left: 15px; top: 0; bottom: 0; width: 270px; position: absolute; padding: 10px 40px 10px 0; } }
+@media only screen and (max-width: 1200px) and (min-width: 1000px) { .aero-sidebar::before { display: block; } }
 .aero-sidebar > ul { font-family: "SegoeUISemiBold"; font-size: 16px; }
-@media only screen and (max-width: 1200px) { .aero-sidebar > ul { padding: 5px 0; -webkit-box-shadow: 0px 5px 13px 0px rgba(0, 0, 0, 0.1); -moz-box-shadow: 0px 5px 13px 0px rgba(0, 0, 0, 0.1); box-shadow: 0px 5px 13px 0px rgba(0, 0, 0, 0.1); } }
+@media only screen and (max-width: 1200px) { .aero-sidebar > ul { padding: 5px 0; } }
 @media only screen and (max-width: 1000px) { .aero-sidebar > ul { display: none; } }
 .aero-sidebar > ul > li { position: relative; }
 @media only screen and (max-width: 1200px) { .aero-sidebar > ul > li { display: inline-block; border-left: 1px solid #cacaca; }
   .aero-sidebar > ul > li:first-child { border: none; }
-  .aero-sidebar > ul > li:hover ul { display: block; } }
+  .aero-sidebar > ul > li:hover ul { display: block; z-index: 100; } }
 .aero-sidebar > ul > li a { color: #282828; line-height: 18px; padding: 4px 0; display: block; }
 @media only screen and (max-width: 1200px) { .aero-sidebar > ul > li a { padding: 6px 0; } }
 .aero-sidebar > ul > li > a { padding: 25px 0 10px; font-size: 18px; color: #673a90; }

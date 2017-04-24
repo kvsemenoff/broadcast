@@ -85,7 +85,7 @@
 		z-index: 1000;
 	}
 }
-.main-menu,
+.menu-wrap,
 .aero__sidebar{
 	float: left;
 	font-family: "SegoeUIRegular";
@@ -135,7 +135,7 @@
 	  	}
 	  }
 	}
-	.menu {
+	.main-menu {
 		@media only screen and (max-width : 1000px) {
 			display: none;
 			background: #fff;
@@ -150,8 +150,75 @@
 			}
 		}
 		@media only screen and (min-width : 1000px) {
-			.point:hover .sub { 
+			.point:hover ul { 
 				display: block;
+			}
+		}
+		.point { 
+			list-style: none; 
+			font-size: 14px; 
+			position: relative; 
+			display: inline-block;
+			@media only screen and (max-width : 1000px) {
+				display: none;
+				&.point-active{
+					display: block;
+				}
+			}
+			&:hover > ul { 
+				display: block; 
+			}
+			& > a {
+				font-size: 18px;
+				color: #fff;
+				display: block;
+				line-height: 28px;
+				padding: 5px 25px;
+				position: relative;
+				font-family: "SegoeUIRegular";
+				border-bottom: 1px solid transparent;
+				@media only screen and (max-width : 1000px) {
+					display: none;
+				}
+			}
+			ul{
+				font-family: "SegoeUISemiBold";
+				display: none; 
+				position: absolute; 
+				left: 25px; 
+				top: 100%; 
+				background: #fff; 
+				padding: 0 25px 10px; 
+				width: 310px;
+				z-index: 10003;
+				@media only screen and (max-width : 1000px) {
+					display: block;
+					left: 0;
+					position: relative;
+				}
+				@media only screen and (max-width : 400px) {
+					left: 0;
+					right: 0;
+					width: 100%;
+				}
+				li { 
+					list-style: none; 
+					width: 100%;
+					a {
+						color: #282828; 
+						display: block; 
+						line-height: 23px;
+						&:hover{
+							color: #673a90;
+						}
+					}
+				}
+				.sub-main-point a { 
+					font-size: 16px;
+					padding: 10px 0 3px;
+					color: #673a90;
+					display: block;
+				}
 			}
 		}
 	}
@@ -162,83 +229,19 @@
 		}
 		li{
 			float: left;
-		}
-		a{
-			font-family: "SegoeUIBold";
-			font-size: 16px;
-			color: #282828;
-			display: inline-block;
-			padding: 0px 0 10px;
-			margin: 0 8px 4px;
-			border-bottom: 1px solid transparent;
+			a{
+				font-family: "SegoeUIBold";
+				font-size: 16px;
+				color: #282828;
+				display: inline-block;
+				padding: 0px 0 10px;
+				margin: 0 8px 4px;
+				border-bottom: 1px solid transparent;
+			}
 		}
 		.mobile-active{
 			border-color: #828282;
 		}
-	}
-	.point { 
-		list-style: none; 
-		font-size: 14px; 
-		position: relative; 
-		display: inline-block;
-		@media only screen and (max-width : 1000px) {
-			display: none;
-		}
-	}
-	.point:hover > .sub { 
-		display: block; 
-	}
-	.point-name{
-		font-size: 18px;
-		color: #fff;
-		display: block;
-		line-height: 28px;
-		padding: 5px 25px;
-		position: relative;
-		font-family: "SegoeUIRegular";
-		border-bottom: 1px solid transparent;
-		@media only screen and (max-width : 1000px) {
-			display: none;
-		}
-	}
-	.sub {
-		font-family: "SegoeUISemiBold";
-		display: none; 
-		position: absolute; 
-		left: 25px; 
-		top: 100%; 
-		background: #fff; 
-		padding: 0 25px 10px; 
-		width: 310px;
-		z-index: 10003;
-		@media only screen and (max-width : 1000px) {
-			display: block;
-			left: 0;
-			position: relative;
-		}
-		@media only screen and (max-width : 400px) {
-			left: 0;
-			right: 0;
-			width: 100%;
-		}
-	}
-	.sub-point { 
-		list-style: none; 
-		width: 100%;
-		a {
-			color: #282828; 
-			display: block; 
-			line-height: 23px;
-			&:hover{
-				color: #673a90;
-			}
-		}
-	}
-	.sub-main-point a { 
-		font-size: 16px;
-		padding: 10px 0 3px;
-		color: #673a90;
-		display: block;
 	}
 }
 .aero-top{
@@ -344,75 +347,9 @@
 		}
 	}
 }
-.aero__sidebar{
-	width: 270px;
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	@media only screen and (max-width : 1200px) {
-		display: none;
-	}
-	.sub{
-		top: 0;
-		left: 0;
-		bottom: 0;
-    padding: 45px 10px 25px 10px;
-		-webkit-box-shadow: 10px 0px 18px 0px rgba(0,0,0,0.1);
-		-moz-box-shadow: 10px 0px 18px 0px rgba(0,0,0,0.1);
-		box-shadow: 10px 0px 18px 0px rgba(0,0,0,0.1);
-		padding-left: 0;
-		display: block;
-	}
-}
-.aero__nav{
-	display: none;
-	padding: 10px 0;
-	-webkit-box-shadow: 0px 10px 15px 2px rgba(0,0,0,0.15);
-	-moz-box-shadow: 0px 10px 15px 2px rgba(0,0,0,0.15);
-	box-shadow: 0px 10px 15px 2px rgba(0,0,0,0.15);
-	@media only screen and (max-width : 1200px) and (min-width : 1000px) {
-		display: block;
-	}
-	.sub__point { 
-		list-style: none;
-		width: 100%;
-		&_main{
-			border-left: 1px solid #cacaca;
-			display: inline-block;
-			width: auto;
-			padding: 0 25px;
-			line-height: 25px;
-			font-size: 18px;
-			color: #673a90;
-			position: relative;
-			&-first{
-				padding-left: 0;
-				border: none;
-			}
-		}
-	}
-	.sub__list{
-		-webkit-box-shadow: 0px 13px 15px 1px rgba(0,0,0,0.15);
-		-moz-box-shadow: 0px 13px 15px 1px rgba(0,0,0,0.15);
-		box-shadow: 0px 13px 15px 1px rgba(0,0,0,0.15);
-		position: absolute;
-		left: -1px;
-		right: -1px;
-		background: #fff;
-		top: 35px;
-		padding: 0 10px 10px 25px;
-		z-index: 10000;
-	}
-	.sub__point-title {
-    color: #282828;
-    display: block;
-    line-height: 20px;
-    font-size: 16px;
-    padding: 4px 0;
-		&:hover{
-			color: #673a90;
-		}
-	}
+
+.aero-nav{
+	
 }
 
 .top-text{

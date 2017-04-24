@@ -143,23 +143,10 @@ $(document).ready(function(){
 	$('.menu-button').click(function(){
 		if (!$(this).hasClass('menu-active')){
 			$(this).addClass('menu-active');
-			$('.menu').slideDown(300)
+			$('.main-menu').slideDown(300)
 		} else {
 			$(this).removeClass('menu-active');
-			$('.menu').slideUp(300)
-		}
-	});
-
-	$('.sub__list').slideUp(0);
-	$('.aero__nav-item').click(function(){
-		if (!$(this).hasClass('aero-active')){
-			$('.aero__nav-item').removeClass('aero-active');
-			$(this).addClass('aero-active');
-			$('.sub__list').slideUp(300);
-			$(this).next('.sub__list').slideDown(300)
-		} else {
-			$(this).removeClass('aero-active');
-			$('.sub__list').slideUp(300)
+			$('.main-menu').slideUp(300)
 		}
 	});
 

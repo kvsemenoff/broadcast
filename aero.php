@@ -94,13 +94,13 @@
 	<div class="foto_job__container">
 		<h2 class="h2_theme_rosa h2_pink h2_inner_page filming__caption">Фотографии процесса нашей работы</h2>
 		<div class="foto_job__img">
-			<img src="img/whatimg.png" alt="">
+			<a href="img/whatimg.png" rel="group"><img src="img/whatimg.png" alt=""></a>
 		</div>
 		<div class="foto_job__img">
-			<img src="img/whatimg.png" alt="">
+			<a href="img/whatimg.png" rel="group"><img src="img/whatimg.png" alt=""></a>
 		</div>
 		<div class="foto_job__img">
-			<img src="img/whatimg.png" alt="">
+			<a href="img/whatimg.png" rel="group"><img src="img/whatimg.png" alt=""></a>
 		</div>
 	</div>
 </div>

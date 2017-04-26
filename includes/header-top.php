@@ -15,7 +15,7 @@
 						<ul class="main-menu clearfix">
 							<li>
 								<ul class="clearfix">
-									<li><a class="mobile-nav-active" href="#">Главная</a></li>
+									<li><a class="mobile-nav-active" href="/">Главная</a></li>
 									<li><a href="#">Услуги</a></li>
 									<li><a href="#">Проекты</a></li>
 									<li><a href="#">Команда</a></li>
@@ -23,7 +23,7 @@
 								</ul>
 							</li>
 							<li class="point-active">
-								<a href="#">Главная</a>
+								<a href="/">Главная</a>
 								<ul>
 									<li><a href="#"><span>Онлайн трансляции</span></a></li>
 									<li><a href="#">Онлайн трансляции в интернет</a></li>
